@@ -1,0 +1,27 @@
+{"level":"info","message":"Express server listening on port 3000.","timestamp":"2015-08-25T16:15:46.081Z"}
+{"level":"info","message":"Listening on routes...","timestamp":"2015-08-25T16:15:46.134Z"}
+{"level":"info","message":"Express server listening on port 3000.","timestamp":"2015-08-25T16:27:12.725Z"}
+{"level":"info","message":"Listening on routes...","timestamp":"2015-08-25T16:27:12.779Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:16:27:16 +0000] \"GET / HTTP/1.1\" 404 106 \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T16:27:16.998Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:16:27:18 +0000] \"GET / HTTP/1.1\" 404 106 \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T16:27:18.683Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:16:27:27 +0000] \"GET / HTTP/1.1\" 404 106 \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T16:27:27.258Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:16:32:40 +0000] \"GET / HTTP/1.1\" 404 106 \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T16:32:40.629Z"}
+{"level":"info","message":"Express server listening on port 3000.","timestamp":"2015-08-25T16:34:12.719Z"}
+{"level":"info","message":"Listening on routes...","timestamp":"2015-08-25T16:34:12.771Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:16:34:15 +0000] \"GET / HTTP/1.1\" 200 145 \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T16:34:15.376Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:16:41:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T16:41:23.420Z"}
+{"level":"info","message":"Express server listening on port 3000.","timestamp":"2015-08-25T17:39:38.697Z"}
+{"level":"info","message":"Listening on routes...","timestamp":"2015-08-25T17:39:38.756Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:17:40:07 +0000] \"GET / HTTP/1.1\" 200 145 \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T17:40:07.001Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:17:40:07 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T17:40:07.651Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:17:40:07 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T17:40:07.794Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:17:40:07 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T17:40:07.959Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:17:40:33 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-25T17:40:33.174Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Aug/2015:23:44:56 +0000] \"GET / HTTP/1.1\" 200 145 \"-\" \"Python-urllib/3.4\"\n","timestamp":"2015-08-25T23:44:56.472Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Aug/2015:02:59:38 +0000] \"GET /cgi-bin/test-cgi HTTP/1.1\" 200 145 \"-\" \"Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)\"\n","timestamp":"2015-08-26T02:59:38.856Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Aug/2015:08:33:10 +0000] \"GET / HTTP/1.1\" 200 145 \"-\" \"Mozilla/4.0 (compatible; MSIE 4.01; Windows 98)\"\n","timestamp":"2015-08-26T08:33:10.340Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Aug/2015:14:52:30 +0000] \"GET / HTTP/1.1\" 200 145 \"-\" \"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-26T14:52:30.430Z"}
+{"level":"info","message":"Express server listening on port 3000.","timestamp":"2015-08-26T16:11:26.000Z"}
+{"level":"info","message":"Listening on routes...","timestamp":"2015-08-26T16:11:26.073Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Aug/2015:16:11:40 +0000] \"GET / HTTP/1.1\" 200 145 \"-\" \"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-26T16:11:40.790Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [26/Aug/2015:16:11:46 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36\"\n","timestamp":"2015-08-26T16:11:46.989Z"}

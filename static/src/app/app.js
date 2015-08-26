@@ -1,0 +1,9 @@
+/**
+ * APPLICATION
+ */
+
+(function () {
+
+	// ...
+
+})();
