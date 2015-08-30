@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
+
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<base href="/">
 	<title>allmoney</title>
+	
+	<!-- include styles -->
+	<link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
-	hello allmoney!
+	
+	<header>
+		<div class="container">
+			<a href="/" class="logo navbar-brand">
+				<img src="assets/images/logo.png" alt="">
+			</a>
+			<div class="slogan navbar-text">
+				<b>Возьми деньги - портал о микрофинансовых компаниях<br/> и частных лицах, предоставляющих срочные займы по России.</b><br/>
+				Здесь вы найдете информацию по условиям предоставления<br/> кредитов и акциям компаний.
+			</div>
+		</div>
+	</header>
+
+	<!-- wrapper application -->
+	<div class="wrapper" ui-view></div>
+	
+	<!-- include libraries -->
+	<script src="/lib/angular/angular.min.js"></script>
+	<script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+	<!-- include application -->
+	<script src="/app/app.js"></script>
+
 </body>
 </html>

@@ -4,7 +4,9 @@
 
 var gulp = require('gulp'),
 	browserify = require('browserify'),
-	source = require('vinyl-source-stream');
+	source = require('vinyl-source-stream'),
+	bower = require('gulp-bower'),
+	less = require('gulp-less');
 
 var path = require('./path.js'),
 	bundler = browserify({
@@ -14,21 +16,36 @@ var path = require('./path.js'),
 
 gulp.task('html:build', function () {
 
-	gulp.src(path.src.html)
+	return gulp.src(path.src.html)
 		.pipe(gulp.dest(path.build.html));
 
 });
 
 gulp.task('css:build', function () {
 
-	gulp.src(path.src.css)
+	return gulp.src(path.src.css)
 		.pipe(gulp.dest(path.build.css));
+
+});
+
+gulp.task('less:build', function () {
+
+	return gulp.src(path.src.less)
+		.pipe(less())
+		.pipe(gulp.dest(path.build.css));
+
+});
+
+gulp.task('bower:build', function() {
+
+	return bower(path.src.bower)
+		.pipe(gulp.dest(path.build.lib));
 
 });
 
 gulp.task('lib:build', function () {
 
-	gulp.src(path.src.lib)
+	return gulp.src(path.src.lib)
 		.pipe(gulp.dest(path.build.lib));
 
 });
@@ -44,7 +61,7 @@ gulp.task('app:build', function () {
 
 gulp.task('assets:build', function () {
 
-	gulp.src(path.src.assets)
+	return gulp.src(path.src.assets)
 		.pipe(gulp.dest(path.build.assets));
 
 });
@@ -52,7 +69,9 @@ gulp.task('assets:build', function () {
 gulp.task('build', [
 	'html:build',
 	'css:build',
+	'less:build',
 	'app:build',
+	'bower:build',
 	'lib:build',
 	'assets:build'
 ]);
@@ -64,7 +83,9 @@ gulp.task('watch', function () {
 
 	gulp.watch(path.watch.html, ['html:build']);
 	gulp.watch(path.watch.css, ['css:build']);
+	gulp.watch(path.watch.less, ['less:build']);
 	gulp.watch(path.watch.app, ['app:build']);
+	gulp.watch(path.watch.bower, ['bower:build']);
 	gulp.watch(path.watch.lib, ['lib:build']);
 	gulp.watch(path.watch.assets, ['assets:build']);
 

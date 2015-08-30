@@ -9,6 +9,8 @@
   "devDependencies": {
     "browserify": "^10.2.0",
     "gulp": "^3.9.0",
+    "gulp-bower": "0.0.10",
+    "gulp-less": "^3.0.3",
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
