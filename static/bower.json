@@ -1,0 +1,11 @@
+{
+  "name": "allmoney",
+  "version": "0.0.1",
+  "authors": [
+    "instantia <instantia.dev@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.5"
+  }
+}
