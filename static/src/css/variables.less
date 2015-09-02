@@ -10,7 +10,7 @@
 // colors
 @gray-base:                        #000;
 @gray-darker:                      lighten(@gray-base, 13.5%);
-@gray-dark:                        lighten(@gray-base, 20%);
+@gray-dark:                        lighten(@gray-base, 23%);
 @gray:                             lighten(@gray-base, 33.5%);
 @gray-light:                       lighten(@gray-base, 46.7%);
 @gray-lighter:                     lighten(@gray-base, 93.5%);
@@ -19,7 +19,7 @@
 
 // base
 @body-bg:                          #fff;
-@text-color:                       @gray-darker;
+@text-color:                       @gray-dark;
 
 // grid
 @padding-base-vertical:            12px;
@@ -39,6 +39,7 @@
 
 // line-heights
 @line-height-base:                 1.285714285; // 18/14
+@line-height-normal:               1.428571429; // 20/14
 @line-height-computed:             floor((@font-size-base * @line-height-base));
 
 //headings
@@ -85,6 +86,10 @@
 @btn-primary-color:                #fff;
 @btn-primary-bg:                   @brand-primary;
 @btn-primary-border:               @btn-primary-bg;
+
+@btn-inverse-color:                #00428e;
+@btn-inverse-bg:                   #fff;
+@btn-inverse-border:               @btn-inverse-bg;
 
 // custom
 @navbar-height:                    60px;

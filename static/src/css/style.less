@@ -11,8 +11,10 @@
  */
 
 header {
-	.clearfix();
 	.padding-vertical(@padding-base-block);
+	.row {
+		.clearfix();
+	}
 	.logo {
 		height: auto;
 		margin-top: 12px;
@@ -23,6 +25,7 @@ header {
 		font-size: 16px;
 		font-style: italic;
 		margin-top: 6px;
+		width: 520px;
 	}
 	.user-panel {
 		padding: 0px;
@@ -84,10 +87,9 @@ header {
 }
 
 .wrapper {
-	width: 100%;
+	.padding-vertical(@padding-base-block);
 	&.home {
-		.clearfix();
-		.padding-vertical(@padding-base-block);
+		overflow: hidden;
 		height: 550px;
 		background: url('@{assets-path}images/home-bg.jpg') no-repeat center top;
 		.select-city {
@@ -95,6 +97,125 @@ header {
 			.col {
 				width: 226px;
 				margin: 0 auto;
+			}
+		}
+		.pick {
+			.clearfix();
+			width: 887px;
+			margin: 0 auto;
+			.col {
+				width: 285px;
+				height: 285px;
+				float: left;
+				margin: 42px 16px 0px 0px;
+				background: fade(#fff, 50%);
+				border-radius: 32px;
+				text-align: center;
+				.padding-horizontal(80px);
+				h3 {
+					font-size: 20px;
+					height: 82px;
+					line-height: @line-height-normal;
+					margin: 0px 0px 44px;
+				}
+				.btn {
+					width: 100%;
+				}
+				.clip {
+					width: 88px;
+					height: 88px;
+					border-radius: 50%;
+					margin: -38px auto 34px;
+					text-align: center;
+					line-height: 76px;
+					font-size: 26px;
+					color: fade(#000, 33%);
+				}
+				&.private .clip {
+					background: #8ccb00;
+					border: 6px solid #66B2EE;
+				}
+				&.mfo .clip {
+					background: #0069e3;
+					border: 6px solid #83B6E1;
+				}
+				&.pawnshop .clip {
+					background: #f49207;
+					border: 6px solid #7CACD0;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	.padding-vertical(@padding-base-block);
+	padding-bottom: 0px;
+	background: #d9e2ef;
+	border-top: 1px solid #fff;
+	.row {
+		.clearfix();
+	}
+	.links {
+		border-bottom: 1px solid #c5ccd8;
+		padding: 0px 0px 32px;
+		.col {
+			width: 25%;
+			float: left;
+			padding-right: 20px;
+		}
+		h4 {
+			font-size: 16px;
+			color: #002c69;
+			margin-bottom: 20px;
+		}
+		ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			> li {
+				font-size: 14px;
+				line-height: @line-height-normal;
+				a > {
+					color: #878f9c;
+				}
+			}
+		}
+	}
+	.copy {
+		.padding-vertical(52px);
+		.logo {
+			height: auto;
+			margin-right: 84px;
+		}
+		.slogan {
+			color: #a1a9b7;
+			font-size: 13px;
+			width: 350px;
+			margin-top: 6px;
+		}
+		.dev {
+			font-size: 13px;
+			line-height: 20px;
+			margin-top: 12px;
+			.clip {
+				.inline();
+				width: 81px;
+				height: 20px;
+				margin-left: 3px;
+				background: url('@{assets-path}images/developer.png') no-repeat center center;
+			}
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: none;
+			}
+			span {
+				text-decoration: underline;
+				margin-right: 3px;
+			}
+			&:hover span {
+				text-decoration: none;
 			}
 		}
 	}

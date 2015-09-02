@@ -227,6 +227,7 @@ th {
 .il { .inline() }
 .fl { float: left }
 .fr { float: right }
+.last { margin-right: 0px !important }
 
 
 // icons
@@ -274,7 +275,7 @@ th {
 	&.active {
 		outline: 0;
 		background-image: none;
-		.box-shadow(inset 0 1px 2px rgba(0,0,0,.125));
+		/* .box-shadow(inset 0 1px 2px rgba(0,0,0,.125)); */
 	}
 
 	&.disabled,
@@ -297,6 +298,9 @@ th {
 	}
 	&.primary {
 		.button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+	}
+	&.inverse {
+		.button-variant(@btn-inverse-color; @btn-inverse-bg; @btn-inverse-border);
 	}
 	
 }

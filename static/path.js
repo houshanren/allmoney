@@ -21,7 +21,7 @@ module.exports = {
     watch: {
         html: 'src/**/*.html',
         css: 'src/css/*.css',
-        less: 'src/css/*.less',
+        less: 'src/css/**/*.less',
         app: 'src/app/**/*.js',
         bower: 'src/bower_components/**/*',
         lib: 'src/lib/*.+(js|map)',
