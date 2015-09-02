@@ -1,21 +1,102 @@
-@import "../bower_components/bootstrap/less/bootstrap.less";
+// reset
+@import "normalize.less";
+// default
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,900italic,400italic,700italic&subset=latin,cyrillic);
+@import "font-awesome/font-awesome.less";
 @import "variables.less";
+@import "core/core.less";
 
 /**
  * CUSTOM CSS
  */
 
 header {
-	padding: 34px 0px;
+	.clearfix();
+	.padding-vertical(@padding-base-block);
 	.logo {
-		padding: 0px;
 		height: auto;
-		margin-top: 10px;
-		margin-right: 34px;
+		margin-top: 12px;
+		margin-right: 40px;
 	}
 	.slogan {
-		margin: 4px 0px;
 		color: #002c69;
 		font-size: 16px;
+		font-style: italic;
+		margin-top: 6px;
+	}
+	.user-panel {
+		padding: 0px;
+		width: 204px;
+		.btn {
+			width: 100%;
+			text-align: left;
+			&.default {
+				margin-bottom: 7px;
+			}
+			
+		}
 	}
 }
+
+.menu {
+	position: relative;
+	height: @navbar-height;
+	#gradient > .horizontal(#00337c, #004996);
+	// gradient
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: @navbar-height;
+		left: 0px;
+		top: 0px;
+		background: url('@{assets-path}images/menu-bg.png') repeat-x center bottom;
+	}
+	.nav {
+		.list-inline();
+		> li {
+			font-size: 16px;
+			> a {
+				display: block;
+				color: #fff;
+				text-shadow: 0px 1px 1px rgba(0,0,0,.15);
+				line-height: @line-height-computed;
+				padding: @navbar-padding-top 21px @navbar-padding-bottom;
+				&:hover,
+				&.active {
+					background: @navbar-link-hover-bg;
+					color: @navbar-link-hover-color;
+					text-decoration: none;
+				}
+				&:focus {
+					background: @navbar-link-hover-bg;
+					text-decoration: none;
+				}
+			}
+			&.active > a {
+				background: @navbar-link-hover-bg;
+				color: @navbar-link-hover-color;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.wrapper {
+	width: 100%;
+	&.home {
+		.clearfix();
+		.padding-vertical(@padding-base-block);
+		height: 550px;
+		background: url('@{assets-path}images/home-bg.jpg') no-repeat center top;
+		.select-city {
+			margin-bottom: 16px;
+			.col {
+				width: 226px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+

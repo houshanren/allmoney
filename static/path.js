@@ -11,7 +11,7 @@ module.exports = {
     src: {
         html: 'src/**/*.html',
         css: 'src/css/*.css',
-        less: 'src/css/*.less',
+        less: 'src/css/style.less',
         app: 'src/app/app.js',
         bower: 'src/bower_components',
         lib: 'src/lib/*.+(js|map)',

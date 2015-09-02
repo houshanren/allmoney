@@ -11,7 +11,7 @@
 	angular
 		.module('app', [
 			'ui.router',
-			'ui.bootstrap'/*,
+			require('./directives').name/*,
 			require('./controllers').name,
 			require('./directives').name,
 			require('./filters/').name,

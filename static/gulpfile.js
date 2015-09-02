@@ -31,7 +31,9 @@ gulp.task('css:build', function () {
 gulp.task('less:build', function () {
 
 	return gulp.src(path.src.less)
-		.pipe(less())
+		.pipe(less({
+			compress: true
+		}))
 		.pipe(gulp.dest(path.build.css));
 
 });

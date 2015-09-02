@@ -3,7 +3,7 @@
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="/">
 	<title>allmoney</title>
 	
@@ -15,23 +15,42 @@
 	
 	<header>
 		<div class="container">
-			<a href="/" class="logo navbar-brand">
+			<a href="/" class="fl logo">
 				<img src="assets/images/logo.png" alt="">
 			</a>
-			<div class="slogan navbar-text">
+			<div class="fl slogan">
 				<b>Возьми деньги - портал о микрофинансовых компаниях<br/> и частных лицах, предоставляющих срочные займы по России.</b><br/>
 				Здесь вы найдете информацию по условиям предоставления<br/> кредитов и акциям компаний.
+			</div>
+			<div class="fr user-panel">
+				<a href="#" class="btn default icon-left" role="button"><i class="fa fa-sign-in"></i>Войти на сайт</a>
+				<a href="#" class="btn primary icon-left" role="button"><i class="fa fa-user-plus"></i>Регистрация</a>
 			</div>
 		</div>
 	</header>
 
+	<nav class="menu">
+		<div class="container">
+			<div class="collapse">
+				<ul class="nav">
+					<li class="active"><a href="#">Главная</a></li>
+					<li><a href="#">Займы от МФО</a></li>
+					<li><a href="#">Займы от частных лиц</a></li>
+					<li><a href="#">Ломбарды</a></li>
+					<li><a href="#">Мнение экспертов</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Задать вопрос юристу</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 	<!-- wrapper application -->
-	<div class="wrapper" ui-view></div>
+	<section ui-view></section>
 	
 	<!-- include libraries -->
 	<script src="/lib/angular/angular.min.js"></script>
 	<script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
 
 	<!-- include application -->
 	<script src="/app/app.js"></script>
