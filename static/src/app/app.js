@@ -11,22 +11,16 @@
 	angular
 		.module('app', [
 			'ui.router',
-			require('./directives').name/*,
+			// components
+			require('./directives').name,
 			require('./controllers').name,
 			require('./directives').name,
-			require('./filters/').name,
-			require('./services').name*/
+			require('./filters').name,
+			require('./services').name,
+			// modules
+			require('./user').name
 		])
-		.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
-
-			$stateProvider
-				.state('index', {
-					url: '/',
-					templateUrl: 'partials/index.html'
-				});
-
-			$urlRouterProvider
-				.otherwise('/');
+		.config(['$locationProvider', function ($locationProvider) {
 
 			$locationProvider
 				.html5Mode(true);
@@ -38,5 +32,8 @@
 			SERVER_ADDRESS: '89.189.176.161',
 			SERVER_PORT: '3000'
 		});
+
+	// requires
+	require('./routes');
 
 })();

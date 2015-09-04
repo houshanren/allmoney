@@ -15,22 +15,30 @@
 @gray-light:                       lighten(@gray-base, 46.7%);
 @gray-lighter:                     lighten(@gray-base, 93.5%);
 
+@brand-default:                    #002c69;
 @brand-primary:                    #8ccb00;
+
+@color-red:                        #F37A60;
+@color-green:                      @brand-primary;
 
 // base
 @body-bg:                          #fff;
 @text-color:                       @gray-dark;
 
 // grid
-@padding-base-vertical:            12px;
-@padding-base-horizontal:          24px;
+@padding-base-vertical:            20px;
+@padding-base-horizontal:          48px;
+@padding-base-x:                   24px;
+@padding-base-y:                   10px;
 @padding-base-block:               68px;
 @grid-gutter-width:                40px;
 @container-width:                  1100px + @grid-gutter-width;
+@border-radius-base:               0px;
 
 // fonts
 @font-family-sans-serif:           "Roboto", Arial, sans-serif;
 @font-family-base:                 @font-family-sans-serif;
+@font-weight-base:                 400;
 @font-size-base:                   15px;
 @font-size-large:                  ceil((@font-size-base * 1.25));
 @font-size-small:                  ceil((@font-size-base * 0.85));
@@ -43,17 +51,17 @@
 @line-height-computed:             floor((@font-size-base * @line-height-base));
 
 //headings
-@font-size-h1:                     floor((@font-size-base * 2.6));
-@font-size-h2:                     floor((@font-size-base * 2.15));
-@font-size-h3:                     ceil((@font-size-base * 1.7));
+@font-size-h1:                     floor((@font-size-base * 2.3));
+@font-size-h2:                     floor((@font-size-base * 2.05));
+@font-size-h3:                     ceil((@font-size-base * 1.5));
 @font-size-h4:                     ceil((@font-size-base * 1.25));
 @font-size-h5:                     @font-size-base;
 @font-size-h6:                     ceil((@font-size-base * 0.85));
 
 @headings-font-family:             inherit;
-@headings-font-weight:             500;
+@headings-font-weight:             700;
 @headings-line-height:             1.1;
-@headings-color:                   inherit;
+@headings-color:                   @brand-default;
 
 // tables
 @table-cell-padding:               8px;
@@ -68,16 +76,29 @@
 @mark-bg:                          @gray-lighter;
 
 // links
-@link-color:                       #004997;
-@link-hover-color:                 #004997;
+@link-color:                       @brand-default;
+@link-hover-color:                 @brand-default;
 @link-hover-decoration:            underline;
+
+// inputs
+@input-bg:                         #fff;
+@input-bg-disabled:                @gray-lighter;
+@input-color:                      @brand-default;
+@input-font-weight:                500;
+@input-font-size:                  16px;
+@input-border:                     #92a0b6;
+@input-border-size:                3px;
+@input-border-radius:              22px;
+@input-border-focus:               #8CB6F9;
+@input-color-placeholder:          #9eb0c8;
+@input-height-base:                (floor((@input-font-size * @line-height-base)) + ((@padding-base-y - @input-border-size + 1) * 2) + (2 * @input-border-size));
 
 // buttons
 @btn-font-weight:                  500;
 @btn-font-size:                    16px;
-@btn-padding-vertical:             10px;
-@btn-padding-horizontal:           24px;
-@btn-border-radius-base:           30px;
+@btn-padding-vertical:             @padding-base-y;
+@btn-padding-horizontal:           @padding-base-x;
+@btn-border-radius-base:           22px;
 
 @btn-default-color:                #fff;
 @btn-default-bg:                   #95a4ba;
@@ -97,3 +118,5 @@
 @navbar-padding-bottom:            ceil((@navbar-height - @line-height-computed) / 2);
 @navbar-link-hover-bg:             @brand-primary;
 @navbar-link-hover-color:          #fff;
+
+@footer-height:                    452px;
