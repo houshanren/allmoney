@@ -25,7 +25,8 @@ module.exports = (function (node, out) {
 		},
 		role: {
 			type: Number,
-			default: 0
+			// user
+			default: 1
 		},
 		status: {
 			type: Number,

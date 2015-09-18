@@ -10,14 +10,17 @@
 	 */
 	module.exports = angular
 		.module('app.user.login', [])
-		.config(['$stateProvider', function ($stateProvider) {
+		.config(['$stateProvider', 'config', function ($stateProvider, config) {
 
 			$stateProvider
 				.state('user.login', {
 					url: '/login',
 					templateUrl: 'partials/user/login.html',
 					controller: 'LoginCtrl',
-					controllerAs: 'login'
+					controllerAs: 'login',
+					data: {
+						access: config.ACCESS.anonymous
+					}
 				});
 
 		}]);

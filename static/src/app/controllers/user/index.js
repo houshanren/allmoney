@@ -19,7 +19,7 @@
 				.error(function (data, status) {
 
 					/*if (status == 404) $state.go('404');*/
-					console.log(data.message);
+					if (!!data.message) console.log(data.message);
 
 				});
 

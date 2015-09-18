@@ -1,0 +1,17 @@
+/**
+ * ROLES:
+ * 0 - anonymous
+ * 1 - user
+ * 2 - moderator
+ * 3 - admin
+ * 4 - private person
+ * 5 - microfinance organization (MFI)
+ * 6 - pawnshop
+ */
+
+{
+	"public": [0, 1, 2, 3, 4, 5, 6],
+	"anonymous": [0],
+	"user": [1, 2, 3, 4, 5, 6],
+	"admin": [3]
+}

@@ -6,7 +6,7 @@
 				<div class="row">
 
 					<div class="fl col col-33">
-						<h3>Тип пользователя</h3>
+						<h3>Тип учетной записи <small>(обязательно)</small></h3>
 						<fieldset>
 							<ui-select ng-model="data.role" ng-disabled="disabled" search-enabled="false" required>
 								<ui-select-match placeholder="Выберите тип">{{ roles[$select.selected] }}</ui-select-match>
@@ -22,7 +22,7 @@
 				<div class="row required">
 
 					<div class="fl col col-33">
-						<h3>Учетные данные</h3>
+						<h3>Учетные данные <small>(обязательно)</small></h3>
 						<fieldset>
 							<input ng-model="data.email" type="email" class="form-control" placeholder="Ваш e-mail" title="Ваш e-mail" required />
 						</fieldset>
@@ -58,14 +58,12 @@
 					</div>
 
 				</div>
+				<hr/>
 				<div class="row agreement">
 
 					<div class="col">
 						<fieldset>
-							<label>
-								<input ng-model="data.agreement" type="checkbox" required />
-								Я принимаю условия <a href="#">Пользовательского соглашения</a> и даю согласие на обработку персональных данных в соответствии с законодательством России и <a href="#">Политикой конфиденциальности</a>.
-							</label>
+								Регистрируясь Вы принимаете условия <a href="#">Пользовательского соглашения</a> и даете согласие на обработку персональных данных в соответствии с законодательством России и <a href="#">Политикой конфиденциальности</a>.
 						</fieldset>
 					</div>
 

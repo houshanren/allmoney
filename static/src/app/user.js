@@ -15,19 +15,25 @@
 			require('./login').name,
 			require('./register').name
 		])
-		.config(['$stateProvider', function ($stateProvider) {
+		.config(['$stateProvider', 'config', function ($stateProvider, config) {
 
 			$stateProvider
 				.state('user', {
 					url: '/user',
 					abstract: true,
-					template: '<ui-view>'
+					template: '<ui-view>',
+					data: {
+						access: config.ACCESS.public
+					}
 				})
 				.state('user.view', {
-					url: '/{id:int}',
+					url: '/:id',
 					templateUrl: 'partials/user/view.html',
 					controller: 'UserCtrl',
-					controllerAs: 'user'
+					controllerAs: 'user',
+					data: {
+						access: config.ACCESS.public
+					}
 				});
 
 		}]);

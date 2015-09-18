@@ -11,6 +11,8 @@
 			$scope.initial = {};
 			$scope.data = angular.copy($scope.initial);
 
+			/*console.log($scope.access);*/
+
 			// ...
 
 			// TODO: login submit

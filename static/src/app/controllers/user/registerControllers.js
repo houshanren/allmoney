@@ -6,13 +6,13 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('RegisterCtrl', ['$scope', 'config', function ($scope, config) {
+		.controller('RegisterCtrl', ['$scope', 'config', 'User', function ($scope, config, User) {
 
 			// TODO: name roles
 			$scope.roles = config.ROLES;
 			$scope.codeRole = {};
 			// define for guest
-			$scope.availableRoles = [0, 3, 4, 5];
+			$scope.availableRoles = [1, 4, 5, 6];
 
 			$scope.initial = {};
 			$scope.data = angular.copy($scope.initial);
@@ -23,7 +23,7 @@
 			$scope.submit = function () {
 
 				// TODO: service check
-				console.log($scope.data);
+				User.register($scope.data);
 				// ...
 
 				// reset form

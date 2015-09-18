@@ -15,6 +15,8 @@
 			'ui.router',
 			'ngSanitize',
 			'ui.select',
+			// values & constants
+			require('./config').name,
 			// components
 			require('./directives').name,
 			require('./controllers').name,
@@ -26,32 +28,12 @@
 		])
 		.config(['$locationProvider', function ($locationProvider) {
 
+			/*$rootScope.access = require('./access.json');*/
+
 			$locationProvider
 				.html5Mode(true);
 
-		}])
-		.constant('config', {
-			NAME: 'ALLMONEY',
-			DEBUG: true,
-			ROLES: [
-				'Обычный пользователь',
-				'Модератор',
-				'Администратор',
-				'Частное лицо',
-				'МФО',
-				'Ломбард'
-			],
-			CITIES: [
-				'Все города',
-				'Москва',
-				'Санкт-Петербург',
-				'Новосибирск',
-				'Нижний-Новгород',
-				'Красноярск',
-				'Казань',
-				'Екатеринбург'
-			]
-		});
+		}]);
 
 	// requires
 	require('./routes');

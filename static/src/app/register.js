@@ -10,14 +10,17 @@
 	 */
 	module.exports = angular
 		.module('app.user.register', [])
-		.config(['$stateProvider', function ($stateProvider) {
+		.config(['$stateProvider', 'config', function ($stateProvider, config) {
 
 			$stateProvider
 				.state('user.register', {
 					url: '/register',
 					templateUrl: 'partials/user/register.html',
 					controller: 'RegisterCtrl',
-					controllerAs: 'register'
+					controllerAs: 'register',
+					data: {
+						access: config.ACCESS.anonymous
+					}
 				});
 
 		}]);

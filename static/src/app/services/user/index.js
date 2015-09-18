@@ -15,8 +15,15 @@
 
 			}
 
+			function publicRegister(data) {
+
+				return $http.post('/api/user/register', data);
+
+			}
+
 			return {
-				getById: publicGetById
+				getById: publicGetById,
+				register: publicRegister
 			};
 
 		}]);
