@@ -2,6 +2,8 @@
  * APPLICATION
  */
 
+'use strict';
+
 (function () {
 
 	/**
@@ -11,6 +13,8 @@
 	angular
 		.module('app', [
 			'ui.router',
+			'ngSanitize',
+			'ui.select',
 			// components
 			require('./directives').name,
 			require('./controllers').name,
@@ -29,8 +33,24 @@
 		.constant('config', {
 			NAME: 'ALLMONEY',
 			DEBUG: true,
-			SERVER_ADDRESS: '89.189.176.161',
-			SERVER_PORT: '3000'
+			ROLES: [
+				'Обычный пользователь',
+				'Модератор',
+				'Администратор',
+				'Частное лицо',
+				'МФО',
+				'Ломбард'
+			],
+			CITIES: [
+				'Все города',
+				'Москва',
+				'Санкт-Петербург',
+				'Новосибирск',
+				'Нижний-Новгород',
+				'Красноярск',
+				'Казань',
+				'Екатеринбург'
+			]
 		});
 
 	// requires

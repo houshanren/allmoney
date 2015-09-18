@@ -1,0 +1,1307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-awesome/"
+			],
+			[
+				"a",
+				"assets/"
+			],
+			[
+				"va",
+				"variables.less"
+			],
+			[
+				"bow",
+				"bower_components"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ea",
+				"each"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"up",
+				"updateLoop"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"move",
+				"movespeed"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"i",
+				"inline"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"pl",
+				"player"
+			],
+			[
+				"player",
+				"playerById"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"_se",
+				"_selectD"
+			],
+			[
+				"sele",
+				"_selectM"
+			],
+			[
+				"_s",
+				"_selectD"
+			],
+			[
+				"_ra",
+				"_randomArray"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"socket",
+				"socket"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"S",
+				"stateParams"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"backr",
+				"background"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"displ",
+				"display_name"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"en",
+				"entry-comments"
+			],
+			[
+				"php",
+				"phpinfo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "api/index.js",
+			"settings":
+			{
+				"buffer_size": 1447,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/models/index.js",
+			"settings":
+			{
+				"buffer_size": 100,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/routes/index.js",
+			"settings":
+			{
+				"buffer_size": 144,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/routes/user.js",
+			"settings":
+			{
+				"buffer_size": 884,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/login.js",
+			"settings":
+			{
+				"buffer_size": 413,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/routes.js",
+			"settings":
+			{
+				"buffer_size": 339,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 17,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/app.js",
+			"settings":
+			{
+				"buffer_size": 657,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/users.json",
+			"settings":
+			{
+				"buffer_size": 236,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/user.js",
+			"settings":
+			{
+				"buffer_size": 631,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/controllers/user/loginControllers.js",
+			"settings":
+			{
+				"buffer_size": 635,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/services/user/authenticationService.js",
+			"settings":
+			{
+				"buffer_size": 279,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 642,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/src/partials/user/view.html",
+			"settings":
+			{
+				"buffer_size": 113,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/register.js",
+			"settings":
+			{
+				"buffer_size": 437,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/controllers/user/index.js",
+			"settings":
+			{
+				"buffer_size": 521,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/services/user/index.js",
+			"settings":
+			{
+				"buffer_size": 371,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/models/user.js",
+			"settings":
+			{
+				"buffer_size": 854,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 82.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: p",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ad",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"git",
+				"GitGutter: Show Comparing Against"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/documents/configs/Settings_RT-N10PV2.CFG",
+		"/D/workspace/vagrant/scripts/mounts.sh",
+		"/D/workspace/vagrant/Vagrantfile",
+		"/C/Users/instantia/AppData/Roaming/Sublime Text 2/Packages/Color Scheme - Default/Monokai Soda.tmTheme",
+		"/C/Cocos2d/projects/weeblerocket/proj.android/jni/Android.mk",
+		"/C/Program Files/CodeAndWeb/TexturePacker/resources/documents/LicenseAgreement.html",
+		"/C/Cocos2d/projects/weeblerocket/Resources/Spritesheets/rockets.plist",
+		"/D/workspace/vagrant/www/dev/allmoney/api/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/login.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/app.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/variables.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/core.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/register.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/view.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/register.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/login.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/style.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/registerControllers.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/authenticationService.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/loginControllers.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/user.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/routes.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/users.json",
+		"/D/workspace/vagrant/www/dev/allmoney/allmoney.sublime-workspace",
+		"/D/workspace/vagrant/www/dev/allmoney/allmoney.sublime-project",
+		"/C/Users/instantia/AppData/Roaming/Windows32/Config.xml",
+		"/D/workspace/vagrant/www/dev/allmoney/index.js",
+		"/D/workspace/vagrant/www/dev/roamforge/server/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/.gitignore",
+		"/D/workspace/vagrant/www/dev/roamforge/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/routes/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/index.js",
+		"/D/workspace/vagrant/scripts/gateway.sh",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/app.js",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/index.js",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/gameControllers.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/vendor-prefixes.less",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/classes/player.js",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/canvas.js",
+		"/Q/installers/Photoshop.CC/m0nkrus.nfo",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/user.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/normalize.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/path.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/gulpfile.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/mixins.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/buttons.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/filters/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/gradients.less",
+		"/D/workspace/vagrant/www/dev/rosalfa.instantia/wp-content/themes/seolead/style.css",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/vendor-prefixes.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/mixins.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/font-awesome/font-awesome.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/font-awesome/core.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/font-awesome/path.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/font-awesome.min.css",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/index.js",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/gameDirectives.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/style.css",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/mixins/forms.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/variables.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/forms.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/core.css",
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/variables.css",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/reset.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/bower.json",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/replace.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/common/directiveSelect.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/common/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular/angular.min.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/mixins/tab-focus.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/buttons.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/glyphicons.less",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/navs.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/navbar.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/mixins/buttons.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/pager.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/theme.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/utilities.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap.js",
+		"/D/documents/downloads/bootstrap-3.3.5/bootstrap-3.3.5/less/bootstrap.less",
+		"/D/documents/downloads/bootstrap-3.3.5/bootstrap-3.3.5/less/variables.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/package.json",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap-csp.css",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/partials/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/.bowerrc",
+		"/D/documents/downloads/Тестовое задание для Люси/╨в╨╡╤Б╤В╨╛╨▓╨╛╨╡ ╨╖╨░╨┤╨░╨╜╨╕╨╡ ╨┤╨╗╤П ╨Ы╤О╤Б╨╕/home.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/app/app.js",
+		"/D/workspace/vagrant/www/dev/roamforge/client/package.json",
+		"/D/workspace/vagrant/www/dev/roamforge/client/npm-debug.log.6ed52eac9bb441a271c3033bc0cd5668",
+		"/D/workspace/vagrant/www/dev/roamforge/client/gulpfile.js",
+		"/D/workspace/vagrant/www/dev/allmoney/package.json",
+		"/D/workspace/vagrant/www/dev/allmoney/routes/index.js",
+		"/D/workspace/vagrant/www/dev/grvd.node/index.js",
+		"/C/Users/INSTAN~1/AppData/Local/Temp/F3T4282.tmp/syslog",
+		"/C/Users/INSTAN~1/AppData/Local/Temp/F3T4281.tmp/syslog",
+		"/D/workspace/vagrant/www/dev/index.php",
+		"/D/workspace/alt/openmama/projects/sample_0/mama/config/profile.openmama",
+		"/D/workspace/alt/openmama/projects/sample_0/mama/config/mama.properties",
+		"/C/Users/instantia/AppData/Local/Temp/fz3temp-1/style.css",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-development.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/css/jquery.formstyler.css",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/404.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-portfolio.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/services.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-o-kompanii.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-news.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/single.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/index.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-uslugi.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-articles.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/front-page.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-kontakty.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-produkciya.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-osteklenie-balkonov.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-rehau.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/footer.php",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/style.css",
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/header.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"com",
+			"admin",
+			"staticPath",
+			".codeschool.com",
+			"400",
+			"placeholder",
+			"002c69",
+			"border-radius-base",
+			"login",
+			"int",
+			"name",
+			"int",
+			"weight",
+			"transit",
+			"hov",
+			"hover",
+			"top",
+			"right",
+			"floceor",
+			"border-box",
+			"form-control-focus",
+			"form-border-radius",
+			"@icon-font-path",
+			"active",
+			"button-variant",
+			":hover",
+			"btn-pr",
+			"hover",
+			"brand-primary",
+			"navbar-vertical-align",
+			"btn-icon",
+			"padding-base-horizontal",
+			"@border-radius-large",
+			"btn-border-radius-large",
+			"font-size",
+			"btn-font",
+			"height",
+			"font",
+			"@navbar-inverse-link-active-bg",
+			"padding",
+			"navbar",
+			"@grid-gutter-width",
+			"1170",
+			"1170px",
+			"1100px",
+			"1140px",
+			"1170",
+			"1200",
+			".horizontal",
+			"gradient",
+			"navbar",
+			"line-he",
+			"font-size",
+			"font-s",
+			"font-size",
+			"navbar",
+			"font",
+			"navbar",
+			"@border-radius-base",
+			"navba",
+			"brand",
+			"pull-left",
+			"css",
+			"error",
+			"source",
+			";\n",
+			"now",
+			"item-prod",
+			"transit",
+			"h1",
+			"content-wra",
+			"e35c1e",
+			".rev",
+			"review",
+			"form",
+			"timer",
+			"contacts",
+			"font-size: 14",
+			"phone",
+			"../fonts/",
+			"'Roboto Condensed'",
+			"self.De",
+			"unity.area",
+			"Phaser.Physics.Matter.BodyDebug",
+			"= new Phaser.Physics.Matter.BodyDebug",
+			"pxmi",
+			"pmxi",
+			"pxmi",
+			"BodyDebug",
+			"debugBody",
+			"InversePointProxy",
+			"Phaser.Physics.Matter.Body.prot",
+			"InversePointProxy",
+			"velocity",
+			"InversePointProxy",
+			"walls",
+			"pxm",
+			"mpx",
+			"mpxi",
+			"pxmi",
+			"pxm(",
+			"mpx(",
+			"mpxi(",
+			"mpxi",
+			"pxmi(",
+			"InversePointProxy",
+			"physics.p2",
+			"Phaser.Physics.P2",
+			"velocity",
+			"Matter",
+			"Phaser",
+			"Phaser.QuadTree",
+			"Phaser",
+			"Physics.Arcade.Body",
+			"Phaser.Physics.",
+			"Phaser",
+			"phaser",
+			"Phaser.Math",
+			"Phaser.Point",
+			"Phaser.Rectangle",
+			"Phaser",
+			"Phaser.QuadTree",
+			"Phaser",
+			"Phaser.Rectangle",
+			"Phaser",
+			"Phaser.Point",
+			"Phaser.Rectangle",
+			"Phaser.Point"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"fonts/",
+			"'blogger_sans'",
+			"Phaser.Physics.Matter",
+			"Physics.QuadTree",
+			"Physics",
+			"Physics.Body",
+			"Physics.",
+			"Physics",
+			"Physics.Math",
+			"Physics.Point",
+			"Physics.Rectangle",
+			"Physics.QuadTree",
+			"Physics.Rectangle",
+			"Physics.Point",
+			"Physics.Rectangle",
+			"Physics.Point",
+			"Physics.Math",
+			"Physics",
+			"Physics.Math",
+			"Physics.Point",
+			"Physics.Arcade",
+			"Point",
+			"Arcade",
+			"",
+			"did",
+			"(unity.config.DEBUG)",
+			"category",
+			"%ProgramFiles(x86)%",
+			"this.game.",
+			"pf3b",
+			"group2",
+			"pf2b",
+			"pfb1",
+			"'Roboto'",
+			"43BFE0",
+			"-Bold.",
+			"_e( '(required)'",
+			"'Tinos'",
+			"'Ubuntu'",
+			"37AFCF",
+			"'Roboto'",
+			"'Open Sans'",
+			"'Roboto'",
+			"90px",
+			"2378C8",
+			"font-size: 13px",
+			"PT Sans"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "api/index.js",
+					"settings":
+					{
+						"buffer_size": 1447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1169,
+								1206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "api/models/index.js",
+					"settings":
+					{
+						"buffer_size": 100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								93
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "api/routes/index.js",
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								137,
+								137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "api/routes/user.js",
+					"settings":
+					{
+						"buffer_size": 884,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								389,
+								389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "static/src/app/login.js",
+					"settings":
+					{
+						"buffer_size": 413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "static/src/app/routes.js",
+					"settings":
+					{
+						"buffer_size": 339,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.js",
+					"settings":
+					{
+						"buffer_size": 17,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "static/src/app/app.js",
+					"settings":
+					{
+						"buffer_size": 657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "api/users.json",
+					"settings":
+					{
+						"buffer_size": 236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "static/src/app/user.js",
+					"settings":
+					{
+						"buffer_size": 631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								558,
+								566
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "static/src/app/controllers/user/loginControllers.js",
+					"settings":
+					{
+						"buffer_size": 635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "static/src/app/services/user/authenticationService.js",
+					"settings":
+					{
+						"buffer_size": 279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "static/src/partials/user/view.html",
+					"settings":
+					{
+						"buffer_size": 113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "static/src/app/register.js",
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "static/src/app/controllers/user/index.js",
+					"settings":
+					{
+						"buffer_size": 521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "static/src/app/services/user/index.js",
+					"settings":
+					{
+						"buffer_size": 371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "api/models/user.js",
+					"settings":
+					{
+						"buffer_size": 854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true
+}

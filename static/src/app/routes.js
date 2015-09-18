@@ -11,11 +11,17 @@
 			$stateProvider
 				.state('index', {
 					url: '/',
-					templateUrl: 'partials/index.html'
+					templateUrl: 'partials/index.html',
+					controller: 'IndexCtrl',
+					controllerAs: 'index'
+				})
+				.state('404', {
+					url: '/404',
+					templateUrl: 'partials/404.html'
 				});
 
 			$urlRouterProvider
-				.otherwise('/');
+				.otherwise('/404');
 
 		}]);
 

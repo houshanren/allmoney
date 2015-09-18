@@ -6,10 +6,10 @@
 				<h1>Вход в <span class="hl">личный</span> кабинет</h1>
 				<form name="loginForm" ng-submit="loginForm.$valid && submit()" novalidate>
 					<fieldset>
-						<input ng-model="user.email" type="email" class="form-control" placeholder="Ваш e-mail" title="Ваш e-mail" required />
+						<input ng-model="data.email" type="email" class="form-control" placeholder="Ваш e-mail" title="Ваш e-mail" required />
 					</fieldset>
 					<fieldset>
-						<input ng-model="user.password" type="password" class="form-control" placeholder="Пароль" title="Пароль" required />
+						<input ng-model="data.password" type="password" class="form-control" placeholder="Пароль" title="Пароль" required />
 					</fieldset>
 					<fieldset>
 						<input type="submit" class="btn primary" value="Войти" />

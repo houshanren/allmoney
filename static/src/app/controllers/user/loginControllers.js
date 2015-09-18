@@ -4,23 +4,20 @@
 
 (function () {
 
-	/**
-	 * Login controllers
-	 * @type {Angular.module}
-	 */
 	angular
 		.module('app.controllers.user')
-		.controller('LoginController', ['$scope', function ($scope) {
+		.controller('LoginCtrl', ['$scope', 'Authentication', function ($scope, Authentication) {
 
 			$scope.initial = {};
-			$scope.user = angular.copy($scope.initial);
+			$scope.data = angular.copy($scope.initial);
 
 			// ...
 
 			// TODO: login submit
 			$scope.submit = function () {
 
-				console.log($scope.user);
+				// TODO: service check
+				Authentication.login($scope.data);
 				// ...
 
 				// reset form
@@ -32,7 +29,7 @@
 
 				$scope.loginForm.$setPristine();
 				$scope.loginForm.$setUntouched();
-				$scope.user = angular.copy($scope.initial);
+				$scope.data = angular.copy($scope.initial);
 
 			};
 

@@ -10,7 +10,8 @@
 	 */
 	module.exports = angular
 		.module('app.user', [
-			'ui.router',
+			require('./controllers/user').name,
+			require('./services/user').name,
 			require('./login').name,
 			require('./register').name
 		])
@@ -24,7 +25,9 @@
 				})
 				.state('user.view', {
 					url: '/{id:int}',
-					templateUrl: 'partials/user/view.html'
+					templateUrl: 'partials/user/view.html',
+					controller: 'UserCtrl',
+					controllerAs: 'user'
 				});
 
 		}]);

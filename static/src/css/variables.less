@@ -38,6 +38,7 @@
 // fonts
 @font-family-sans-serif:           "Roboto", Arial, sans-serif;
 @font-family-base:                 @font-family-sans-serif;
+@font-family-icon:                 FontAwesome;
 @font-weight-base:                 400;
 @font-size-base:                   15px;
 @font-size-large:                  ceil((@font-size-base * 1.25));
@@ -72,8 +73,13 @@
 // other colors
 @headings-small-color:             @gray-light;
 @hr-border:                        @gray-lighter;
-@text-muted:                       @gray-light;
+@text-muted:                       #9eb0c8;
 @mark-bg:                          @gray-lighter;
+
+@state-success-text:               #3c763d;
+@state-info-text:                  #31708f;
+@state-warning-text:               #8a6d3b;
+@state-danger-text:                #a94442;
 
 // links
 @link-color:                       @brand-default;
@@ -90,8 +96,13 @@
 @input-border-size:                3px;
 @input-border-radius:              22px;
 @input-border-focus:               #8CB6F9;
-@input-color-placeholder:          #9eb0c8;
+@input-color-placeholder:          @text-muted;
 @input-height-base:                (floor((@input-font-size * @line-height-base)) + ((@padding-base-y - @input-border-size + 1) * 2) + (2 * @input-border-size));
+
+@caret-size:                       @input-height-base * 0.55;
+@caret-bg:                         #c6d7e3;
+@caret-color:                      #77859a;
+@caret-radius:                     50%;
 
 // buttons
 @btn-font-weight:                  500;

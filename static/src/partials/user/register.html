@@ -1,5 +1,105 @@
 <div class="wrapper page page-register">
 	<div class="container">
 		<h1>Создание учетный записи</h1>
+		<section class="register">
+			<form name="registerForm" ng-submit="registerForm.$valid && submit()" novalidate>
+				<div class="row">
+
+					<div class="fl col col-33">
+						<h3>Тип пользователя</h3>
+						<fieldset>
+							<ui-select ng-model="data.role" ng-disabled="disabled" search-enabled="false" required>
+								<ui-select-match placeholder="Выберите тип">{{ roles[$select.selected] }}</ui-select-match>
+								<ui-select-choices repeat="codeRole in availableRoles | filter: $select.search">
+									<span ng-bind-html="roles[codeRole] | highlight: $select.search"></span>
+								</ui-select-choices>
+							</ui-select>
+						</fieldset>
+					</div>
+
+				</div>
+				<hr/>
+				<div class="row required">
+
+					<div class="fl col col-33">
+						<h3>Учетные данные</h3>
+						<fieldset>
+							<input ng-model="data.email" type="email" class="form-control" placeholder="Ваш e-mail" title="Ваш e-mail" required />
+						</fieldset>
+						<fieldset>
+							<input ng-model="data.password" type="password" class="form-control" placeholder="Пароль" title="Пароль" required />
+						</fieldset>
+						<fieldset>
+							<input ng-model="data.confirm" type="password" class="form-control" placeholder="Подтвердите пароль" title="Подтвердите пароль" required />
+						</fieldset>
+					</div>
+
+					<div class="fr col col-66">
+						<h3>Контактные данные</h3>
+						<div class="fl col col-50">
+							<fieldset>
+								<input ng-model="data.firstname" type="text" class="form-control" placeholder="Ваше имя" title="Ваше имя" />
+							</fieldset>
+							<fieldset>
+								<input ng-model="data.middlename" type="text" class="form-control" placeholder="Ваше отчество" title="Ваше отчество" />
+							</fieldset>
+							<fieldset>
+								<input ng-model="data.lastname" type="text" class="form-control" placeholder="Ваша фамилия" title="Ваша фамилия" />
+							</fieldset>
+						</div>
+						<div class="fr col col-50">
+							<fieldset>
+								<input ng-model="data.contactphone" type="text" class="form-control" placeholder="Контактный телефон" title="Контактный телефон" />
+							</fieldset>
+							<fieldset>
+								<input ng-model="data.contactemail" type="email" class="form-control" placeholder="Контактный e-mail" title="Контактный e-mail" />
+							</fieldset>
+						</div>
+					</div>
+
+				</div>
+				<div class="row agreement">
+
+					<div class="col">
+						<fieldset>
+							<label>
+								<input ng-model="data.agreement" type="checkbox" required />
+								Я принимаю условия <a href="#">Пользовательского соглашения</a> и даю согласие на обработку персональных данных в соответствии с законодательством России и <a href="#">Политикой конфиденциальности</a>.
+							</label>
+						</fieldset>
+					</div>
+
+				</div>
+				<div class="row submit">
+
+					<fieldset>
+						<input type="submit" class="btn primary" value="Зарегистрироваться" />
+					</fieldset>
+
+				</div>
+			</form>
+		</section>
+		
+		<section class="benefits">
+			<h2>Преимущества личного кабинета</h2>
+			<div class="row">
+				<div class="col">
+					<div class="clip"><i class="fa fa-pencil-square-o"></i></div>
+					<h3>Редактирование информации</h3>
+				</div>
+				<div class="col">
+					<div class="clip"><i class="fa fa-toggle-off"></i></div>
+					<h3>Подключение услуг</h3>
+				</div>
+				<div class="col">
+					<div class="clip"><i class="fa fa-line-chart"></i></div>
+					<h3>Контроль статистики</h3>
+				</div>
+				<div class="col">
+					<div class="clip"><i class="fa fa-credit-card"></i></div>
+					<h3>Оплата</h3>
+				</div>
+			</div>
+		</section>
 	</div>
 </div>

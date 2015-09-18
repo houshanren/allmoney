@@ -73,99 +73,6 @@ hr {
 	cursor: pointer;
 }
 
-
-// form
-
-fieldset {
-	border: 0px;
-	margin: 0px 0px 10px;
-	padding: 0px;
-	min-width: 0;
-}
-
-label {
-	display: inline-block;
-	max-width: 100%;
-	margin-bottom: 6px;
-	font-weight: normal;
-}
-
-input[type="search"] {
-	.box-sizing(border-box);
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-	margin: 4px 0 0;
-	margin-top: 1px \9; // IE8-9
-	line-height: normal;
-}
-
-input[type="file"] {
-	display: block;
-}
-
-input[type="range"] {
-	display: block;
-	width: 100%;
-}
-
-select[multiple],
-select[size] {
-	height: auto;
-}
-
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-	outline: none;
-}
-
-.form-control {
-	display: block;
-	width: 100%;
-	height: @input-height-base;
-	padding: (@padding-base-y - @input-border-size + 1) (@padding-base-x - @input-border-size + 1);
-	font-size: @input-font-size;
-	font-weight: @input-font-weight;
-	line-height: @line-height-base;
-	color: @input-color;
-	background-color: @input-bg;
-	background-image: none;
-	border: @input-border-size solid @input-border;
-	border-radius: @input-border-radius;
-	.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-
-	.placeholder();
-
-	&:focus {
-		border-color: @input-border-focus;
-		outline: none;
-	}
-
-	// Unstyle the caret on `<select>`s in IE10+.
-	&::-ms-expand {
-		border: 0;
-		background-color: transparent;
-	}
-
-	&[disabled],
-	&[readonly],
-	fieldset[disabled] & {
-		background-color: @input-bg-disabled;
-		opacity: 1;
-	}
-
-	&[disabled],
-	fieldset[disabled] & {
-		cursor: @cursor-disabled;
-	}
-
-	textarea& {
-		height: auto;
-	}
-}
-
 // buttons
 
 .btn {
@@ -233,6 +140,142 @@ input[type="checkbox"]:focus {
 	
 }
 
+// form
+
+fieldset {
+	border: 0px;
+	margin: 0px 0px 10px;
+	padding: 0px;
+	min-width: 0;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 6px;
+	font-weight: normal;
+}
+
+input[type="search"] {
+	.box-sizing(border-box);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 4px 0 0;
+	margin-top: 1px \9; // IE8-9
+	line-height: normal;
+}
+
+input[type="file"] {
+	display: block;
+}
+
+input[type="range"] {
+	display: block;
+	width: 100%;
+}
+
+select[multiple],
+select[size] {
+	height: auto;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+	outline: none;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	text-align: left;
+	height: @input-height-base;
+	padding: (@padding-base-y - @input-border-size + 1) (@padding-base-x - @input-border-size + 1);
+	font-size: @input-font-size;
+	font-weight: @input-font-weight;
+	line-height: @line-height-base;
+	color: @input-color;
+	background-color: @input-bg;
+	background-image: none;
+	border: @input-border-size solid @input-border;
+	border-radius: @input-border-radius;
+	.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+
+	.placeholder();
+
+	&:hover,
+	&:active,
+	&:active:hover {
+		background-color: @input-bg;
+		color: @input-color;
+	}
+
+	&:focus {
+		border-color: @input-border-focus;
+		background-color: @input-bg;
+		color: @input-color;
+		outline: none;
+	}
+
+	// Unstyle the caret on `<select>`s in IE10+.
+	&::-ms-expand {
+		border: 0;
+		background-color: transparent;
+	}
+
+	&[disabled],
+	&[readonly],
+	fieldset[disabled] & {
+		background-color: @input-bg-disabled;
+		opacity: 1;
+	}
+
+	&[disabled],
+	fieldset[disabled] & {
+		cursor: @cursor-disabled;
+	}
+
+	textarea& {
+		height: auto;
+	}
+}
+
+.caret {
+	display: inline-block;
+	vertical-align: middle;
+	width: @caret-size;
+	height: @caret-size;
+	background: @caret-bg;
+	border-radius: @caret-radius;
+	color: @caret-color;
+	text-align: center;
+	font-size: 15px;
+	font-style: normal;
+}
+
+.caret:before {
+	content:"\f078";
+	line-height: @caret-size;
+	text-align: center;
+	font-family: @font-family-icon;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.btn .caret {
+	margin-top: -1px;
+	&.pull-right {
+		margin-right: -15px;
+	}
+	&.pull-left {
+		margin-left: -15px;
+	}
+}
+
 // headings
 
 h1, h2, h3, h4, h5, h6,
@@ -279,6 +322,25 @@ h3, .h3 { font-size: @font-size-h3; }
 h4, .h4 { font-size: @font-size-h4; }
 h5, .h5 { font-size: @font-size-h5; }
 h6, .h6 { font-size: @font-size-h6; }
+
+.text-muted {
+	color: @text-muted;
+}
+.text-primary {
+	color: @brand-primary;
+}
+.text-success {
+	color: @state-success-text;
+}
+.text-info {
+	color: @state-info-text;
+}
+.text-warning {
+	color: @state-info-text;
+}
+.text-danger {
+	color: @state-danger-text;
+}
 
 
 // body text
@@ -405,4 +467,26 @@ th {
 .fa {
 	position: relative;
 	top: 1px;
+}
+
+.col-75 {
+	width: 75%;
+}
+.col-66 {
+	width: 66.6666%;
+}
+.col-60 {
+	width: 60%;
+}
+.col-50 {
+	width: 50%;
+}
+.col-40 {
+	width: 40%;
+}
+.col-33 {
+	width: 33.3333%;
+}
+.col-25 {
+	width: 25%;
 }

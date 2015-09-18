@@ -1,5 +1,5 @@
 node_modules
 static/node_modules
 static/src/bower_components
-node.log
+api/node.log
 
