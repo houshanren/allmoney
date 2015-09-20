@@ -6,7 +6,7 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('LoginCtrl', ['$scope', 'Authentication', function ($scope, Authentication) {
+		.controller('LoginCtrl', ['$scope', '$auth', function ($scope, $auth) {
 
 			$scope.initial = {};
 			$scope.data = angular.copy($scope.initial);
@@ -19,7 +19,13 @@
 			$scope.submit = function () {
 
 				// TODO: service check
-				Authentication.login($scope.data);
+				$auth.submitLogin($scope.data)
+					.then(function (res) {
+
+						// TEMP
+						console.log(res);
+
+					});
 				// ...
 
 				// reset form

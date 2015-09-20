@@ -7,19 +7,23 @@
 	module.exports = angular
 		.module('app.controllers.user', [])
 		// TODO: common controllers
-		.controller('UserCtrl', ['$scope', '$stateParams', '$state', 'User', function ($scope, $stateParams, $state, User) {
+		.controller('UserCtrl', ['$scope', '$stateParams', '$state', '$auth', 'User', function ($scope, $stateParams, $state, $auth, User) {
+
+			$scope.isMyProfile = false;
 
 			User.getById($stateParams.id)
-				.success(function (data) {
+				.success(function (res) {
 
-					$scope.data = data;
-					console.log(data);
+					$scope.data = res;
+					if ($scope.data._id === $auth.user._id) {
+						$scope.isMyProfile = true;
+					}
 
 				})
-				.error(function (data, status) {
+				.error(function (res, status) {
 
 					/*if (status == 404) $state.go('404');*/
-					if (!!data.message) console.log(data.message);
+					if (!!res.message) console.log(res.message);
 
 				});
 

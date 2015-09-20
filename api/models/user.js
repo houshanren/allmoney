@@ -35,6 +35,10 @@ module.exports = (function (node, out) {
 		meta: {
 			logo: String
 		},
+		balance: {
+			type: Number,
+			default: 0
+		},
 		created: Date,
 		updated: Date
 	});

@@ -4,20 +4,24 @@
 		"selected_items":
 		[
 			[
-				"tex",
-				"text-align"
+				"text",
+				"text-decoration"
 			],
 			[
-				"text",
-				"text-align"
+				"font-s",
+				"font-style"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"tex",
+				"text-decoration"
 			],
 			[
 				"req",
 				"require"
-			],
-			[
-				"font-s",
-				"font-size"
 			],
 			[
 				"fon",
@@ -156,10 +160,6 @@
 				"table-cell"
 			],
 			[
-				"font-",
-				"font-style"
-			],
-			[
 				"S",
 				"stateParams"
 			],
@@ -203,7 +203,7 @@
 			"file": "api/index.js",
 			"settings":
 			{
-				"buffer_size": 1447,
+				"buffer_size": 1739,
 				"line_ending": "Windows"
 			}
 		},
@@ -211,7 +211,7 @@
 			"file": "api/models/index.js",
 			"settings":
 			{
-				"buffer_size": 100,
+				"buffer_size": 73,
 				"line_ending": "Windows"
 			}
 		},
@@ -219,7 +219,7 @@
 			"file": "api/routes/index.js",
 			"settings":
 			{
-				"buffer_size": 144,
+				"buffer_size": 160,
 				"line_ending": "Windows"
 			}
 		},
@@ -227,7 +227,7 @@
 			"file": "api/routes/user.js",
 			"settings":
 			{
-				"buffer_size": 884,
+				"buffer_size": 2778,
 				"line_ending": "Windows"
 			}
 		},
@@ -235,7 +235,7 @@
 			"file": "static/src/app/login.js",
 			"settings":
 			{
-				"buffer_size": 413,
+				"buffer_size": 490,
 				"line_ending": "Windows"
 			}
 		},
@@ -243,7 +243,7 @@
 			"file": "static/src/app/routes.js",
 			"settings":
 			{
-				"buffer_size": 339,
+				"buffer_size": 1164,
 				"line_ending": "Windows"
 			}
 		},
@@ -259,7 +259,15 @@
 			"file": "static/src/app/app.js",
 			"settings":
 			{
-				"buffer_size": 657,
+				"buffer_size": 1328,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/access.json",
+			"settings":
+			{
+				"buffer_size": 254,
 				"line_ending": "Windows"
 			}
 		},
@@ -267,7 +275,7 @@
 			"file": "api/users.json",
 			"settings":
 			{
-				"buffer_size": 236,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -275,7 +283,7 @@
 			"file": "static/src/app/user.js",
 			"settings":
 			{
-				"buffer_size": 631,
+				"buffer_size": 756,
 				"line_ending": "Windows"
 			}
 		},
@@ -283,7 +291,7 @@
 			"file": "static/src/app/controllers/user/loginControllers.js",
 			"settings":
 			{
-				"buffer_size": 635,
+				"buffer_size": 726,
 				"line_ending": "Windows"
 			}
 		},
@@ -291,7 +299,7 @@
 			"file": "static/src/app/services/user/authenticationService.js",
 			"settings":
 			{
-				"buffer_size": 279,
+				"buffer_size": 980,
 				"line_ending": "Windows"
 			}
 		},
@@ -299,7 +307,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 642,
+				"buffer_size": 702,
 				"line_ending": "Unix"
 			}
 		},
@@ -315,7 +323,7 @@
 			"file": "static/src/app/register.js",
 			"settings":
 			{
-				"buffer_size": 437,
+				"buffer_size": 514,
 				"line_ending": "Windows"
 			}
 		},
@@ -323,7 +331,7 @@
 			"file": "static/src/app/controllers/user/index.js",
 			"settings":
 			{
-				"buffer_size": 521,
+				"buffer_size": 631,
 				"line_ending": "Windows"
 			}
 		},
@@ -331,7 +339,7 @@
 			"file": "static/src/app/services/user/index.js",
 			"settings":
 			{
-				"buffer_size": 371,
+				"buffer_size": 334,
 				"line_ending": "Windows"
 			}
 		},
@@ -339,7 +347,47 @@
 			"file": "api/models/user.js",
 			"settings":
 			{
-				"buffer_size": 854,
+				"buffer_size": 872,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/partials/user/login.html",
+			"settings":
+			{
+				"buffer_size": 1557,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/index.html",
+			"settings":
+			{
+				"buffer_size": 5362,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/partials/user/register.html",
+			"settings":
+			{
+				"buffer_size": 3702,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/controllers/user/registerControllers.js",
+			"settings":
+			{
+				"buffer_size": 918,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/controllers/user.js",
+			"settings":
+			{
+				"buffer_size": 853,
 				"line_ending": "Windows"
 			}
 		}
@@ -420,6 +468,24 @@
 	},
 	"file_history":
 	[
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/register.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/core.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/config.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/variables.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/ui-select/dist/select.css",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/style.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/registerControllers.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/404.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/define.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/vendor-prefixes.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/bower.json",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/ui-select/bower.json",
+		"/C/Users/instantia/AppData/Local/Temp/7zODE1D.tmp/главная_страница.html",
+		"/D/workspace/vagrant/www/dev/akademiya.instantia/.htaccess",
+		"/D/workspace/vagrant/www/index.php",
 		"/D/documents/configs/Settings_RT-N10PV2.CFG",
 		"/D/workspace/vagrant/scripts/mounts.sh",
 		"/D/workspace/vagrant/Vagrantfile",
@@ -431,16 +497,9 @@
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/login.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/app.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/variables.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/core.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/index.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/index.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/register.html",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/view.html",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/register.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/login.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/style.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/registerControllers.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/authenticationService.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/loginControllers.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/index.js",
@@ -460,12 +519,10 @@
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/app.js",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/index.js",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/gameControllers.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/vendor-prefixes.less",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/classes/player.js",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/canvas.js",
 		"/Q/installers/Photoshop.CC/m0nkrus.nfo",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/user.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/index.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/normalize.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/path.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/gulpfile.js",
@@ -490,7 +547,6 @@
 		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/core.css",
 		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/variables.css",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/reset.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/bower.json",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/replace.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/common/directiveSelect.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/common/index.js",
@@ -539,15 +595,7 @@
 		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/index.php",
 		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-uslugi.php",
 		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-articles.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/front-page.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-kontakty.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-produkciya.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-osteklenie-balkonov.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-rehau.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/footer.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/style.css",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/header.php"
+		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-articles.php"
 	],
 	"find":
 	{
@@ -566,6 +614,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"validateToken",
+			"role",
+			"instantia",
+			"\"",
+			"inline",
+			"5284ae",
+			"c6d7e3",
+			"@state-success-text",
+			"text-",
+			"placeholder",
+			"hover",
+			"hober",
+			"app",
 			"com",
 			"admin",
 			"staticPath",
@@ -680,20 +741,7 @@
 			"Phaser.QuadTree",
 			"Phaser",
 			"Physics.Arcade.Body",
-			"Phaser.Physics.",
-			"Phaser",
-			"phaser",
-			"Phaser.Math",
-			"Phaser.Point",
-			"Phaser.Rectangle",
-			"Phaser",
-			"Phaser.QuadTree",
-			"Phaser",
-			"Phaser.Rectangle",
-			"Phaser",
-			"Phaser.Point",
-			"Phaser.Rectangle",
-			"Phaser.Point"
+			"Phaser.Physics."
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -758,7 +806,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 20,
 			"sheets":
 			[
 				{
@@ -766,15 +814,15 @@
 					"file": "api/index.js",
 					"settings":
 					{
-						"buffer_size": 1447,
+						"buffer_size": 1739,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1169,
-								1206
+								1670,
+								1670
 							]
 						],
 						"settings":
@@ -783,7 +831,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 684.0,
+						"translation.y": 1167.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -793,15 +841,15 @@
 					"file": "api/models/index.js",
 					"settings":
 					{
-						"buffer_size": 100,
+						"buffer_size": 73,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								64,
-								93
+								68,
+								68
 							]
 						],
 						"settings":
@@ -819,15 +867,15 @@
 					"file": "api/routes/index.js",
 					"settings":
 					{
-						"buffer_size": 144,
+						"buffer_size": 160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								137,
-								137
+								147,
+								147
 							]
 						],
 						"settings":
@@ -846,15 +894,15 @@
 					"file": "api/routes/user.js",
 					"settings":
 					{
-						"buffer_size": 884,
+						"buffer_size": 2778,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								389,
-								389
+								429,
+								429
 							]
 						],
 						"settings":
@@ -863,7 +911,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 905.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -873,15 +921,15 @@
 					"file": "static/src/app/login.js",
 					"settings":
 					{
-						"buffer_size": 413,
+						"buffer_size": 490,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								236,
-								236
+								437,
+								446
 							]
 						],
 						"settings":
@@ -900,15 +948,15 @@
 					"file": "static/src/app/routes.js",
 					"settings":
 					{
-						"buffer_size": 339,
+						"buffer_size": 1164,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								309,
-								318
+								1126,
+								1147
 							]
 						],
 						"settings":
@@ -917,7 +965,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -953,15 +1001,15 @@
 					"file": "static/src/app/app.js",
 					"settings":
 					{
-						"buffer_size": 657,
+						"buffer_size": 1328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								310,
-								310
+								748,
+								748
 							]
 						],
 						"settings":
@@ -970,17 +1018,43 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 228.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
+					"file": "static/src/app/access.json",
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "api/users.json",
 					"settings":
 					{
-						"buffer_size": 236,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1003,19 +1077,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "static/src/app/user.js",
 					"settings":
 					{
-						"buffer_size": 631,
+						"buffer_size": 756,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								558,
-								566
+								338,
+								338
 							]
 						],
 						"settings":
@@ -1024,52 +1098,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "static/src/app/controllers/user/loginControllers.js",
-					"settings":
-					{
-						"buffer_size": 635,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								214,
-								225
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 141.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 11,
-					"file": "static/src/app/services/user/authenticationService.js",
+					"file": "static/src/app/controllers/user/loginControllers.js",
 					"settings":
 					{
-						"buffer_size": 279,
+						"buffer_size": 726,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								140
+								164,
+								164
 							]
 						],
 						"settings":
@@ -1085,10 +1132,37 @@
 				},
 				{
 					"buffer": 12,
+					"file": "static/src/app/services/user/authenticationService.js",
+					"settings":
+					{
+						"buffer_size": 980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 642,
+						"buffer_size": 702,
 						"regions":
 						{
 						},
@@ -1112,7 +1186,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "static/src/partials/user/view.html",
 					"settings":
 					{
@@ -1138,51 +1212,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "static/src/app/register.js",
 					"settings":
 					{
-						"buffer_size": 437,
+						"buffer_size": 514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								157,
-								157
+								223,
+								223
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "static/src/app/controllers/user/index.js",
-					"settings":
-					{
-						"buffer_size": 521,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								354,
-								354
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1192,23 +1240,24 @@
 				},
 				{
 					"buffer": 16,
-					"file": "static/src/app/services/user/index.js",
+					"file": "static/src/app/controllers/user/index.js",
 					"settings":
 					{
-						"buffer_size": 371,
+						"buffer_size": 631,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								143,
-								143
+								265,
+								265
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1218,18 +1267,153 @@
 				},
 				{
 					"buffer": 17,
-					"file": "api/models/user.js",
+					"file": "static/src/app/services/user/index.js",
 					"settings":
 					{
-						"buffer_size": 854,
+						"buffer_size": 334,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								444,
-								444
+								327,
+								327
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "api/models/user.js",
+					"settings":
+					{
+						"buffer_size": 872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "static/src/partials/user/login.html",
+					"settings":
+					{
+						"buffer_size": 1557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								797,
+								797
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "static/src/index.html",
+					"settings":
+					{
+						"buffer_size": 5362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1199,
+								1199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 47.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "static/src/partials/user/register.html",
+					"settings":
+					{
+						"buffer_size": 3702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1329,
+								1329
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "static/src/app/controllers/user/registerControllers.js",
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								144
 							]
 						],
 						"settings":
@@ -1239,6 +1423,33 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "api/controllers/user.js",
+					"settings":
+					{
+						"buffer_size": 853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								530,
+								530
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

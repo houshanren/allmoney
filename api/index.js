@@ -19,6 +19,9 @@ node = {
 	// TODO: client-side files path
 	staticPath: path.join(__dirname, '../static/build'),
 
+	secret: 'firefly',
+	// one day
+	authExpires: 86400
 }
 
 // logging config (winston)
@@ -47,14 +50,19 @@ var router = express.Router();
 var db = mongoose.connect('mongodb://localhost/allmoney').connection;
 
 app.set('port', node.port);
+app.set('secret', node.secret);
+
 app.use(morgan('combined', {
 	'stream': out.stream
 }));
+// bodyparser
 app.use(bodyParser.urlencoded({
-	extended: true
+	extended: false
 }));
 app.use(bodyParser.json());
+// define api
 app.use('/api', router);
+// client-side
 app.use(express.static(node.staticPath));
 
 // port listen
@@ -76,7 +84,7 @@ app.listen(node.port, function () {
 	});
 
 	// TODO: routes server 
-	require('./routes')(node, out, router);
+	require('./routes')(node, out, app, router);
 
 	// TODO: otherwise route
 	app.get('/*', function (req, res) {

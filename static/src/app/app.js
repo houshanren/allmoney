@@ -13,6 +13,8 @@
 	angular
 		.module('app', [
 			'ui.router',
+			// instead ngCookies https://github.com/lynndylanhurley/ng-token-auth#why-does-this-module-use-ipcookies-instead-of-ngcookies
+			'ng-token-auth',
 			'ngSanitize',
 			'ui.select',
 			// values & constants
@@ -26,12 +28,40 @@
 			// modules
 			require('./user').name
 		])
-		.config(['$locationProvider', function ($locationProvider) {
-
-			/*$rootScope.access = require('./access.json');*/
+		.config(['$locationProvider', '$authProvider', function ($locationProvider, $authProvider) {
 
 			$locationProvider
 				.html5Mode(true);
+
+			$authProvider.configure({
+				// localhost
+				apiUrl: '/api',
+				tokenValidationPath: '/user/validate',
+  				signOutUrl: '/user/signout',
+  				emailRegistrationPath: '/user/register',
+				accountUpdatePath: '/user/update',
+				accountDeletePath: '/user/delete',
+				passwordResetPath: '/user/password',
+				passwordUpdatePath: '/user/password',
+				emailSignInPath: '/user/signin',
+
+				tokenFormat: {
+					"access-token": "{{ token }}",
+					"token-type": "Bearer",
+					"expiry": "{{ expiry }}",
+					"uid": "{{ uid }}"
+				},
+				handleLoginResponse: function (res) {
+
+					return res;
+
+				},
+				handleTokenValidationResponse: function (res) {
+
+					return res;
+					
+				}
+			});
 
 		}]);
 

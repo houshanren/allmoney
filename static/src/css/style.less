@@ -31,14 +31,45 @@ header {
 	}
 	.user-panel {
 		padding: 0px;
-		width: 204px;
+		width: 286px;
+		text-align: right;
 		.btn {
-			width: 100%;
+			width: 204px;
 			text-align: left;
 			&.default {
 				margin-bottom: 7px;
 			}
 			
+		}
+		.signed {
+			.clearfix();
+			margin-top: 8px;
+			padding: 12px 14px;
+			background: fade(@btn-default-bg, 20%);
+			border-radius: 33px;
+		}
+		.avatar {
+			width: @input-height-base;
+			height: @input-height-base;
+			border: @input-border-size solid @input-border;
+			border-radius: 50%;
+			margin: 0px 16px 0px 0px;
+			background: #fbfbfc url('@{assets-path}images/avatar-42x42.png') no-repeat center center;
+		}
+		.info {
+			width: 198px;
+			text-align: left;
+			line-height: @line-height-normal;
+			.username {
+				font-weight: 500;
+			}
+			.balance {
+				display: block;
+				font-size: 90%;
+				.sum {
+					font-weight: 500;
+				}
+			}
 		}
 	}
 }

@@ -2,10 +2,10 @@
  * ROUTES
  */
 
-module.exports = (function (node, out, router) {
+module.exports = (function (node, out, app, router) {
 
 	out.info('Listening on routes...');
 
-	require('./user')(node, out, router);
+	require('./user')(node, out, app, router);
 
 });

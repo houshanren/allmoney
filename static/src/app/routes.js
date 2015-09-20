@@ -6,7 +6,7 @@
 
 	module.exports = angular
 		.module('app')
-		.config(['$stateProvider', '$urlRouterProvider', 'config', function ($stateProvider, $urlRouterProvider, config) {
+		.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', 'config', function ($stateProvider, $urlRouterProvider, $httpProvider, config) {
 
 			$stateProvider
 				.state('index', {
@@ -29,14 +29,27 @@
 			$urlRouterProvider
 				.otherwise('/404');
 
+
+			// redirect to login
+			/*$httpProvider.interceptors.push(function ($q, $location) {
+
+		        return {
+		            'responseError': function (response) {
+
+		                if (response.status === 401 || response.status === 403) {
+		                    $location.path('/user/login');
+		                }
+		                return $q.reject(response);
+
+		            }
+		        };
+
+		    });*/
+
 		}])
-		.run(['$rootScope', '$state', function ($rootScope, $state) {
+		.run(['$rootScope', '$state', '$auth', function ($rootScope, $state, $auth) {
 
-			$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
-
-				
-
-			});
+			$auth.validateUser();
 
 		}]);
 

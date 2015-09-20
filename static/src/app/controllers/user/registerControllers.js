@@ -6,7 +6,7 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('RegisterCtrl', ['$scope', 'config', 'User', function ($scope, config, User) {
+		.controller('RegisterCtrl', ['$scope', '$auth', 'config', function ($scope, $auth, config) {
 
 			// TODO: name roles
 			$scope.roles = config.ROLES;
@@ -23,7 +23,14 @@
 			$scope.submit = function () {
 
 				// TODO: service check
-				User.register($scope.data);
+				$auth.submitRegistration($scope.data)
+					.then(function (res) {
+
+						// TEMP
+						console.log(res);
+
+					});
+				/*Authentication.register($scope.data);*/
 				// ...
 
 				// reset form

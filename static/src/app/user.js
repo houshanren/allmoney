@@ -31,6 +31,12 @@
 					templateUrl: 'partials/user/view.html',
 					controller: 'UserCtrl',
 					controllerAs: 'user',
+					params:  {
+						id: {
+							value: null,
+							squash: true
+						}
+					},
 					data: {
 						access: config.ACCESS.public
 					}

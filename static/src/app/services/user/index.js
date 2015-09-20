@@ -15,21 +15,13 @@
 
 			}
 
-			function publicRegister(data) {
-
-				return $http.post('/api/user/register', data);
-
-			}
-
 			return {
-				getById: publicGetById,
-				register: publicRegister
+				getById: publicGetById
 			};
 
 		}]);
 
 
 	// requires
-	require('./authenticationService');
 
 })();

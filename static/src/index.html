@@ -24,8 +24,19 @@
 					Здесь вы найдете информацию по условиям предоставления<br/> кредитов и акциям компаний.
 				</div>
 				<div class="fr user-panel">
-					<a href="/user/login" class="btn default icon-left" role="button"><i class="fa fa-sign-in"></i>Войти на сайт</a>
-					<a href="/user/register" class="btn primary icon-left" role="button"><i class="fa fa-user-plus"></i>Регистрация</a>
+					<div class="not-signed" ng-hide="user.signedIn">
+						<a href="/user/login" class="btn default icon-left" role="button"><i class="fa fa-sign-in"></i>Войти на сайт</a>
+						<a href="/user/register" class="btn primary icon-left" role="button"><i class="fa fa-user-plus"></i>Регистрация</a>
+					</div>
+					<div class="signed" ng-show="user.signedIn">
+						<a href="/user/{{ user._id }}" class="fl avatar">
+							
+						</a>
+						<div class="fl info">
+							<a href="/user/{{ user._id }}" class="username">{{ user.username }}</a>
+							<span class="balance">Ваш баланс: <span class="sum" ng-bind-html="user.balance | rub"></span></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -136,8 +147,11 @@
 	<!-- include libraries -->
 	<script src="/lib/angular/angular.js"></script>
 	<script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="/lib/angular-cookie/angular-cookie.min.js"></script>
+	<script src="/lib/ng-token-auth/dist/ng-token-auth.min.js"></script>
 	<script src="/lib/angular-sanitize/angular-sanitize.js"></script>
 	<script src="/lib/ui-select/dist/select.min.js"></script>
+	<script src="/lib/lodash/lodash.min.js"></script>
 
 	<!-- include application -->
 	<script src="/app/app.js"></script>
