@@ -11,8 +11,6 @@
 			$scope.initial = {};
 			$scope.data = angular.copy($scope.initial);
 
-			/*console.log($scope.access);*/
-
 			// ...
 
 			// TODO: login submit
@@ -22,11 +20,13 @@
 				$auth.submitLogin($scope.data)
 					.then(function (res) {
 
-						// TEMP
-						console.log(res);
+						// success
+
+					}, function (res) {
+
+						// errror
 
 					});
-				// ...
 
 				// reset form
 				$scope.reset();

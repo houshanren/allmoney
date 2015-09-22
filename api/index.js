@@ -2,41 +2,22 @@
  * SERVER
  */
 
+'use strict';
+
+global.__home = __dirname + '/';
+
 var express = require('express'),
 	mongoose = require('mongoose'),
 	bodyParser = require('body-parser'),
 	path = require('path'),
-	// logging
-	winston = require('winston'),
-	// stream
-	morgan = require('morgan'),
-	node;
+	morgan = require('morgan');
 
-// server-side
-node = {
-	port: process.env.PORT || 3000,
 
-	// TODO: client-side files path
-	staticPath: path.join(__dirname, '../static/build'),
+var config = require('./config'),
+	errorHandler = require(__home + 'error'),
+	out = require('./logger');
 
-	secret: 'firefly',
-	// one day
-	authExpires: 86400
-}
-
-// logging config (winston)
-var out = new(winston.Logger)({
-	transports: [
-		new(winston.transports.Console)({
-			colorize: true,
-			timestamp: false
-		}),
-		new(winston.transports.File)({
-			filename: 'node.log'
-		})
-	]
-});
-out.level = 'debug';
+// stream
 out.stream = {
 	write: function (message, encoding) {
 
@@ -45,13 +26,17 @@ out.stream = {
 	}
 };
 
-var app = express();
-var router = express.Router();
+var app = module.exports = express();
 var db = mongoose.connect('mongodb://localhost/allmoney').connection;
 
-app.set('port', node.port);
-app.set('secret', node.secret);
+// TODO: routes
+var routes = require('./routes');
+var user = require('./routes/user');
 
+app.set('port', config.port);
+app.set('secret', config.secret);
+
+// TODO: app define
 app.use(morgan('combined', {
 	'stream': out.stream
 }));
@@ -60,16 +45,23 @@ app.use(bodyParser.urlencoded({
 	extended: false
 }));
 app.use(bodyParser.json());
-// define api
-app.use('/api', router);
-// client-side
-app.use(express.static(node.staticPath));
+// url routes
+app.use('/api', routes);
+app.use('/api/user', user);
+// static path
+app.use(express.static(config.staticPath));
 
-// port listen
-app.listen(node.port, function () {
+// TODO: otherwise route
+app.get('/*', function (req, res) {
 
-	out.info('Express server listening on port ' + node.port + '.');
+	res.sendFile(path.join(config.staticPath, 'index.html'));
 
+});
+
+// TODO: port listen
+app.listen(config.port, function () {
+
+	out.info('Express server listening on port ' + config.port + '.');
 	// TODO: database connecting
 	db.on('error', function () {
 
@@ -79,18 +71,24 @@ app.listen(node.port, function () {
 	db.once('open', function () {
 
 		out.info('Connected to database.');
-		require('./models')(node, out);
 
 	});
 
-	// TODO: routes server 
-	require('./routes')(node, out, app, router);
+});
 
-	// TODO: otherwise route
-	app.get('/*', function (req, res) {
+// catch 404 and forward to error handler
+app.use(function (req, res, next) {
 
-		res.sendFile(path.join(node.staticPath, 'index.html'));
+	var err = new Error('Not Found');
+	err.status = 404;
+	next(err);
 
-	});
+});
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function (err, req, res) {
+
+	return errorHandler(req, res, err.status || 500, 0, err.message);
 
 });

@@ -7,7 +7,7 @@
 	module.exports = angular
 		.module('app.controllers', [])
 		// TODO: common controllers
-		.controller('IndexCtrl', ['$scope', '$stateParams', '$state', 'config', function ($scope, $stateParams, $state, config) {
+		.controller('IndexCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
 
 			$scope.cities = config.CITIES;
 			$scope.codeCity = {};
@@ -17,6 +17,20 @@
 			// TEMP: define location
 			$scope.initial = {};
 			$scope.data = angular.copy($scope.initial);
+
+		}])
+		.controller('UserPanelCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
+
+			$scope.handleSignOutBtnClick = function () {
+
+				$auth.signOut()
+					.then(function (res) {
+						
+						// ...
+
+					});
+
+			};
 
 		}]);
 

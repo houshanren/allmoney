@@ -29,27 +29,47 @@
 			$urlRouterProvider
 				.otherwise('/404');
 
-
-			// redirect to login
-			/*$httpProvider.interceptors.push(function ($q, $location) {
-
-		        return {
-		            'responseError': function (response) {
-
-		                if (response.status === 401 || response.status === 403) {
-		                    $location.path('/user/login');
-		                }
-		                return $q.reject(response);
-
-		            }
-		        };
-
-		    });*/
+			// interceptors
+			$httpProvider.interceptors.push('ResponseInterceptor');
+			$httpProvider.interceptors.push('ProgressInterceptor');
 
 		}])
-		.run(['$rootScope', '$state', '$auth', function ($rootScope, $state, $auth) {
+		.run(['$rootScope', '$state', '$auth', 'User', 'config', function ($rootScope, $state, $auth, User, config) {
 
+			// TODO: validate user
 			$auth.validateUser();
+
+			$rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+
+				// TODO: validate user
+				$auth.validateUser()
+					.then(function (res) {
+
+						if (!('data' in toState) || !('access' in toState.data)) {
+							// undefined data access
+							event.preventDefault();
+						} else if (!User.checkAccess(toState.data.access, $auth.user.role)) {
+							// failed access
+							event.preventDefault();
+							
+							if (fromState.url === '^') {
+								if ($auth.user.signedIn) {
+									$state.go('index');
+								} else {
+									$state.go('user.login');
+								}
+							}
+						}
+
+					});;
+
+			});
+
+			$rootScope.$on('auth:login-success', function (event, reason) {
+
+				$state.go('index');
+
+			});
 
 		}]);
 

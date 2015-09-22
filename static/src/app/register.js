@@ -21,6 +21,21 @@
 					data: {
 						access: config.ACCESS.anonymous
 					}
+				})
+				.state('user.confirm', {
+					url: '/register/:token',
+					templateUrl: 'partials/user/confirm.html',
+					controller: 'EmailConfirmationCtrl',
+					controllerAs: 'confirm',
+					params:  {
+						token: {
+							value: null,
+							squash: true
+						}
+					},
+					data: {
+						access: config.ACCESS.public
+					}
 				});
 
 		}]);

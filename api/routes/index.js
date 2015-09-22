@@ -2,10 +2,23 @@
  * ROUTES
  */
 
-module.exports = (function (node, out, app, router) {
+'use strict';
 
-	out.info('Listening on routes...');
+/**
+ * DEPENDENCIES
+ */
 
-	require('./user')(node, out, app, router);
+var errorHandler = require(__home + 'error'),
+	out = require('winston');
 
-});
+var express = require('express');
+var router = express.Router();
+
+/**
+ * START ROUTE
+ */
+
+out.info('Listening on routes...');
+
+module.exports = router;
+

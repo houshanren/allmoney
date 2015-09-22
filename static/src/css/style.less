@@ -43,9 +43,9 @@ header {
 		}
 		.signed {
 			.clearfix();
-			margin-top: 8px;
+			margin: 13px 0px 14px;
 			padding: 12px 14px;
-			background: fade(@btn-default-bg, 20%);
+			background: #f1f5fa;
 			border-radius: 33px;
 		}
 		.avatar {
@@ -61,15 +61,59 @@ header {
 			text-align: left;
 			line-height: @line-height-normal;
 			.username {
+				.inline();
+				color: @brand-default;
 				font-weight: 500;
+				max-width: 168px;
+				overflow: hidden;
+				white-space: nowrap;
 			}
 			.balance {
 				display: block;
-				font-size: 90%;
+				font-size: @font-size-small;
 				.sum {
 					font-weight: 500;
 				}
 			}
+			.additional {
+				.inline();
+				margin-left: 2px;
+			}
+		}
+		.dropdown-menu {
+			font-size: @font-size-small;
+			text-align: left;
+			overflow: hidden;
+			width: 100%;
+			margin: -47px 0 0;
+			padding-top: 39px;
+			padding-bottom: 12px;
+			background: #D9E2EF;
+			border: 0px;
+			border-radius: 0px 0px @input-border-radius @input-border-radius;
+			li a {
+				padding: 6px 26px;
+				color: #434a52;
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					color: #23364a;
+					background: #f1f5fa;
+				}
+			}
+			.fa {
+				font-size: @font-size-base;
+				margin-right: 1px;
+				width: 14px;
+				text-align: center;
+			}
+			.divider {
+				background-color: fade(#00337c, 8%);
+			}
+		}
+		&.open .signed {
+			position: relative;
+    		z-index: 1001;
 		}
 	}
 }
@@ -201,6 +245,9 @@ header {
 			&:hover {
 				text-decoration: none;
 			}
+		}
+		.dropdown a {
+			text-decoration: none;
 		}
 		.benefits {
 			text-align: center;
@@ -354,14 +401,15 @@ footer {
 		}
 		.slogan {
 			color: #a1a9b7;
-			font-size: 13px;
-			width: 350px;
-			margin-top: 6px;
+			font-size: @font-size-small;
+			width: 380px;
+			margin-top: 4px;
 		}
 		.dev {
 			font-size: 13px;
 			line-height: 20px;
 			margin-top: 12px;
+			color: @brand-default;
 			.clip {
 				.inline();
 				width: 81px;
@@ -404,6 +452,28 @@ label {
 	}
 }
 
+// progress bar
+#ngProgress {
+    margin: 0;
+    padding: 0;
+    z-index: 99998;
+    background-color: @brand-primary;
+    color: @brand-primary;
+    height: 2px;
+    opacity: 0;
+    .transition(all 0.5s ease-in-out);
+}
+
+#ngProgress-container {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
 // ui-select
 .ui-select-offscreen {
 	clip: rect(0 0 0 0) !important;
@@ -419,22 +489,24 @@ label {
 	top: 0px !important;
 }
 
-.ui-select-container {
+.ui-select-container.dropdown {
 	position: relative;
 	height: @input-height-base;
-	.ui-select-match {
+	.form-control {
 		.ui-select-placeholder {
 			color: @input-color-placeholder;
 		}
 	}
-	ul {
+	.dropdown-menu {
 		width: 100%;
 		position: relative;
 		list-style: none;
 		display: none;
-		margin: 0px;
-		padding: 0px;
-		font-size: 0px;
+		top: 0;
+		padding: 0;
+		margin: 0;
+		font-size: 0;
+		float: none;
 		line-height: @line-height-base;
 		background-color: @input-bg;
 		background-image: none;
@@ -456,11 +528,12 @@ label {
 			}
 		}
 	}
-	&.open ul {
-		display: block;
-		z-index: 9999;
+	&.open {
+		.dropdown-menu {
+			display: block;
+		}
 	}
-	&.direction-up ul {
+	&.direction-up .dropdown-menu {
 		margin-top: @input-height-base;
 	}
 }
@@ -519,3 +592,13 @@ label {
 	}
 }
 
+.dropdown-menu {
+	overflow: hidden;
+}
+
+.dropdown-menu-right {
+	margin-right: -18px;
+}
+.dropdown-menu-left {
+	margin-left: -18px;
+}

@@ -26,12 +26,9 @@
 				$auth.submitRegistration($scope.data)
 					.then(function (res) {
 
-						// TEMP
-						console.log(res);
+						// ...
 
 					});
-				/*Authentication.register($scope.data);*/
-				// ...
 
 				// reset form
 				$scope.reset();

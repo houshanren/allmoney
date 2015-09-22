@@ -12,25 +12,41 @@
 			$scope.isMyProfile = false;
 
 			User.getById($stateParams.id)
-				.success(function (res) {
+				.then(function (res) {
 
+					// success
 					$scope.data = res;
 					if ($scope.data._id === $auth.user._id) {
 						$scope.isMyProfile = true;
 					}
 
-				})
-				.error(function (res, status) {
+				}, function (res) {
 
-					/*if (status == 404) $state.go('404');*/
-					if (!!res.message) console.log(res.message);
+					// error
+
+				});
+
+		}])
+		.controller('EmailConfirmationCtrl', ['$scope', '$stateParams', 'User', 'config', function ($scope, $stateParams, User, config) {
+
+			User.confirmationEmail($stateParams.token)
+				.then(function (res) {
+
+					// success
+					$scope.confirmed = true;
+
+				}, function (res) {
+
+					// error
+					$scope.confirmed = false;
+					$scope.error = config.ERRORS[res.code];
 
 				});
 
 		}]);
 
 	// requires
-	require('./loginControllers');
-	require('./registerControllers');
+	require('./loginController');
+	require('./registerController');
 
 })();

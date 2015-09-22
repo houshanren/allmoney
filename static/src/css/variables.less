@@ -42,7 +42,7 @@
 @font-weight-base:                 400;
 @font-size-base:                   15px;
 @font-size-large:                  ceil((@font-size-base * 1.25));
-@font-size-small:                  ceil((@font-size-base * 0.85));
+@font-size-small:                  ceil((@font-size-base * 0.90));
 
 @cursor-disabled:                  not-allowed;
 
@@ -81,9 +81,17 @@
 @state-warning-text:               #8a6d3b;
 @state-danger-text:                #a94442;
 
+@state-success-bg:                 #dff0d8;
+@state-info-bg:                    #d9edf7;
+@state-warning-bg:                 #fcf8e3;
+@state-danger-bg:                  #f2dede;
+
+@alert-padding:                    @padding-base-x;
+@alert-border-radius:              @border-radius-base;
+
 // links
-@link-color:                       @brand-default;
-@link-hover-color:                 @brand-default;
+@link-color:                       #009df3;
+@link-hover-color:                 #009df3;
 @link-hover-decoration:            underline;
 
 // inputs
@@ -99,7 +107,7 @@
 @input-color-placeholder:          @text-muted;
 @input-height-base:                (floor((@input-font-size * @line-height-base)) + ((@padding-base-y - @input-border-size + 1) * 2) + (2 * @input-border-size));
 
-@caret-size:                       @input-height-base * 0.55;
+@caret-size:                       floor(@input-height-base * 0.55);
 @caret-bg:                         #c6d7e3;
 @caret-color:                      #77859a;
 @caret-radius:                     50%;

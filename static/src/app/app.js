@@ -15,7 +15,10 @@
 			'ui.router',
 			// instead ngCookies https://github.com/lynndylanhurley/ng-token-auth#why-does-this-module-use-ipcookies-instead-of-ngcookies
 			'ng-token-auth',
+			// dom
 			'ngSanitize',
+			'ngProgress',
+			'ui.bootstrap',
 			'ui.select',
 			// values & constants
 			require('./config').name,

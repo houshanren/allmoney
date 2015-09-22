@@ -2,159 +2,204 @@
  * USER ROUTES
  */
 
-module.exports = (function (node, out, app, router) {
+'use strict';
 
-	var _ = require('lodash'),
-		jwt = require('jsonwebtoken');
+/**
+ * DEPENDENCIES
+ */
 
-	// include models
-	var User = require('../controllers/user')(node, out);
+var config = require(__home + 'config'),
+	errorHandler = require(__home + 'error'),
+	out = require('winston');
 
-	/**
-	 * handler
-	 */
+var app = require(__home + 'index');
+var express = require('express');
+var router = express.Router();
 
-	router.get('/user/validate', validateToken);
-	router.post('/user/register', createUser);
-	router.post('/user/signin', signinUser);
-	router.get('/user/:id', getUserById);
+/**
+ * START ROUTE
+ */
 
-	/**
-	 * functions
-	 */
+var _ = require('lodash'),
+	jwt = require('jsonwebtoken');
 
-	function addAuthHeaders(res, userId, token, expires) {
+// include controllers
+var User = require('../controllers/user');
 
-		if (token) {
-			res.set('access-token', token);
-            res.set('token-type', 'Bearer');
-            res.set('expiry', Math.ceil(Date.now() / 1000) + expires);
-            res.set('uid', userId);
-		}
+// handler
 
+router.get('/validate', validateToken);
+router.post('/register', createUser);
+router.post('/signin', signinUser);
+router.delete('/signout', signoutUser);
+router.get('/register/:token', confirmationEmailUser);
+router.get('/:id', getUserById);
+
+// functions
+
+function addAuthHeaders(res, userId, token, expiry) {
+
+	if (token) {
+		res.set('access-token', token);
+        res.set('token-type', 'Bearer');
+        res.set('expiry', expiry);
+        res.set('uid', userId);
 	}
 
-	function authenticate(req, res, next) {
+}
 
-		var token = req.get('access-token');
+function authenticate(req, res, next) {
 
-		if (token) {
+	var token = req.get('access-token');
 
-			// verifies secret and checks exp
-			jwt.verify(token, app.get('secret'), function (err, decoded) {
+	if (token) {
+		// verifies secret and checks exp
+		jwt.verify(token, app.get('secret'), function (err, decoded) {
 
-				if (err) {
-					return res.json({
-						success: false,
-						message: 'Failed to authenticate token.'
-					});
-				} else {
-					var expires = node.authExpires,
-						userId = req.get('uid');
+			if (err) return errorHandler(req, res, 401, 1, err.message);
 
-					// add headers
-					addAuthHeaders(res, userId, token, expires);
+			// add headers
+			addAuthHeaders(res, decoded._id, token, decoded.exp);
 
-					// TEMP: ... controller
-					User.getById(userId, function (err, user) {
-
-						if (err || !user) return res.status(404).send(err);
-
-						res.json(user);
-
-					});
-				}
-			});
-
-		} else {
-
-			// if there is no token
-			// return an error
-			return res.status(403).send({
-				success: false,
-				message: 'No token provided.'
-			});
-
-		}
-
-	}
-
-	function validateToken(req, res, next) {
-
-		authenticate(req, res, next);
-
-	}
-
-	function signinUser(req, res) {
-
-		var data = req.body;
-
-		User.signin({
-			email: data.email,
-			password: data.password
-		}, function (err, user) {
-
-			if (err) return res.status(404).send(err);
-
-			if (!user) {
-				res.status(404).json({
-					success: false,
-					message: 'Authentication failed. Invalid user or password.'
-				});
-			} else {
-				var expires = node.authExpires, // expires in 24 hours
-					token = jwt.sign(user, app.get('secret'), {
-						expiresInMinutes: expires
-					});
-
-				// add headers
-				addAuthHeaders(res, user._id, token, expires);
-
-				res.json(user);
-			}
+			res.json(decoded);
 
 		});
 
+	} else {
+		// if there is no token
+		// return an error
+		return errorHandler(req, res, 401, 2, 'No token provided');
 	}
 
-	function createUser(req, res) {
+}
 
-		var data = req.body;
+function validateToken(req, res, next) {
 
-		User.create(data, function (err, user) {
+	authenticate(req, res, next);
 
-			if (err) return res.send(err);
+}
 
-			out.info('Created new user - ' + user.username + '.');
+function signinUser(req, res) {
+
+	var data = req.body;
+
+	User.signin({
+		email: data.email,
+		password: data.password
+	}, function (err, user) {
+
+		if (err) return errorHandler(req, res, 403, 4, err.message);
+		if (!user) return errorHandler(req, res, 403, 4, 'Authentication failed. Invalid user or password');
+
+		var expires = config.authExpires,
+			expiry = Math.ceil(Date.now() / 1000) + expires;
+
+		// create token
+		var token = jwt.sign(user.toObject(), app.get('secret'), {
+			expiresInSeconds: expires
+		});
+
+		// add headers
+		addAuthHeaders(res, user._id, token, expiry);
+
+		res.json(user);
+
+	});
+
+}
+
+function createUser(req, res) {
+
+	var data = req.body;
+
+	User.create(data, function (err, user) {
+
+		if (err) return errorHandler(req, res, 500, 5, err.message);
+
+		// TODO: send confirmation to mail
+		User.sendConfirmationEmail(user.toObject(), app.get('secret'), function (err, info) {
+
+			if (err) return errorHandler(req, res, 500, 5, err.message);
+
+			// ... signin
+
+			out.info('Created new user - ' + user.email + '.');
 
 			res.json(user);
 
 		});
 
-	}
+	});
 
-	function getUserById(req, res, next) {
+}
 
-		User.getById(req.params.id, function (err, user) {
+function confirmationEmailUser(req, res) {
 
-			if (err || !user) return res.status(404).send(err);
+	var token = req.params.token;
 
-			res.json(user);
+	if (token) {
+		User.checkConfirmationEmail(token, app.get('secret'), function (err, user) {
 
-		});
+			if (err) return errorHandler(req, res, 400, 3, err.message);
 
-	}
-
-	function getUserByName(req, res) {
-
-		User.getByName(req.params.username, function (err, user) {
-
-			if (err || !user) return res.status(404).send(err);
-
-			res.json(user);
+			// ... check ident emails
+				
+			res.sendStatus(200);
 
 		});
-
+	} else {
+		// if there is no token
+		// return an error
+		return errorHandler(req, res, 400, 3, 'No token provided');
 	}
 
-});
+}
+
+function signoutUser(req, res) {
+
+	var token = req.get('access-token');
+
+	if (token) {
+		// TEMP: after delete token
+		jwt.verify(token, app.get('secret'), function (err, decoded) {
+
+			if (err) return errorHandler(req, res, 400, 4, 'Failed to authenticate token');
+
+			res.sendStatus(200);
+
+		});
+	} else {
+		// if there is no token
+		// return an error
+		return errorHandler(req, res, 400, 4, 'No token provided');
+	}
+
+}
+
+function getUserById(req, res) {
+
+	User.getById(req.params.id, function (err, user) {
+
+		if (err) return errorHandler(req, res, 404, 6, err.message);
+		if (!user) return errorHandler(req, res, 404, 6, 'User not found');
+
+		res.json(user);
+
+	});
+
+}
+
+function getUserByName(req, res) {
+
+	User.getByName(req.params.username, function (err, user) {
+
+		if (err) return errorHandler(req, res, 404, 6, err.message);
+		if (!user) return errorHandler(req, res, 404, 6, 'User not found');
+
+		res.json(user);
+
+	});
+
+}
+
+module.exports = router;
