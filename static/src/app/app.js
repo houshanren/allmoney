@@ -31,11 +31,12 @@
 			// modules
 			require('./user').name
 		])
-		.config(['$locationProvider', '$authProvider', function ($locationProvider, $authProvider) {
+		.config(['$locationProvider', '$authProvider', '$provide', function ($locationProvider, $authProvider, $provide) {
 
 			$locationProvider
 				.html5Mode(true);
 
+			// TODO: auth config
 			$authProvider.configure({
 				// localhost
 				apiUrl: '/api',
@@ -64,6 +65,14 @@
 					return res;
 					
 				}
+			});
+
+			// HACK: redefine ui-bootstrap templates
+			$provide.decorator('alertDirective', function ($delegate) {
+
+				$delegate[0].templateUrl = 'partials/alert.html';
+				return $delegate;
+
 			});
 
 		}]);

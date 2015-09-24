@@ -27,6 +27,11 @@ var Code = require('../controllers/code'),
 
 function publicSignin(data, callback) {
 
+	if (!data.password || !data.email)
+		return callback(new Error('Authentication failed. Invalid user or password'));
+
+	data.password = Code.hash(data.password);
+
 	User.findOne({
 		email: data.email,
 		password: data.password
@@ -39,6 +44,8 @@ function publicCreate(data, callback) {
 	if (!data.username) {
 		data.username = data.email;
 	}
+
+	data.password = Code.hash(data.password);
 
 	// TEMP: create new user
 	var user = User(data);
@@ -59,7 +66,8 @@ function publicSendConfirmationEmail(user, secret, callback) {
 		expired: Date.now() + 518400 * 1000
 	}, function (err, data) {
 
-		if (err) return callback(err);
+		if (err)
+			return callback(err);
 
 		Mailer.send({
 			to: user.email,
@@ -81,14 +89,18 @@ function publicCheckConfirmationEmail(token, secret, callback) {
 
 	Token.check(token, function (err, data) {
 
-		if (err) return callback(err);
-		if (!data) return callback(new Error('Token not found'));
+		if (err)
+			return callback(err);
+		if (!data)
+			return callback(new Error('Token not found'));
 
 		var email = Code.decrypt(data.token, secret);
 		publicGetByEmail(email, function (err, user) {
 
-			if (err) return callback(err);
-			if (user.status !== 0) return callback(new Error('Account already activated'));
+			if (err)
+				return callback(err);
+			if (user.status !== 0)
+				return callback(new Error('Account already activated'));
 
 			// activate account
 			user.status = 1;

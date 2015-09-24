@@ -35,11 +35,45 @@ var userSchema = new mongoose.Schema({
 		default: 0
 	},
 	meta: {
-		logo: String
+		avatar: String,
+		// private person
+		pp: {
+			firstname: String,
+			middlename: String,
+			lastname: String,
+			city: String,
+			// passport data
+			series: String,
+			number: String,
+			issue: String,
+			by: String
+		},
+		mfi: {
+			name: String,
+			legalname: String,
+			bin: String,
+			inn: String,
+			legaladdress: String,
+			actualaddress: String
+		},
+		ps: {
+			name: String,
+			legalname: String,
+			bin: String,
+			inn: String,
+			license: String,
+			legaladdress: String,
+			actualaddress: String
+		}
 	},
 	balance: {
 		type: Number,
 		default: 0
+	},
+	contacts: {
+		firstname: String,
+		phone: String,
+		email: String
 	},
 	created: Date,
 	updated: Date
@@ -67,6 +101,20 @@ userSchema.pre('save', function (next) {
 	next();
 
 });
+
+userSchema.options.toJSON = {
+	transform: function (doc, user, options) {
+
+		user.id = user._id;
+		delete user._id;
+		delete user.__v;
+		delete user.password;
+		delete user.created;
+		delete user.updated;
+		return user;
+
+	}
+};
 
 var User = mongoose.model('User', userSchema);
 

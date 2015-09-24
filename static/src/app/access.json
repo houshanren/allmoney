@@ -4,9 +4,9 @@
  * 1 - user
  * 2 - moderator
  * 3 - admin
- * 4 - private person
- * 5 - microfinance organization (MFI)
- * 6 - pawnshop
+ * 4 - private person (pp)
+ * 5 - microfinance organization (mfi)
+ * 6 - pawnshop (ps)
  */
 
 {

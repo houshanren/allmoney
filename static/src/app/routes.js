@@ -44,7 +44,7 @@
 				// TODO: validate user
 				$auth.validateUser()
 					.then(function (res) {
-
+						
 						if (!('data' in toState) || !('access' in toState.data)) {
 							// undefined data access
 							event.preventDefault();

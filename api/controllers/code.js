@@ -38,7 +38,19 @@ function publicDecrypt(text, secret) {
 
 }
 
+function publicHash(text) {
+
+	var cipher = crypto.createHash('md5');
+	var hash = cipher
+		.update(text)
+		.digest('hex');
+
+	return hash;
+
+}
+
 module.exports = {
+	hash: publicHash,
 	encrypt: publicEncrypt,
 	decrypt: publicDecrypt
 };

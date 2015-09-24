@@ -1,0 +1,9 @@
+<div class="alert" ng-class="['alert-' + (type || 'warning'), closeable ? 'alert-dismissible' : null]" role="alert">
+	<div class="message" ng-transclude></div>
+	<div class="wrap-close" ng-show="closeable">
+		<button type="button" class="close" ng-click="close($event)">
+			<span aria-hidden="true"><i class="fa fa-times"></i></span>
+			<span class="sr-only">Закрыть</span>
+		</button>
+	</div>
+</div>

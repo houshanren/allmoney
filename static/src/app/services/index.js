@@ -9,9 +9,14 @@
 		// TODO: common services
 		// ...
 		// TODO: common interceptors
-		.factory('ResponseInterceptor', ['$q', '$location', 'config', function ($q, $location, config) {
+		.factory('ResponseInterceptor', ['$q', '$location', '$rootScope', 'config', function ($q, $location, $rootScope, config) {
 
 			function publicResponseError(res) {
+
+				// error alert
+				$rootScope.$broadcast('new-alert', _.assign(res.data, {
+					type: 'danger'
+				}));
 
 				if (res.status === 401 || res.status === 403) {
                     $location.path('/user/login');

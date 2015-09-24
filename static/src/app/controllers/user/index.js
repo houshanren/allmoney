@@ -15,8 +15,8 @@
 				.then(function (res) {
 
 					// success
-					$scope.data = res;
-					if ($scope.data._id === $auth.user._id) {
+					$scope.data = res.data;
+					if ($scope.data.id === $auth.user.id) {
 						$scope.isMyProfile = true;
 					}
 
@@ -39,7 +39,7 @@
 
 					// error
 					$scope.confirmed = false;
-					$scope.error = config.ERRORS[res.code];
+					$scope.error = config.ERRORS[res.data.code];
 
 				});
 

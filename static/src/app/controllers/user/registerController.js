@@ -6,7 +6,7 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('RegisterCtrl', ['$scope', '$auth', 'config', function ($scope, $auth, config) {
+		.controller('RegisterCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
 
 			// TODO: name roles
 			$scope.roles = config.ROLES;
@@ -26,7 +26,7 @@
 				$auth.submitRegistration($scope.data)
 					.then(function (res) {
 
-						// ...
+						$state.go('index');
 
 					});
 

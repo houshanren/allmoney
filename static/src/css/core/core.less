@@ -69,6 +69,17 @@ hr {
 	border-top: 1px solid @hr-border;
 }
 
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
 [role="button"] {
 	cursor: pointer;
 }
@@ -540,7 +551,7 @@ th {
 .alert {
 	padding: @alert-padding;
 	margin-bottom: @line-height-computed;
-	border: 1px solid transparent;
+	border: 0px solid transparent;
 	border-radius: @alert-border-radius;
 
 	// Improve alignment and spacing of inner content
@@ -557,21 +568,50 @@ th {
 .alert-success {
 	color: @state-success-text;
 	background-color: @state-success-bg;
+	border-color: @state-success-border;
 }
 
 .alert-info {
 	color: @state-info-text;
 	background-color: @state-info-bg;
+	border-color: @state-info-border;
 }
 
 .alert-warning {
 	color: @state-warning-text;
 	background-color: @state-warning-bg;
+	border-color: @state-warning-border;
 }
 
 .alert-danger {
 	color: @state-danger-text;
 	background-color: @state-danger-bg;
+	border-color: @state-danger-border;
+}
+
+.close {
+	float: right;
+	font-size: @font-size-base;
+	font-weight: @font-weight-base;
+	line-height: 1;
+	color: #000;
+	.opacity(.2);
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		cursor: pointer;
+		.opacity(.5);
+	}
+
+	button& {
+		padding: 0;
+		outline: none;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		-webkit-appearance: none;
+	}
 }
 
 
@@ -586,12 +626,18 @@ th {
 .fr { float: right }
 .last { margin-right: 0px !important }
 
+.row {
+	.clearfix();
+}
 
-// icons
-
-.fa {
-	position: relative;
-	top: 1px;
+.col {
+	.clearfix();
+	&.fl {
+		padding-right: 15px;
+	}
+	&.fr {
+		padding-left: 15px;
+	}
 }
 
 .col-75 {
@@ -614,4 +660,10 @@ th {
 }
 .col-25 {
 	width: 25%;
+}
+
+// icons
+.fa {
+	position: relative;
+	top: 1px;
 }

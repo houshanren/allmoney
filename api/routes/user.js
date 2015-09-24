@@ -56,7 +56,8 @@ function authenticate(req, res, next) {
 		// verifies secret and checks exp
 		jwt.verify(token, app.get('secret'), function (err, decoded) {
 
-			if (err) return errorHandler(req, res, 401, 1, err.message);
+			if (err)
+				return errorHandler(req, res, 401, 1, err.message);
 
 			// add headers
 			addAuthHeaders(res, decoded._id, token, decoded.exp);
@@ -88,21 +89,23 @@ function signinUser(req, res) {
 		password: data.password
 	}, function (err, user) {
 
-		if (err) return errorHandler(req, res, 403, 4, err.message);
-		if (!user) return errorHandler(req, res, 403, 4, 'Authentication failed. Invalid user or password');
+		if (err)
+			return errorHandler(req, res, 403, 4, err.message);
+		if (!user)
+			return errorHandler(req, res, 403, 4, 'Authentication failed. Invalid user or password');
 
 		var expires = config.authExpires,
 			expiry = Math.ceil(Date.now() / 1000) + expires;
 
 		// create token
-		var token = jwt.sign(user.toObject(), app.get('secret'), {
+		var token = jwt.sign(user.toJSON(), app.get('secret'), {
 			expiresInSeconds: expires
 		});
 
 		// add headers
 		addAuthHeaders(res, user._id, token, expiry);
 
-		res.json(user);
+		res.json(user.toJSON());
 
 	});
 
@@ -111,21 +114,47 @@ function signinUser(req, res) {
 function createUser(req, res) {
 
 	var data = req.body;
+	// original password
+	var password = data.password;
 
 	User.create(data, function (err, user) {
 
-		if (err) return errorHandler(req, res, 500, 5, err.message);
+		if (err)
+			return errorHandler(req, res, 500, 5, err.message);
+
+		out.info('Created new user - ' + user.email + '.');
+
+		// signin
+		User.signin({
+			email: user.email,
+			password: password
+		}, function (err, user) {
+
+			if (err)
+				return errorHandler(req, res, 403, 4, err.message);
+			if (!user)
+				return errorHandler(req, res, 403, 4, 'Authentication failed. Invalid user or password');
+
+			var expires = config.authExpires,
+				expiry = Math.ceil(Date.now() / 1000) + expires;
+
+			// create token
+			var token = jwt.sign(user.toJSON(), app.get('secret'), {
+				expiresInSeconds: expires
+			});
+
+			// add headers
+			addAuthHeaders(res, user._id, token, expiry);
+
+			res.json(user.toJSON());
+
+		});
 
 		// TODO: send confirmation to mail
 		User.sendConfirmationEmail(user.toObject(), app.get('secret'), function (err, info) {
 
-			if (err) return errorHandler(req, res, 500, 5, err.message);
-
-			// ... signin
-
-			out.info('Created new user - ' + user.email + '.');
-
-			res.json(user);
+			if (err)
+				return errorHandler(req, res, 500, 5, err.message);
 
 		});
 
@@ -140,7 +169,8 @@ function confirmationEmailUser(req, res) {
 	if (token) {
 		User.checkConfirmationEmail(token, app.get('secret'), function (err, user) {
 
-			if (err) return errorHandler(req, res, 400, 3, err.message);
+			if (err)
+				return errorHandler(req, res, 400, 3, err.message);
 
 			// ... check ident emails
 				
@@ -163,7 +193,8 @@ function signoutUser(req, res) {
 		// TEMP: after delete token
 		jwt.verify(token, app.get('secret'), function (err, decoded) {
 
-			if (err) return errorHandler(req, res, 400, 4, 'Failed to authenticate token');
+			if (err)
+				return errorHandler(req, res, 400, 1, 'Failed to authenticate token');
 
 			res.sendStatus(200);
 
@@ -171,19 +202,23 @@ function signoutUser(req, res) {
 	} else {
 		// if there is no token
 		// return an error
-		return errorHandler(req, res, 400, 4, 'No token provided');
+		return errorHandler(req, res, 400, 2, 'No token provided');
 	}
 
 }
 
 function getUserById(req, res) {
 
+	out.log('debug', req.params.id);
+
 	User.getById(req.params.id, function (err, user) {
 
-		if (err) return errorHandler(req, res, 404, 6, err.message);
-		if (!user) return errorHandler(req, res, 404, 6, 'User not found');
+		if (err)
+			return errorHandler(req, res, 404, 6, err.message);
+		if (!user)
+			return errorHandler(req, res, 404, 6, 'User not found');
 
-		res.json(user);
+		res.json(user.toJSON());
 
 	});
 
@@ -193,10 +228,12 @@ function getUserByName(req, res) {
 
 	User.getByName(req.params.username, function (err, user) {
 
-		if (err) return errorHandler(req, res, 404, 6, err.message);
-		if (!user) return errorHandler(req, res, 404, 6, 'User not found');
+		if (err)
+			return errorHandler(req, res, 404, 6, err.message);
+		if (!user)
+			return errorHandler(req, res, 404, 6, 'User not found');
 
-		res.json(user);
+		res.json(user.toJSON());
 
 	});
 

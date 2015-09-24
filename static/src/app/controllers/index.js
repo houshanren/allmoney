@@ -32,6 +32,35 @@
 
 			};
 
+		}])
+		.controller('AlertsSectionCtrl', ['$scope', '$timeout', 'config', function ($scope, $timeout, config) {
+
+			$scope.alerts = [];
+
+			// close alert
+			$scope.closeAlert = function (index) {
+
+				$scope.alerts.splice(index, 1);
+
+			};
+
+			// TODO: checking new allert
+			$scope.$on('new-alert', function(event, data) {
+
+				var alert = $scope.alerts.push({
+					type: data.type,
+					closeable: true,
+					message: config.ERRORS[data.code]
+				});
+
+				$timeout(function () {
+
+					$scope.alerts.splice($scope.alerts.indexOf(alert), 1);
+
+				}, 8000);
+
+			});
+
 		}]);
 
 	// requires

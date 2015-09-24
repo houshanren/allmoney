@@ -46,7 +46,6 @@ header {
 			margin: 13px 0px 14px;
 			padding: 12px 14px;
 			background: #f1f5fa;
-			border-radius: 33px;
 		}
 		.avatar {
 			width: @input-height-base;
@@ -57,14 +56,15 @@ header {
 			background: #fbfbfc url('@{assets-path}images/avatar-42x42.png') no-repeat center center;
 		}
 		.info {
-			width: 198px;
+			width: 160px;
 			text-align: left;
 			line-height: @line-height-normal;
+			position: relative;
 			.username {
 				.inline();
 				color: @brand-default;
 				font-weight: 500;
-				max-width: 168px;
+				max-width: 100%;
 				overflow: hidden;
 				white-space: nowrap;
 			}
@@ -75,9 +75,38 @@ header {
 					font-weight: 500;
 				}
 			}
-			.additional {
-				.inline();
-				margin-left: 2px;
+			&:after {
+				content: '';
+				display: block;
+				width: 20px;
+				height: 42px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				#gradient > .horizontal(transparent, #f1f5fa);
+			}
+		}
+		.additional {
+			width: 30px;
+			height: 66px;
+			margin: -12px -14px -12px 0;
+			.caret {
+				border-radius: 0px;
+				width: 100%;
+				display: block;
+				height: 66px;
+				margin: 0px;
+				font-size: 13px;
+				background-color: #d9e2ef;
+				&:hover {
+					background-color: fade(#d9e2ef, 60%);
+				}
+				&:before {
+					line-height: 66px;
+					display: block;
+					width: 30px;
+					height: 66px;
+				}
 			}
 		}
 		.dropdown-menu {
@@ -85,15 +114,14 @@ header {
 			text-align: left;
 			overflow: hidden;
 			width: 100%;
-			margin: -47px 0 0;
-			padding-top: 39px;
-			padding-bottom: 12px;
+			margin: -14px 0 0;
+			padding: 5px 0 5px;
 			background: #D9E2EF;
-			border: 0px;
-			border-radius: 0px 0px @input-border-radius @input-border-radius;
+			border: 0;
+			border-radius: 0;
 			li a {
 				padding: 6px 26px;
-				color: #434a52;
+				color: #182A3E;
 				&:hover,
 				&:focus {
 					text-decoration: none;
@@ -114,6 +142,9 @@ header {
 		&.open .signed {
 			position: relative;
     		z-index: 1001;
+    		.caret:before {
+    			.rotate(180deg);
+    		}
 		}
 	}
 }
@@ -324,7 +355,6 @@ header {
 		.register {
 			margin: 0 0 40px;
 			.row {
-				.clearfix();
 				padding-top: 10px;
 			}
 			.col {
@@ -335,12 +365,6 @@ header {
 						color: #fc9f4d;
 						font-size: @font-size-small;
 					}
-				}
-				&.fl {
-					padding-right: 15px;
-				}
-				&.fr {
-					padding-left: 15px;
 				}
 			}
 			.agreement {
@@ -601,4 +625,63 @@ label {
 }
 .dropdown-menu-left {
 	margin-left: -18px;
+}
+
+// alerts
+.alert {
+	display: table;
+	padding: 0px;
+	width: 100%;
+	color: #fff;
+	.message {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 24px;
+	}
+	.wrap-close {
+		display: none;
+		vertical-align: middle;
+		text-align: center;
+		width: 30px;
+		height: 100%;
+		background: fade(#000, 6%);
+		&:hover {
+			background-color: fade(#000, 4%);
+			.close {
+				opacity: 1;
+			}
+		}
+	}
+	.close {
+		float: none;
+		opacity: .5;
+		color: #fff;
+		width: 100%;
+		height: 100%;
+	}
+	&.alert-dismissible {
+		.message {
+			padding: 24px 10px 24px 24px;
+		}
+		.wrap-close {
+			display: table-cell;
+		}
+	}
+}
+
+.alerts-section {
+	position: fixed;
+	bottom: 8px;
+	right: 20px;
+	width: 380px;
+	height: auto;
+	z-index: 9999;
+	.alert {
+		font-size: @font-size-small;
+		padding: 0;
+		margin-bottom: 12px;
+		.message {
+			padding: 12px 10px 12px 20px;
+		}
+	}
 }
