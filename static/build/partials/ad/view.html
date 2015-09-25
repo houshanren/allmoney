@@ -1,0 +1,93 @@
+<div class="wrapper page page-ad">
+	<div class="container">
+		<h1>Информация об объявлении</h1>
+		<section class="row">
+			<div class="fl col col-50 meta">
+				<h3>Основная информация</h3>
+				<div class="fl avatar">
+					
+				</div>
+				<div class="info">
+					
+					<dl>
+						<dt><h5>Процентная ставка:</h5></dt>
+						<dd>
+							<b>{{ data.rate.from }} - {{ data.rate.to }}%</b>
+							{{ rateUnits[data.rate.unit] }}
+						</dd>
+					</dl>
+					<dl>
+						<dt><h5>Сумма кредита:</h5></dt>
+						<dd>
+							<b>{{ data.amount.from }} - {{ data.amount.to }}</b>
+						</dd>
+					</dl>
+					<dl>
+						<dt><h5>Срок предоставления займа:</h5></dt>
+						<dd>
+							<b>{{ data.term.from }} - {{ data.term.to }}</b>
+							{{ termUnits[data.term.unit] }}
+						</dd>
+					</dl>
+					<dl>
+						<dt><h5>Срок рассмотрения заявки:</h5></dt>
+						<dd>
+							<b>от {{ data.period.from }}</b>
+							{{ periodUnits[data.period.unit] }}
+						</dd>
+					</dl>
+					<!-- ... add define array -->
+					<!-- private person -->
+					<dl ng-if="data.creator.role === 4">
+						<dt><h5>Тип обеспечения:</h5></dt>
+						<dd>
+							{{ data.security }}
+						</dd>
+					</dl>
+					<!-- microfinance organization -->
+					<dl ng-if="data.creator.role === 5">
+						<dt><h5>Способ получения:</h5></dt>
+						<dd>
+							{{ data.wayget }}
+						</dd>
+					</dl>
+					<dl>
+						<dt><h5>Доступные города:</h5></dt>
+						<dd>
+							{{ data.cities }}
+						</dd>
+					</dl>
+
+				</div>
+			</div>
+			<div class="fr col col-50 additional">
+				<div class="contacts">
+					<h3>Контактные данные</h3>
+					<dl>
+						<dd><i class="fa fa-user"></i> {{ data.creator.contacts.name || reports['notspecified'] }}</dd>
+					</dl>
+					<dl>
+						<dd><i class="fa fa-phone"></i> {{ data.creator.contacts.phone || reports['notspecified'] }}</dd>
+					</dl>
+					<dl>
+						<dd><i class="fa fa-envelope"></i> {{ data.creator.contacts.email || reports['notspecified'] }}</dd>
+					</dl>
+				</div>
+				<hr ng-if="data.creator.role === 5 || data.creator.role === 6" />
+				<div class="load" ng-if="data.creator.role === 5 || data.creator.role === 6">
+					<a ng-href="{{ data.link }}" target="_blank" class="btn primary icon-left" role="button"><i class="fa fa-rocket"></i>Заявка на займ</a>
+				</div>
+			</div>
+		</section>
+		<hr/>
+		<section class="row more" ng-if="data.post">
+			<h3>Дополнительная информация</h3>
+			{{ data.post }}
+		</section>
+		<hr/>
+		<section class="row more">
+			<h3>Отзывы о займодатели</h3>
+			{{ data.creator.reviews || reports['noreviews'] }}
+		</section>
+	</div>
+</div>

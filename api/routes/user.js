@@ -153,6 +153,8 @@ function createUser(req, res) {
 	// original password
 	var password = data.password;
 
+	// ... check select user role
+
 	User.create(data, function (err, user) {
 
 		if (err)

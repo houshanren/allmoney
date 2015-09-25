@@ -18,7 +18,7 @@
 				.state('user.register', {
 					url: '/register',
 					templateUrl: 'partials/user/register.html',
-					controller: 'RegisterCtrl',
+					controller: 'UserRegisterCtrl',
 					controllerAs: 'register',
 					data: {
 						access: config.ACCESS.anonymous
@@ -27,7 +27,7 @@
 				.state('user.confirm', {
 					url: '/register/:token',
 					templateUrl: 'partials/user/confirm.html',
-					controller: 'EmailConfirmationCtrl',
+					controller: 'UserEmailConfirmationCtrl',
 					controllerAs: 'confirm',
 					params:  {
 						token: {

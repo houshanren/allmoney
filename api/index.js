@@ -32,6 +32,7 @@ var db = mongoose.connect('mongodb://localhost/allmoney').connection;
 // TODO: routes
 var routes = require('./routes');
 var user = require('./routes/user');
+var ad = require('./routes/ad');
 
 app.set('port', config.port);
 app.set('secret', config.secret);
@@ -48,6 +49,7 @@ app.use(bodyParser.json());
 // url routes
 app.use('/api', routes);
 app.use('/api/user', user);
+app.use('/api/ad', ad);
 // static path
 app.use(express.static(config.staticPath));
 

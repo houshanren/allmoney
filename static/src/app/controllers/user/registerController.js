@@ -8,11 +8,10 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('RegisterCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
+		.controller('UserRegisterCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
 
 			// TODO: name roles
 			$scope.roles = config.ROLES;
-			$scope.codeRole = {};
 			// define for guest
 			$scope.availableRoles = [1, 4, 5, 6];
 
@@ -21,14 +20,15 @@
 
 			// ...
 
-			// TODO: login submit
+			// TODO: register submit
 			$scope.submit = function () {
 
 				// TODO: register
 				$auth.submitRegistration($scope.data)
 					.then(function (res) {
 
-						$state.go('index');
+						$scope.reset();
+						$state.go('user.personal');
 
 					});
 
@@ -44,8 +44,6 @@
 				$scope.data = angular.copy($scope.initial);
 
 			};
-
-			
 
 		}]);
 

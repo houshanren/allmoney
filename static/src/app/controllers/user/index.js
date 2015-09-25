@@ -30,7 +30,7 @@
 				});
 
 		}])
-		.controller('EmailConfirmationCtrl', ['$scope', '$stateParams', 'User', 'config', function ($scope, $stateParams, User, config) {
+		.controller('UserEmailConfirmationCtrl', ['$scope', '$stateParams', 'User', 'config', function ($scope, $stateParams, User, config) {
 
 			User.confirmationEmail($stateParams.token)
 				.then(function (res) {

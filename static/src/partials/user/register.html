@@ -10,8 +10,8 @@
 						<fieldset>
 							<ui-select ng-model="data.role" ng-disabled="disabled" search-enabled="false" required>
 								<ui-select-match placeholder="Выберите тип">{{ roles[$select.selected] }}</ui-select-match>
-								<ui-select-choices repeat="codeRole in availableRoles | filter: $select.search">
-									<span ng-bind-html="roles[codeRole] | highlight: $select.search"></span>
+								<ui-select-choices repeat="code in availableRoles | filter: $select.search">
+									<span ng-bind-html="roles[code] | highlight: $select.search"></span>
 								</ui-select-choices>
 							</ui-select>
 						</fieldset>
@@ -109,12 +109,12 @@
 									<input ng-model="data.meta.ps.legaladdress" type="text" class="form-control" placeholder="Юридический адрес" title="Юридический адрес" />
 								</fieldset>
 								<fieldset>
-									<input ng-model="data.meta.ps.legaladdress" type="text" class="form-control" placeholder="Номер лицензии" title="Номер лицензии" />
+									<input ng-model="data.meta.ps.license" type="text" class="form-control" placeholder="Номер лицензии" title="Номер лицензии" />
 								</fieldset>
 							</div>
 							<div class="fr col col-50">
 								<fieldset>
-									<input ng-model="data.meta.ps.bin" type="text" class="form-control" placeholder="ОГРН" title="ОГРНы" />
+									<input ng-model="data.meta.ps.bin" type="text" class="form-control" placeholder="ОГРН" title="ОГРН" />
 								</fieldset>
 								<fieldset>
 									<input ng-model="data.meta.ps.inn" type="text" class="form-control" placeholder="ИНН" title="ИНН" />

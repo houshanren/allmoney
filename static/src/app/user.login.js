@@ -18,7 +18,7 @@
 				.state('user.login', {
 					url: '/login',
 					templateUrl: 'partials/user/login.html',
-					controller: 'LoginCtrl',
+					controller: 'UserLoginCtrl',
 					controllerAs: 'login',
 					data: {
 						access: config.ACCESS.anonymous

@@ -46,6 +46,8 @@ header {
 			margin: 13px 0px 14px;
 			padding: 12px 14px;
 			background: #f1f5fa;
+			border-radius: 33px;
+			overflow: hidden;
 		}
 		.avatar {
 			width: @input-height-base;
@@ -87,7 +89,7 @@ header {
 			}
 		}
 		.additional {
-			width: 30px;
+			width: 34px;
 			height: 66px;
 			margin: -12px -14px -12px 0;
 			.caret {
@@ -104,7 +106,7 @@ header {
 				&:before {
 					line-height: 66px;
 					display: block;
-					width: 30px;
+					width: 32px;
 					height: 66px;
 				}
 			}
@@ -114,11 +116,11 @@ header {
 			text-align: left;
 			overflow: hidden;
 			width: 100%;
-			margin: -14px 0 0;
-			padding: 5px 0 5px;
+			margin: -72px 0 0;
+    		padding: 64px 0 5px;
 			background: #D9E2EF;
 			border: 0;
-			border-radius: 0;
+			border-radius: 33px;
 			li a {
 				padding: 6px 26px;
 				color: #182A3E;
@@ -142,6 +144,7 @@ header {
 		&.open .signed {
 			position: relative;
     		z-index: 1001;
+    		border-radius: 33px 33px 0 0;
     		.caret:before {
     			.rotate(180deg);
     		}
@@ -278,6 +281,9 @@ header {
 				text-decoration: none;
 			}
 		}
+		.btn {
+			text-decoration: none;
+		}
 		.dropdown a {
 			text-decoration: none;
 		}
@@ -353,32 +359,48 @@ header {
 		}
 	}
 	&.page-register .register,
-	&.page-edit .edit {
+	&.page-edit .edit,
+	&.page-ad-create .create,
+	&.page-ad-edit .edit {
 		.row {
 			padding-top: 10px;
 		}
 		.col {
 			.clearfix();
 			h3 {
-				margin-top: 0px;
+				margin-top: 0;
 				small {
 					color: #fc9f4d;
 					font-size: @font-size-small;
 				}
+			}
+			h5 {
+				margin-top: 6px;
+				color: @text-color;
+				font-size: @font-size-base;
+				padding: 0 11px;
+			}
+		}
+		fieldset {
+			.clearfix();
+			label {
+				padding: 5px 8px 4px;
+				margin-bottom: 0;
 			}
 		}
 		.agreement {
 			font-size: @font-size-base;
 			line-height: @line-height-normal;
 			font-weight: bold;
-			padding: 0px 11px;
+			padding: 0 11px;
 		}
 	}
 	&.page-register .register {
 		margin: 0 0 40px;
 	}
 	&.page-user,
-	&.page-personal {
+	&.page-personal,
+	&.page-ad {
 		.avatar {
 			width: 118px;
 			height: 118px;
@@ -446,6 +468,7 @@ header {
 				border-color: #EDF1F7;
 				&:hover {
 					background-color: #e1e6ee;
+					border-color: #e1e6ee;
 					color: #002a5a;
 				}
 			}
@@ -463,6 +486,25 @@ header {
 			}
 			&.status4 {
 				color: #d94737;
+			}
+		}
+	}
+	&.page-ad-create .create,
+	&.page-ad-edit .edit {
+		// ...
+	}
+	&.page-ad {
+		// ...
+		.info {
+			// ...
+			dd {
+				color: @text-muted;
+				b {
+					font-size: 30px;
+					font-weight: @font-weight-base;
+					margin-right: 6px;
+					color: @text-color;
+				}
 			}
 		}
 	}
@@ -551,8 +593,10 @@ footer {
 // attach
 
 label {
-	.padding-horizontal(22px);
-	font-weight: bold;
+	font-size: @input-font-size;
+	font-weight: @input-font-weight;
+	line-height: @line-height-base;
+	color: @input-color;
 }
 
 // TODO: angular

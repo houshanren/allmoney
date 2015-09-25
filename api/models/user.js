@@ -26,11 +26,13 @@ var userSchema = new mongoose.Schema({
 	},
 	role: {
 		type: Number,
+		required: true,
 		// user
 		default: 1
 	},
 	status: {
 		type: Number,
+		required: true,
 		default: 0
 	},
 	meta: {
@@ -71,6 +73,7 @@ var userSchema = new mongoose.Schema({
 	},
 	balance: {
 		type: Number,
+		required: true,
 		default: 0
 	},
 	contacts: {

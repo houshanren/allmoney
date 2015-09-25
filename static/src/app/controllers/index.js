@@ -10,7 +10,7 @@
 		.module('app.controllers', [])
 		// TODO: common controllers
 		.controller('MainCtrl', ['$scope', '$location', 'config', function ($scope, $location, config) {
-
+			
 			$scope.isActive = function (location) {
 
 				return location === $location.path();

@@ -1,5 +1,5 @@
 /**
- * USER REGISTER CONTROLLERS
+ * USER EDIT CONTROLLERS
  */
 
 'use strict';
@@ -8,7 +8,7 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('EditCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
+		.controller('UserEditCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
 
 			// BUG: if copy $auth.user, we receive is not accurate data
 			// HACK: not copy (sync)
@@ -16,7 +16,7 @@
 
 			// ...
 
-			// TODO: login submit
+			// TODO: edit submit
 			$scope.submit = function () {
 
 				// TODO: update data

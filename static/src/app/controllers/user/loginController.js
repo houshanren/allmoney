@@ -8,7 +8,7 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('LoginCtrl', ['$scope', '$auth', function ($scope, $auth) {
+		.controller('UserLoginCtrl', ['$scope', '$auth', function ($scope, $auth) {
 
 			$scope.initial = {};
 			$scope.data = angular.copy($scope.initial);
@@ -42,8 +42,6 @@
 				$scope.data = angular.copy($scope.initial);
 
 			};
-
-			
 
 		}]);
 

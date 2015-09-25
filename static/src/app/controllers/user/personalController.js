@@ -8,7 +8,7 @@
 
 	angular
 		.module('app.controllers.user')
-		.controller('PersonalCtrl', ['$scope', '$state', '$auth', 'User', 'config', function ($scope, $state, $auth, User, config) {
+		.controller('UserPersonalCtrl', ['$scope', '$state', '$auth', 'User', 'config', function ($scope, $state, $auth, User, config) {
 
 			$scope.reports = config.REPORTS;
 			$scope.statuses = config.STATUSES;

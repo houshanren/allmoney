@@ -1,5 +1,5 @@
 /**
- * USER
+ * AD
  */
 
 'use strict';
@@ -7,33 +7,31 @@
 (function () {
 
 	/**
-	 * Login module
+	 * Ad module
 	 * @type {Angular.module}
 	 */
 	module.exports = angular
-		.module('app.user', [
-			require('./controllers/user').name,
-			require('./services/user').name,
-			require('./user.login').name,
-			require('./user.register').name,
-			require('./user.personal').name
+		.module('app.ad', [
+			require('./controllers/ad').name,
+			require('./services/ad').name,
+			require('./ad.create').name
 		])
 		.config(['$stateProvider', 'config', function ($stateProvider, config) {
 
 			$stateProvider
-				.state('user', {
-					url: '/user',
+				.state('ad', {
+					url: '/ad',
 					abstract: true,
 					template: '<ui-view>',
 					data: {
 						access: config.ACCESS.public
 					}
 				})
-				.state('user.view', {
+				.state('ad.view', {
 					url: '/:id',
-					templateUrl: 'partials/user/view.html',
-					controller: 'UserCtrl',
-					controllerAs: 'user',
+					templateUrl: 'partials/ad/view.html',
+					controller: 'AdCtrl',
+					controllerAs: 'ad',
 					params:  {
 						id: {
 							value: null,

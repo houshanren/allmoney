@@ -18,7 +18,7 @@
 				.state('user.personal', {
 					url: '/personal',
 					templateUrl: 'partials/user/personal.html',
-					controller: 'PersonalCtrl',
+					controller: 'UserPersonalCtrl',
 					controllerAs: 'personal',
 					data: {
 						access: config.ACCESS.user
@@ -27,7 +27,7 @@
 				.state('user.edit', {
 					url: '/edit',
 					templateUrl: 'partials/user/edit.html',
-					controller: 'EditCtrl',
+					controller: 'UserEditCtrl',
 					controllerAs: 'edit',
 					data: {
 						access: config.ACCESS.user

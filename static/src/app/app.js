@@ -20,6 +20,7 @@
 			'ngProgress',
 			'ui.bootstrap',
 			'ui.select',
+			'checklist-model',
 			// values & constants
 			require('./config').name,
 			// components
@@ -29,7 +30,8 @@
 			require('./filters').name,
 			require('./services').name,
 			// modules
-			require('./user').name
+			require('./user').name,
+			require('./ad').name
 		])
 		.config(['$locationProvider', '$authProvider', '$provide', function ($locationProvider, $authProvider, $provide) {
 
