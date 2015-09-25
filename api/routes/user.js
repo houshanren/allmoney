@@ -30,6 +30,7 @@ var User = require('../controllers/user');
 
 router.get('/validate', validateToken);
 router.post('/register', createUser);
+router.put('/update', updateUser);
 router.post('/signin', signinUser);
 router.delete('/signout', signoutUser);
 router.get('/register/:token', confirmationEmailUser);
@@ -48,7 +49,7 @@ function addAuthHeaders(res, userId, token, expiry) {
 
 }
 
-function authenticate(req, res, next) {
+function authenticate(req, res, callback) {
 
 	var token = req.get('access-token');
 
@@ -60,9 +61,9 @@ function authenticate(req, res, next) {
 				return errorHandler(req, res, 401, 1, err.message);
 
 			// add headers
-			addAuthHeaders(res, decoded._id, token, decoded.exp);
+			addAuthHeaders(res, decoded.id, token, decoded.exp);
 
-			res.json(decoded);
+			User.getById(decoded.id, callback);
 
 		});
 
@@ -74,9 +75,18 @@ function authenticate(req, res, next) {
 
 }
 
-function validateToken(req, res, next) {
+function validateToken(req, res) {
 
-	authenticate(req, res, next);
+	authenticate(req, res, function (err, user) {
+
+		if (err)
+			return errorHandler(req, res, 404, 6, err.message);
+		if (!user)
+			return errorHandler(req, res, 404, 6, 'User not found');
+
+		res.json(user.toJSON());
+
+	});
 
 }
 
@@ -98,7 +108,11 @@ function signinUser(req, res) {
 			expiry = Math.ceil(Date.now() / 1000) + expires;
 
 		// create token
-		var token = jwt.sign(user.toJSON(), app.get('secret'), {
+		var token = jwt.sign({
+			id: user._id,
+			email: user.email,
+			username: user.username
+		}, app.get('secret'), {
 			expiresInSeconds: expires
 		});
 
@@ -106,6 +120,28 @@ function signinUser(req, res) {
 		addAuthHeaders(res, user._id, token, expiry);
 
 		res.json(user.toJSON());
+
+	});
+
+}
+
+function updateUser(req, res) {
+
+	authenticate(req, res, function (err, user) {
+
+		if (err)
+			return errorHandler(req, res, 404, 6, err.message);
+		if (!user)
+			return errorHandler(req, res, 404, 6, 'User not found');
+		
+		User.update(user, req.body, function (err, user) {
+
+			if (err)
+				return errorHandler(req, res, 500, 7, err.message);
+
+			res.json(user.toJSON());
+
+		});
 
 	});
 
@@ -139,7 +175,11 @@ function createUser(req, res) {
 				expiry = Math.ceil(Date.now() / 1000) + expires;
 
 			// create token
-			var token = jwt.sign(user.toJSON(), app.get('secret'), {
+			var token = jwt.sign({
+				id: user._id,
+				email: user.email,
+				username: user.username
+			}, app.get('secret'), {
 				expiresInSeconds: expires
 			});
 
@@ -208,8 +248,6 @@ function signoutUser(req, res) {
 }
 
 function getUserById(req, res) {
-
-	out.log('debug', req.params.id);
 
 	User.getById(req.params.id, function (err, user) {
 

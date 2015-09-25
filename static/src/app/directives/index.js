@@ -2,6 +2,8 @@
  * DIRECTIVES
  */
 
+'use strict';
+
 (function () {
 
 	module.exports = angular

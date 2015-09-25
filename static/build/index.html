@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 
 </head>
-<body>
+<body ng-controller="MainCtrl">
 	
 	<alerts-section></alerts-section>
 
@@ -36,7 +36,7 @@
 		<div class="container">
 			<div class="collapse">
 				<ul class="nav">
-					<li class="active"><a href="#">Главная</a></li>
+					<li ng-class="{ active: isActive('/') }"><a href="/">Главная</a></li>
 					<li><a href="#">Займы от МФО</a></li>
 					<li><a href="#">Займы от частных лиц</a></li>
 					<li><a href="#">Ломбарды</a></li>
@@ -138,7 +138,7 @@
 	<script src="/lib/angular/angular.js"></script>
 	<script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="/lib/angular-cookie/angular-cookie.min.js"></script>
-	<script src="/lib/ng-token-auth/dist/ng-token-auth.min.js"></script>
+	<script src="/lib/ng-token-auth/dist/ng-token-auth.js"></script>
 	<script src="/lib/angular-sanitize/angular-sanitize.js"></script>
 	<script src="/lib/ngprogress/build/ngprogress.min.js"></script>
 	<script src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>

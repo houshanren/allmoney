@@ -2,13 +2,16 @@
  * USER CONTROLLERS
  */
 
+'use strict';
+
 (function () {
 
 	module.exports = angular
 		.module('app.controllers.user', [])
 		// TODO: common controllers
-		.controller('UserCtrl', ['$scope', '$stateParams', '$state', '$auth', 'User', function ($scope, $stateParams, $state, $auth, User) {
+		.controller('UserCtrl', ['$scope', '$stateParams', '$state', '$auth', 'User', 'config', function ($scope, $stateParams, $state, $auth, User, config) {
 
+			$scope.reports = config.REPORTS;
 			$scope.isMyProfile = false;
 
 			User.getById($stateParams.id)
@@ -48,5 +51,7 @@
 	// requires
 	require('./loginController');
 	require('./registerController');
+	require('./personalController');
+	require('./editController');
 
 })();

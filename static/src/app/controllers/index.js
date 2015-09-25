@@ -2,11 +2,22 @@
  * CONTROLLERS
  */
 
+'use strict';
+
 (function () {
 
 	module.exports = angular
 		.module('app.controllers', [])
 		// TODO: common controllers
+		.controller('MainCtrl', ['$scope', '$location', 'config', function ($scope, $location, config) {
+
+			$scope.isActive = function (location) {
+
+				return location === $location.path();
+
+			};
+
+		}])
 		.controller('IndexCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
 
 			$scope.cities = config.CITIES;

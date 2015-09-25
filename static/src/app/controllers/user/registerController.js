@@ -2,6 +2,8 @@
  * USER REGISTER CONTROLLERS
  */
 
+'use strict';
+
 (function () {
 
 	angular
@@ -22,7 +24,7 @@
 			// TODO: login submit
 			$scope.submit = function () {
 
-				// TODO: service check
+				// TODO: register
 				$auth.submitRegistration($scope.data)
 					.then(function (res) {
 
@@ -31,7 +33,7 @@
 					});
 
 				// reset form
-				$scope.reset();
+				/*$scope.reset();*/
 
 			};
 

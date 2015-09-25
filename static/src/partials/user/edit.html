@@ -1,24 +1,16 @@
-<div class="wrapper page page-register">
+<div class="wrapper page page-edit">
 	<div class="container">
-		<h1>Создание учетный записи</h1>
-		<section class="register">
-			<form name="registerForm" ng-submit="registerForm.$valid && submit()" novalidate>
-				<div class="row">
-
-					<div class="fl col col-33">
-						<h3>Тип учетной записи <small>(обязательно)</small></h3>
-						<fieldset>
-							<ui-select ng-model="data.role" ng-disabled="disabled" search-enabled="false" required>
-								<ui-select-match placeholder="Выберите тип">{{ roles[$select.selected] }}</ui-select-match>
-								<ui-select-choices repeat="codeRole in availableRoles | filter: $select.search">
-									<span ng-bind-html="roles[codeRole] | highlight: $select.search"></span>
-								</ui-select-choices>
-							</ui-select>
-						</fieldset>
-					</div>
-
-				</div>
-				<hr ng-if="data.role > 0" />
+		<h1>Личный кабинет</h1>
+		<div class="row tabs">
+			<ul class="nav">
+				<li ng-class="{ active: isActive('/user/personal') }"><a href="/user/personal">Общая информация</a></li>
+				<li ng-class="{ active: isActive('/user/edit') }"><a href="/user/edit">Настройки профиля</a></li>
+				<li ng-class="{ active: isActive('/user/stats') }"><a href="/user/stats">Моя статистика</a></li>
+				<li ng-class="{ active: isActive('/user/notification') }"><a href="/user/notification">Уведомления</a></li>
+			</ul>
+		</div>
+		<section class="edit">
+			<form name="editForm" ng-submit="editForm.$valid && submit()" novalidate>
 				<div class="row meta" ng-if="data.role > 0">
 					
 					<div role="user" ng-if="data.role === 1">
@@ -133,13 +125,10 @@
 					<div class="fl col col-33">
 						<h3>Учетные данные <small>(обязательно)</small></h3>
 						<fieldset>
-							<input ng-model="data.email" type="email" class="form-control" placeholder="Ваш e-mail" title="Ваш e-mail" required />
+							<input ng-model="data.password" equals="{{ data.password_confirmation }}" type="password" class="form-control" placeholder="Пароль" title="Пароль" />
 						</fieldset>
 						<fieldset>
-							<input ng-model="data.password" equals="{{ data.password_confirmation }}" type="password" class="form-control" placeholder="Пароль" title="Пароль" required />
-						</fieldset>
-						<fieldset>
-							<input ng-model="data.password_confirmation" equals="{{ data.password }}" type="password" class="form-control" placeholder="Подтвердите пароль" title="Подтвердите пароль" required />
+							<input ng-model="data.password_confirmation" equals="{{ data.password }}" type="password" class="form-control" placeholder="Подтвердите пароль" title="Подтвердите пароль" />
 						</fieldset>
 					</div>
 
@@ -162,45 +151,14 @@
 
 				</div>
 				<hr/>
-				<div class="row agreement">
-
-					<div class="col">
-						<fieldset>
-								Регистрируясь Вы принимаете условия <a href="#">Пользовательского соглашения</a> и даете согласие на обработку персональных данных в соответствии с законодательством России и <a href="#">Политикой конфиденциальности</a>.
-						</fieldset>
-					</div>
-
-				</div>
 				<div class="row submit">
 
 					<fieldset>
-						<input type="submit" class="btn primary" value="Зарегистрироваться" />
+						<input type="submit" class="btn primary" value="Применить изменения" />
 					</fieldset>
 
 				</div>
 			</form>
-		</section>
-		
-		<section class="benefits">
-			<h2>Преимущества личного кабинета</h2>
-			<div class="row">
-				<div class="col">
-					<div class="clip"><i class="fa fa-pencil-square-o"></i></div>
-					<h3>Редактирование информации</h3>
-				</div>
-				<div class="col">
-					<div class="clip"><i class="fa fa-toggle-off"></i></div>
-					<h3>Подключение услуг</h3>
-				</div>
-				<div class="col">
-					<div class="clip"><i class="fa fa-line-chart"></i></div>
-					<h3>Контроль статистики</h3>
-				</div>
-				<div class="col">
-					<div class="clip"><i class="fa fa-credit-card"></i></div>
-					<h3>Оплата</h3>
-				</div>
-			</div>
 		</section>
 	</div>
 </div>

@@ -4,7 +4,7 @@
 
 // paths
 @assets-path:                      "../assets/";
-@icon-path:                        "@{assets-path}fonts/";
+@icon-path:                        "@{assets-path}fonts";
 @fa-font-path:                     @icon-path;
 
 // colors
@@ -12,7 +12,7 @@
 @gray-darker:                      lighten(@gray-base, 13.5%);
 @gray-dark:                        lighten(@gray-base, 23%);
 @gray:                             lighten(@gray-base, 33.5%);
-@gray-light:                       lighten(@gray-base, 46.7%);
+@gray-light:                       lighten(@gray-base, 84.7%);
 @gray-lighter:                     lighten(@gray-base, 93.5%);
 
 @brand-default:                    #002c69;
@@ -56,8 +56,8 @@
 @font-size-h2:                     floor((@font-size-base * 2.05));
 @font-size-h3:                     ceil((@font-size-base * 1.5));
 @font-size-h4:                     ceil((@font-size-base * 1.25));
-@font-size-h5:                     @font-size-base;
-@font-size-h6:                     ceil((@font-size-base * 0.85));
+@font-size-h5:                     ceil((@font-size-base * 1.1));
+@font-size-h6:                     ceil((@font-size-base * 0.9));
 
 @headings-font-family:             inherit;
 @headings-font-weight:             700;
@@ -125,6 +125,11 @@
 @btn-padding-horizontal:           @padding-base-x;
 @btn-border-radius-base:           22px;
 
+@btn-small-font-size:              13px;
+@btn-small-padding-vertical:       5px;
+@btn-small-padding-horizontal:     12px;
+@btn-border-radius-small:          14px;
+
 @btn-default-color:                #fff;
 @btn-default-bg:                   #95a4ba;
 @btn-default-border:               @btn-default-bg;
@@ -136,6 +141,10 @@
 @btn-inverse-color:                #00428e;
 @btn-inverse-bg:                   #fff;
 @btn-inverse-border:               @btn-inverse-bg;
+
+@btn-empty-color:                  #004997;
+@btn-empty-bg:                     transparent;
+@btn-empty-border:                 #004997;
 
 // custom
 @navbar-height:                    60px;

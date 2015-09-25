@@ -2,12 +2,14 @@
  * USER SERVICES
  */
 
+'use strict';
+
 (function () {
 
 	module.exports = angular
 		.module('app.services.user', [])
 		// TODO: common services
-		.factory('User', ['$http', 'config', function ($http, config) {
+		.factory('User', ['$http', '$state', '$auth', 'config', function ($http, $state, $auth, config) {
 
 			function publicGetById(id) {
 
@@ -15,13 +17,23 @@
 
 			}
 
-			function publicCheckAccess(access, role) {
+			function publicCheckAccess(access, fromUrl, role, callback) {
 
 				if (role === undefined) {
 					role = config.DEFAULT_ROLE;
 				}
 
-				return _.indexOf(access, role) === -1 ? false : true;
+				if (_.indexOf(access, role) === -1) {
+					callback(false);
+
+					if ($auth.user.signedIn) {
+						$state.go('index');
+					} else {
+						$state.go('user.login');
+					}
+				} else {
+					callback(true);
+				}
 
 			}
 

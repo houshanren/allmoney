@@ -60,6 +60,11 @@
 					return res;
 
 				},
+				handleAccountUpdateResponse: function (res) {
+
+					return res;
+					
+				},
 				handleTokenValidationResponse: function (res) {
 
 					return res;

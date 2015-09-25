@@ -1,5 +1,5 @@
 /**
- * USER MODELS
+ * USER MODEL
  */
 
 'use strict';
@@ -11,7 +11,6 @@
 var mongoose = require('mongoose');
 
 var userSchema = new mongoose.Schema({
-	name: String,
 	username: {
 		type: String,
 		unique: true
@@ -36,6 +35,10 @@ var userSchema = new mongoose.Schema({
 	},
 	meta: {
 		avatar: String,
+		user: {
+			name: String,
+			city: String
+		},
 		// private person
 		pp: {
 			firstname: String,
@@ -71,7 +74,7 @@ var userSchema = new mongoose.Schema({
 		default: 0
 	},
 	contacts: {
-		firstname: String,
+		name: String,
 		phone: String,
 		email: String
 	},

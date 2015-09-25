@@ -18,10 +18,21 @@
 					</div>
 
 				</div>
-				<hr ng-show="data.role > 3" />
-				<div class="row meta" ng-show="data.role > 3">
-
-					<div role="pp" ng-show="data.role === 4">
+				<hr ng-if="data.role > 0" />
+				<div class="row meta" ng-if="data.role > 0">
+					
+					<div role="user" ng-if="data.role === 1">
+						<div class="fl col col-33">
+							<h3>Основная информация</h3>
+							<fieldset>
+								<input ng-model="data.meta.user.name" type="text" class="form-control" placeholder="Ваше имя" title="Ваше имя" />
+							</fieldset>
+							<fieldset>
+								<input ng-model="data.meta.user.city" type="text" class="form-control" placeholder="Город проживания" title="Город проживания" />
+							</fieldset>
+						</div>
+					</div>
+					<div role="pp" ng-if="data.role === 4">
 						<div class="col col-66">
 							<div class="fl col col-50">
 								<h3>Основная информация</h3>
@@ -56,7 +67,7 @@
 						</div>
 					</div>
 
-					<div role="mfi" ng-show="data.role === 5">
+					<div role="mfi" ng-if="data.role === 5">
 						<div class="col col-66">
 							<h3>Данные организации</h3>
 							<div class="fl col col-50">
@@ -84,7 +95,7 @@
 						</div>
 					</div>
 
-					<div role="ps" ng-show="data.role === 6">
+					<div role="ps" ng-if="data.role === 6">
 						<div class="col col-66">
 							<h3>Данные организации</h3>
 							<div class="fl col col-50">
@@ -139,7 +150,7 @@
 					<div class="fl col col-33">
 						<h3>Контактные данные</h3>
 						<fieldset>
-							<input ng-model="data.contacts.firstname" type="text" class="form-control" placeholder="Ваше имя" title="Ваше имя" />
+							<input ng-model="data.contacts.name" type="text" class="form-control" placeholder="Ваше имя" title="Ваше имя" />
 						</fieldset>
 						<fieldset>
 							<input ng-model="data.contacts.phone" type="text" class="form-control" placeholder="Контактный телефон" title="Контактный телефон" />

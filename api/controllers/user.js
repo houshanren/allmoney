@@ -39,6 +39,20 @@ function publicSignin(data, callback) {
 
 }
 
+function publicUpdate(user, data, callback) {
+
+	// update only meta, contacts, password
+	_.assign(user.meta, data.meta);
+	_.assign(user.contacts, data.contacts);
+	if (data.password) {
+		data.password = Code.hash(data.password);
+		user.password = data.password;
+	}
+
+	user.save(callback);
+
+}
+
 function publicCreate(data, callback) {
 
 	if (!data.username) {
@@ -129,6 +143,7 @@ function publicGetByEmail(email, callback) {
 
 module.exports = {
 	signin: publicSignin,
+	update: publicUpdate,
 	create: publicCreate,
 	sendConfirmationEmail: publicSendConfirmationEmail,
 	checkConfirmationEmail: publicCheckConfirmationEmail,

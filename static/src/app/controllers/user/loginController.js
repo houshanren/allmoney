@@ -2,6 +2,8 @@
  * USER LOGIN CONTROLLERS
  */
 
+'use strict';
+
 (function () {
 
 	angular
@@ -16,7 +18,7 @@
 			// TODO: login submit
 			$scope.submit = function () {
 
-				// TODO: service check
+				// TODO: login
 				$auth.submitLogin($scope.data)
 					.then(function (res) {
 

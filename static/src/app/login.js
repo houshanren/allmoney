@@ -2,6 +2,8 @@
  * USER LOGIN
  */
 
+'use strict';
+
 (function () {
 
 	/**

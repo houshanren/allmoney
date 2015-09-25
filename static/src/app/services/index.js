@@ -2,6 +2,8 @@
  * SERVICES
  */
 
+'use strict';
+
 (function () {
 
 	module.exports = angular

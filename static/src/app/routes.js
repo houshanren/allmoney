@@ -2,6 +2,8 @@
  * ROUTES
  */
 
+'use strict';
+
 (function () {
 
 	module.exports = angular
@@ -36,38 +38,54 @@
 		}])
 		.run(['$rootScope', '$state', '$auth', 'User', 'config', function ($rootScope, $state, $auth, User, config) {
 
-			// TODO: validate user
-			$auth.validateUser();
-
 			$rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
 
 				// TODO: validate user
 				$auth.validateUser()
 					.then(function (res) {
-						
+
 						if (!('data' in toState) || !('access' in toState.data)) {
-							// undefined data access
 							event.preventDefault();
-						} else if (!User.checkAccess(toState.data.access, $auth.user.role)) {
-							// failed access
-							event.preventDefault();
-							
-							if (fromState.url === '^') {
-								if ($auth.user.signedIn) {
-									$state.go('index');
-								} else {
-									$state.go('user.login');
-								}
-							}
+						} else {
+							User.checkAccess(toState.data.access, fromState.url, $auth.user.role, function (access) {
+
+								if (!access)
+									event.preventDefault();
+
+							});
 						}
 
-					});;
+					}, function (res) {
+
+						$auth.user.role = 0;
+						// check access
+						User.checkAccess(toState.data.access, fromState.url, $auth.user.role, function (access) {
+
+							if (!access)
+								event.preventDefault();
+
+						});
+
+					});
 
 			});
 
 			$rootScope.$on('auth:login-success', function (event, reason) {
 
 				$state.go('index');
+
+			});
+
+			$rootScope.$on('auth:logout-success', function (event) {
+
+				$auth.user.role = 0;
+				// check access
+				User.checkAccess($state.current.data.access, $state.current.url, $auth.user.role, function (access) {
+
+					if (!access)
+						event.preventDefault();
+
+				});
 
 			});
 

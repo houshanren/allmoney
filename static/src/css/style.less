@@ -195,7 +195,8 @@ header {
 }
 
 .wrapper {
-	.padding-vertical(90px);
+	padding-top: 45px;
+	padding-bottom: 60px;
 	&.home {
 		height: 550px;
 		background: url('@{assets-path}images/home-bg.jpg') no-repeat center top;
@@ -351,27 +352,117 @@ header {
 			}
 		}
 	}
-	&.page-register {
-		.register {
-			margin: 0 0 40px;
-			.row {
-				padding-top: 10px;
-			}
-			.col {
-				.clearfix();
-				h3 {
-					margin-top: 0px;
-					small {
-						color: #fc9f4d;
-						font-size: @font-size-small;
-					}
+	&.page-register .register,
+	&.page-edit .edit {
+		.row {
+			padding-top: 10px;
+		}
+		.col {
+			.clearfix();
+			h3 {
+				margin-top: 0px;
+				small {
+					color: #fc9f4d;
+					font-size: @font-size-small;
 				}
 			}
-			.agreement {
-				font-size: @font-size-base;
-				line-height: @line-height-normal;
-				font-weight: bold;
-				padding: 0px 11px;
+		}
+		.agreement {
+			font-size: @font-size-base;
+			line-height: @line-height-normal;
+			font-weight: bold;
+			padding: 0px 11px;
+		}
+	}
+	&.page-register .register {
+		margin: 0 0 40px;
+	}
+	&.page-user,
+	&.page-personal {
+		.avatar {
+			width: 118px;
+			height: 118px;
+			border: 1px solid @gray-lighter;
+			padding: 5px;
+			margin: 0 20px 20px 0;
+			// default avatar
+			background: url('@{assets-path}images/avatar-108x108.png') no-repeat 5px 5px;
+			img {
+				.img-responsive();
+			}
+		}
+		.info {
+			margin-left: 138px;
+			line-height: @line-height-normal;
+		}
+		.contacts {
+			.fa {
+				width: 30px;
+				font-size: 22px;
+				text-align: center;
+				color: #cad6e2;
+				margin-right: 4px;
+			}
+			dl {
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&.page-personal,
+	&.page-edit {
+		.tabs {
+			margin-bottom: 10px;
+			.nav {
+				list-style: none;
+				font-size: 0;
+				padding: 0;
+				li {
+					.inline();
+					font-size: @font-size-base;
+					padding: 2px 20px;
+					font-size: 20px;
+					border-left: 1px solid @gray-light;
+					&.active a {
+						color: @brand-primary;
+						border-color: transparent;
+					}
+					&:first-child {
+						padding-left: 0;
+						border-left: 0;
+					}
+				}
+				a {
+					text-decoration: none;
+					border-bottom: 1px dashed fade(@link-color, 50%);
+				}
+			}
+		}
+	}
+	&.page-personal {
+		.status {
+			.send-check {
+				margin-left: 10px;
+				background-color: #EDF1F7;
+				border-color: #EDF1F7;
+				&:hover {
+					background-color: #e1e6ee;
+					color: #002a5a;
+				}
+			}
+			&.status0 {
+				color: #d96137;
+			}
+			&.status1 {
+				color: #d99e37;
+			}
+			&.status2 {
+				color: #37a6d9;
+			}
+			&.status3 {
+				color: #a4cb2e;
+			}
+			&.status4 {
+				color: #d94737;
 			}
 		}
 	}

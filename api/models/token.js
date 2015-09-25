@@ -1,5 +1,5 @@
 /**
- * TOKEN MODELS
+ * TOKEN MODEL
  */
 
 'use strict';

@@ -2,6 +2,8 @@
  * USER
  */
 
+'use strict';
+
 (function () {
 
 	/**
@@ -13,7 +15,8 @@
 			require('./controllers/user').name,
 			require('./services/user').name,
 			require('./login').name,
-			require('./register').name
+			require('./register').name,
+			require('./personal').name
 		])
 		.config(['$stateProvider', 'config', function ($stateProvider, config) {
 

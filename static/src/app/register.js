@@ -2,6 +2,8 @@
  * USER REGISTER
  */
 
+'use strict';
+
 (function () {
 
 	/**

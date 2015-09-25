@@ -148,7 +148,14 @@ hr {
 	&.inverse {
 		.button-variant(@btn-inverse-color; @btn-inverse-bg; @btn-inverse-border);
 	}
-	
+	&.empty {
+		.button-variant(@btn-empty-color; @btn-empty-bg; @btn-empty-border);
+	}
+}
+
+.btn-sm {
+	font-weight: @font-weight-base;
+	.button-size(@btn-small-padding-vertical; @btn-small-padding-horizontal; @btn-small-font-size; @line-height-base; @btn-border-radius-small);
 }
 
 // form
@@ -478,7 +485,7 @@ ol {
 
 dl {
 	margin-top: 0;
-	margin-bottom: @line-height-computed;
+	margin-bottom: ceil(@line-height-computed * 0.75);
 }
 dt,
 dd {
@@ -665,5 +672,6 @@ th {
 // icons
 .fa {
 	position: relative;
-	top: 1px;
+	vertical-align: middle;
+	top: -1px;
 }
