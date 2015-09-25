@@ -37,9 +37,9 @@
 			<div class="collapse">
 				<ul class="nav">
 					<li ng-class="{ active: isActive('/') }"><a href="/">Главная</a></li>
-					<li><a href="#">Займы от МФО</a></li>
-					<li><a href="#">Займы от частных лиц</a></li>
-					<li><a href="#">Ломбарды</a></li>
+					<li ng-class="{ active: isActive('/catalog/mfi') }"><a href="/catalog/mfi">Займы от МФО</a></li>
+					<li ng-class="{ active: isActive('/catalog/private') }"><a href="/catalog/private">Займы от частных лиц</a></li>
+					<li ng-class="{ active: isActive('/catalog/pawnshop') }"><a href="/catalog/pawnshop">Ломбарды</a></li>
 					<li><a href="#">Мнение экспертов</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Задать вопрос юристу</a></li>

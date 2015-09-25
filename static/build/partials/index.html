@@ -6,8 +6,8 @@
 				<fieldset>
 					<ui-select ng-model="data.city" ng-disabled="disabled" search-enabled="false">
 						<ui-select-match placeholder="Выберите город">{{ cities[$select.selected] }}</ui-select-match>
-						<ui-select-choices repeat="codeCity in availableCities | filter: $select.search">
-							<span ng-bind-html="cities[codeCity] | highlight: $select.search"></span>
+						<ui-select-choices repeat="code in citiesCodes | filter: $select.search">
+							<span ng-bind-html="cities[code] | highlight: $select.search"></span>
 						</ui-select-choices>
 					</ui-select>
 				</fieldset>
@@ -19,17 +19,17 @@
 			<div class="col private">
 				<div class="clip"><i class="fa fa-user"></i></div>
 				<h3>Займы<br/> от частных<br/> лиц</h3>
-				<a href="#" class="btn inverse">Выбрать</a>
+				<a href="/catalog/private" class="btn inverse">Выбрать</a>
 			</div>
-			<div class="col mfo">
+			<div class="col mfi">
 				<div class="clip"><i class="fa fa-users"></i></div>
 				<h3>Займы микрофинансовых организаций</h3>
-				<a href="#" class="btn inverse">Выбрать</a>
+				<a href="/catalog/mfi" class="btn inverse">Выбрать</a>
 			</div>
 			<div class="col last pawnshop">
 				<div class="clip"><i class="fa fa-diamond"></i></div>
 				<h3><br/>Ломбарды</h3>
-				<a href="#" class="btn inverse">Выбрать</a>
+				<a href="/catalog/pawnshop" class="btn inverse">Выбрать</a>
 			</div>
 			
 		</div>

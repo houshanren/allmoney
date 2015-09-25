@@ -94,6 +94,10 @@ var adSchema = new mongoose.Schema({
 		required: true,
 		default: 0
 	},
+	category: {
+		type: Number,
+		required: true
+	},
 	creator: {
 		type: mongoose.Schema.ObjectId,
 		required: true

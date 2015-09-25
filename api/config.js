@@ -18,7 +18,14 @@ var config = {
 	authExpires: 86400,
 	// TODO: email for sender
 	fromEmail: 'druzhbin@seolead.pro',
-	domain: 'allmoney.dev'
+	domain: 'allmoney.dev',
+
+	// ad categories
+	adCategories: {
+		'private': 4,
+		'mfi': 5,
+		'pawnshop': 6
+	}
 }
 
 module.exports = config;

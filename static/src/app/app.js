@@ -31,7 +31,8 @@
 			require('./services').name,
 			// modules
 			require('./user').name,
-			require('./ad').name
+			require('./ad').name,
+			require('./catalog').name
 		])
 		.config(['$locationProvider', '$authProvider', '$provide', function ($locationProvider, $authProvider, $provide) {
 

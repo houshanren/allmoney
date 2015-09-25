@@ -12,7 +12,9 @@
 		.filter('rub', ['$filter', '$locale', function ($filter, $locale) {
 
 			return function (num) {
+
 				return $filter('number')(num, 2) + '<span class="currency"> руб.</span>';
+				
 			};
 
 		}]);

@@ -263,7 +263,7 @@ header {
 					background: #8ccb00;
 					border: 6px solid #66B2EE;
 				}
-				&.mfo .clip {
+				&.mfi .clip {
 					background: #0069e3;
 					border: 6px solid #83B6E1;
 				}
@@ -308,6 +308,28 @@ header {
 					color: @brand-default;
 					font-weight: 400;
 					line-height: 1.3;
+				}
+			}
+		}
+	}
+	&.page-sidebar {
+		.container {
+			.clearfix();
+			> section {
+				float: left;
+				width: 800px;
+			}
+			> aside {
+				width: 284px;
+				min-height: 400px;
+				float: right;
+				border-left: 1px dashed @hr-border;
+				padding-left: 16px;
+				.create {
+					margin-bottom: 32px;
+					.btn {
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -504,6 +526,92 @@ header {
 					font-weight: @font-weight-base;
 					margin-right: 6px;
 					color: @text-color;
+				}
+			}
+		}
+	}
+	&.page-catalog {
+		// ...
+		.catalog {
+			// ...
+			.filters {
+				margin-bottom: 32px;
+			}
+			.ad {
+				border-bottom: 1px solid @hr-border;
+				padding: 14px 8px;
+				position: relative;
+				.avatar {
+					width: 108px;
+					height: 108px;
+					padding: 0;
+					margin: 0;
+					// default avatar
+					background: url('@{assets-path}images/avatar-108x108.png') no-repeat 0 0;
+					img {
+						.img-responsive();
+					}
+				}
+				dl {
+					width: 130px;
+					padding: 22px 0 0 24px;
+					line-height: @line-height-normal;
+				}
+				dt {
+					font-weight: @font-weight-base;
+					color: @text-muted;
+				}
+				dd {
+					font-weight: 900;
+					font-size: 20px;
+					color: @brand-default;
+					b {
+						display: block;
+						font-weight: 700;
+						font-size: @font-size-base;
+						color: @brand-primary;
+					}
+				}
+				.external {
+					position: relative;
+					z-index: 3;
+					width: 144px;
+					text-align: center;
+					display: block;
+					height: 108px;
+					text-decoration: none;
+					color: @gray;
+					font-size: @font-size-small;
+					padding: 17px 0 0;
+					.clip {
+						display: block;
+						margin: 0 auto 6px;
+						border-radius: 50%;
+						width: 50px;
+						height: 50px;
+						background: @brand-primary;
+						font-size: 26px;
+						color: fade(#000, 60%);
+						line-height: 50px;
+					}
+					&:hover {
+						color: #000;
+						.clip {
+							background-color: fade(@brand-primary, 75%);
+						}
+					}
+				}
+				.more {
+					position: absolute;
+					z-index: 2;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					display: block;
+				}
+				&:hover {
+					background-color: #f7f9fc;
 				}
 			}
 		}

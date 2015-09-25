@@ -9,7 +9,7 @@
 	module.exports = angular
 		.module('app.directives', [])
 		// TODO: common directives
-		.directive('userPanel', ['$state', 'config', function ($state, config) {
+		.directive('userPanel', ['config', function (config) {
 
 			return {
 				restrict: 'A',
@@ -19,7 +19,7 @@
 			};
 
 		}])
-		.directive('alertsSection', ['$state', 'config', function ($state, config) {
+		.directive('alertsSection', ['config', function (config) {
 
 			return {
 				restrict: 'E',
@@ -65,7 +65,18 @@
 				}
 			}
 
-		});
+		})
+		.directive('sidebar', ['config', function (config) {
+
+			return {
+				restrict: 'E',
+				replace: true,
+				templateUrl: 'partials/sidebar.html',
+				controller: 'SidebarCtrl',
+				controllerAs: 'sidebar'
+			};
+
+		}]);
 
 	// requires
 

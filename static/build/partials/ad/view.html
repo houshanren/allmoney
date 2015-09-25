@@ -41,20 +41,20 @@
 					<dl ng-if="data.creator.role === 4">
 						<dt><h5>Тип обеспечения:</h5></dt>
 						<dd>
-							{{ data.security }}
+							<span ng-repeat="code in data.security track by $index">{{ securityTypes[code] }}{{ ((data.security.length - 1) > $index) ? ', ' : null }}</span>
 						</dd>
 					</dl>
 					<!-- microfinance organization -->
 					<dl ng-if="data.creator.role === 5">
 						<dt><h5>Способ получения:</h5></dt>
 						<dd>
-							{{ data.wayget }}
+							<span ng-repeat="code in data.wayget track by $index">{{ waygetTypes[code] }}{{ ((data.wayget.length - 1) > $index) ? ', ' : null }}</span>
 						</dd>
 					</dl>
 					<dl>
 						<dt><h5>Доступные города:</h5></dt>
 						<dd>
-							{{ data.cities }}
+							<span ng-repeat="code in data.cities track by $index">{{ cities[code] }}{{ ((data.cities.length - 1) > $index) ? ', ' : null }}</span>
 						</dd>
 					</dl>
 

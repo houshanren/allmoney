@@ -30,9 +30,10 @@ var app = module.exports = express();
 var db = mongoose.connect('mongodb://localhost/allmoney').connection;
 
 // TODO: routes
-var routes = require('./routes');
-var user = require('./routes/user');
-var ad = require('./routes/ad');
+var routes = require('./routes'),
+	user = require('./routes/user'),
+	ad = require('./routes/ad'),
+	catalog = require('./routes/catalog');
 
 app.set('port', config.port);
 app.set('secret', config.secret);
@@ -50,6 +51,7 @@ app.use(bodyParser.json());
 app.use('/api', routes);
 app.use('/api/user', user);
 app.use('/api/ad', ad);
+app.use('/api/catalog', catalog);
 // static path
 app.use(express.static(config.staticPath));
 

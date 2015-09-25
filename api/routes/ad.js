@@ -54,6 +54,9 @@ function createAd(req, res) {
 
 		var data = req.body;
 		data.creator = user._id;
+		data.category = user.role;
+		if (user.role === 4)
+			data.link = '/user/' + user._id;
 
 		// TODO: create ad
 		Ad.create(data, function (err, ad) {
@@ -66,8 +69,6 @@ function createAd(req, res) {
 		});
 
 	});
-
-	
 
 }
 

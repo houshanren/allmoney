@@ -10,7 +10,7 @@
 		.module('app.controllers', [])
 		// TODO: common controllers
 		.controller('MainCtrl', ['$scope', '$location', 'config', function ($scope, $location, config) {
-			
+
 			$scope.isActive = function (location) {
 
 				return location === $location.path();
@@ -21,9 +21,7 @@
 		.controller('IndexCtrl', ['$scope', '$state', '$auth', 'config', function ($scope, $state, $auth, config) {
 
 			$scope.cities = config.CITIES;
-			$scope.codeCity = {};
-			// define for guest
-			$scope.availableCities = [0, 1, 2, 3, 4, 5, 6, 7];
+			$scope.citiesCodes = [0, 1, 2, 3, 4, 5, 6, 7];
 
 			// TEMP: define location
 			$scope.initial = {};
@@ -71,6 +69,11 @@
 				}, 8000);
 
 			});
+
+		}])
+		.controller('SidebarCtrl', ['$scope', 'config', function ($scope, config) {
+
+			// ...
 
 		}]);
 
