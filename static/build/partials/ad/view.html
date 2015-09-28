@@ -75,11 +75,11 @@
 				</div>
 				<hr ng-if="data.creator.role === 5 || data.creator.role === 6" />
 				<div class="load" ng-if="data.creator.role === 5 || data.creator.role === 6">
-					<a ng-href="{{ data.link }}" target="_blank" class="btn primary icon-left" role="button"><i class="fa fa-rocket"></i>Заявка на займ</a>
+					<a ng-href="{{ data.link }}" target="_blank" class="btn primary icon-left" role="button"><i class="fa fa-clipboard"></i>Заявка на займ</a>
 				</div>
 			</div>
 		</section>
-		<hr/>
+		<hr ng-if="data.post"/>
 		<section class="row more" ng-if="data.post">
 			<h3>Дополнительная информация</h3>
 			{{ data.post }}

@@ -4,24 +4,84 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"return"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
 				"text",
-				"text-align"
-			],
-			[
-				"font-s",
-				"font-style"
-			],
-			[
-				"font-",
-				"font-family"
-			],
-			[
-				"tex",
 				"text-decoration"
 			],
 			[
 				"req",
-				"require"
+				"required"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"ge",
+				"getById"
+			],
+			[
+				"st",
+				"sendStatus"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padd-",
+				"padding-bottom"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"err",
+				"errorHandler"
+			],
+			[
+				"exp",
+				"exports"
+			],
+			[
+				"to",
+				"toObject"
+			],
+			[
+				"de",
+				"decoded"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"font-",
+				"font-family"
 			],
 			[
 				"fon",
@@ -128,10 +188,6 @@
 				"text-align"
 			],
 			[
-				"ta",
-				"table"
-			],
-			[
 				"_se",
 				"_selectD"
 			],
@@ -164,20 +220,12 @@
 				"stateParams"
 			],
 			[
-				"bac",
-				"background"
-			],
-			[
 				"backr",
 				"background"
 			],
 			[
 				"di",
 				"display"
-			],
-			[
-				"back",
-				"background"
 			],
 			[
 				"displ",
@@ -200,162 +248,10 @@
 	"buffers":
 	[
 		{
-			"file": "api/index.js",
+			"file": "static/src/partials/ad/edit.html",
 			"settings":
 			{
-				"buffer_size": 1752,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "api/models/index.js",
-			"settings":
-			{
-				"buffer_size": 73,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "api/routes/index.js",
-			"settings":
-			{
-				"buffer_size": 160,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "api/routes/user.js",
-			"settings":
-			{
-				"buffer_size": 2808,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/login.js",
-			"settings":
-			{
-				"buffer_size": 490,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/routes.js",
-			"settings":
-			{
-				"buffer_size": 1160,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.js",
-			"settings":
-			{
-				"buffer_size": 17,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/app.js",
-			"settings":
-			{
-				"buffer_size": 1493,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/access.json",
-			"settings":
-			{
-				"buffer_size": 254,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "api/users.json",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/user.js",
-			"settings":
-			{
-				"buffer_size": 840,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/controllers/user/loginControllers.js",
-			"settings":
-			{
-				"buffer_size": 726,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 702,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "static/src/partials/user/view.html",
-			"settings":
-			{
-				"buffer_size": 133,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/register.js",
-			"settings":
-			{
-				"buffer_size": 514,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/controllers/user/index.js",
-			"settings":
-			{
-				"buffer_size": 727,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/app/services/user/index.js",
-			"settings":
-			{
-				"buffer_size": 334,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "api/models/user.js",
-			"settings":
-			{
-				"buffer_size": 921,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/partials/user/login.html",
-			"settings":
-			{
-				"buffer_size": 1557,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "static/src/index.html",
-			"settings":
-			{
-				"buffer_size": 5532,
+				"buffer_size": 1992,
 				"line_ending": "Windows"
 			}
 		},
@@ -363,47 +259,167 @@
 			"file": "static/src/partials/user/register.html",
 			"settings":
 			{
-				"buffer_size": 3702,
+				"buffer_size": 8329,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "static/src/app/controllers/user/registerControllers.js",
+			"file": "static/src/app/controllers/index.js",
 			"settings":
 			{
-				"buffer_size": 918,
+				"buffer_size": 1586,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "api/controllers/user.js",
+			"file": "static/src/app/catalog.js",
 			"settings":
 			{
-				"buffer_size": 853,
+				"buffer_size": 919,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "static/src/app/filters/index.js",
+			"file": "static/src/partials/catalog/view.html",
 			"settings":
 			{
-				"buffer_size": 327,
+				"buffer_size": 1794,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "static/src/css/style.less",
+			"file": "static/src/partials/sidebar.html",
 			"settings":
 			{
-				"buffer_size": 9489,
+				"buffer_size": 168,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "static/src/css/variables.less",
+			"file": "static/src/partials/catalog/ad.html",
 			"settings":
 			{
-				"buffer_size": 4978,
+				"buffer_size": 1237,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/directives/catalog/index.js",
+			"settings":
+			{
+				"buffer_size": 444,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/routes/catalog.js",
+			"settings":
+			{
+				"buffer_size": 796,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/controllers/catalog.js",
+			"settings":
+			{
+				"buffer_size": 570,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/services/catalog/index.js",
+			"settings":
+			{
+				"buffer_size": 416,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/index.html",
+			"settings":
+			{
+				"buffer_size": 5358,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/routes/ad.js",
+			"settings":
+			{
+				"buffer_size": 2081,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/user.login.js",
+			"settings":
+			{
+				"buffer_size": 509,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/user.personal.js",
+			"settings":
+			{
+				"buffer_size": 738,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/user.register.js",
+			"settings":
+			{
+				"buffer_size": 865,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/controllers/user/index.js",
+			"settings":
+			{
+				"buffer_size": 1167,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/controllers/user/personalController.js",
+			"settings":
+			{
+				"buffer_size": 372,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/routes/user.js",
+			"settings":
+			{
+				"buffer_size": 5392,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/models/ad.js",
+			"settings":
+			{
+				"buffer_size": 1810,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/access.json",
+			"settings":
+			{
+				"buffer_size": 286,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/partials/ad/view.html",
+			"settings":
+			{
+				"buffer_size": 2957,
 				"line_ending": "Windows"
 			}
 		},
@@ -411,7 +427,95 @@
 			"file": "static/src/css/core/core.less",
 			"settings":
 			{
-				"buffer_size": 7398,
+				"buffer_size": 10643,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/partials/index.html",
+			"settings":
+			{
+				"buffer_size": 1195,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/services/user/index.js",
+			"settings":
+			{
+				"buffer_size": 948,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/index.js",
+			"settings":
+			{
+				"buffer_size": 1885,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/config.js",
+			"settings":
+			{
+				"buffer_size": 503,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/filters/catalog/index.js",
+			"settings":
+			{
+				"buffer_size": 272,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/filters/index.js",
+			"settings":
+			{
+				"buffer_size": 348,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/directives/index.js",
+			"settings":
+			{
+				"buffer_size": 1444,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/css/style.less",
+			"settings":
+			{
+				"buffer_size": 16608,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/config.js",
+			"settings":
+			{
+				"buffer_size": 1959,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/partials/ad/create.html",
+			"settings":
+			{
+				"buffer_size": 5825,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/app/controllers/catalog/index.js",
+			"settings":
+			{
+				"buffer_size": 1154,
 				"line_ending": "Windows"
 			}
 		}
@@ -492,17 +596,86 @@
 	},
 	"file_history":
 	[
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/authenticationService.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/register.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/index.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/core.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/editController.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/ad/editController.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/loginController.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/registerController.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/user.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/app.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/ad/create.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/ad.create.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/ad/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/ad/createController.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/ad.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/ad/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/catalog/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/edit.html",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/config.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/index.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/variables.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/ui-select/dist/select.css",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/style.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/variables.less",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/core.less",
+		"/D/workspace/vagrant/www/dev/allmoney/api/models/ad.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/ad/view.html",
+		"/D/workspace/vagrant/www/dev/allmoney/api/routes/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/error.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user-panel.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/personalController.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/filters/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/login.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/routes.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/models/token.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/controllers/user.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/controllers/ad.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/models/user.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/routes/user.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/routes/ad.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/register.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/personal.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/app.ad.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/routes/ads.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/controllers/ads.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/register.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/confirm.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/alert.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/view.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/access.json",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/personal.html",
+		"/D/workspace/vagrant/www/dev/allmoney/api/controllers/code.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/my.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/controllers/mailer.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/alerts-section.html",
+		"/D/workspace/vagrant/www/dev/allmoney/api/config.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/logger.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/models/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/controllers/token.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/login.html",
+		"/D/workspace/vagrant/www/dev/allmoney/api/partials/mails/register.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/lib/ngprogress/build/ngprogress.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/lib/ngprogress/ngProgress.css",
+		"/D/workspace/vagrant/www/dev/allmoney/api/controllers/error.js",
+		"/D/workspace/vagrant/www/dev/roamforge/server/classes/area.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/registerControllers.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/loginControllers.js",
+		"/D/workspace/vagrant/www/dev/roamforge/server/simulation.js",
+		"/D/workspace/vagrant/www/dev/allmoney/package.json",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/authenticationService_.js",
+		"/D/workspace/vagrant/www/dev/allmoney/index.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap.js",
+		"/D/workspace/vagrant/www/dev/allmoney/api/users.json",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/gameControllers.js",
+		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/gameDirectives.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap-csp.css",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/authenticationService.js",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/index.html",
+		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/ui-select/dist/select.css",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/404.html",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/define.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/vendor-prefixes.less",
@@ -518,31 +691,15 @@
 		"/C/Cocos2d/projects/weeblerocket/proj.android/jni/Android.mk",
 		"/C/Program Files/CodeAndWeb/TexturePacker/resources/documents/LicenseAgreement.html",
 		"/C/Cocos2d/projects/weeblerocket/Resources/Spritesheets/rockets.plist",
-		"/D/workspace/vagrant/www/dev/allmoney/api/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/login.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/app.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/view.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/register.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/partials/user/login.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/loginControllers.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/controllers/user/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/user.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/routes.js",
-		"/D/workspace/vagrant/www/dev/allmoney/api/users.json",
 		"/D/workspace/vagrant/www/dev/allmoney/allmoney.sublime-workspace",
 		"/D/workspace/vagrant/www/dev/allmoney/allmoney.sublime-project",
 		"/C/Users/instantia/AppData/Roaming/Windows32/Config.xml",
-		"/D/workspace/vagrant/www/dev/allmoney/index.js",
 		"/D/workspace/vagrant/www/dev/roamforge/server/index.js",
 		"/D/workspace/vagrant/www/dev/allmoney/.gitignore",
 		"/D/workspace/vagrant/www/dev/roamforge/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/api/routes/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/services/user/index.js",
 		"/D/workspace/vagrant/scripts/gateway.sh",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/app.js",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/index.js",
-		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/gameControllers.js",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/classes/player.js",
 		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/canvas.js",
 		"/Q/installers/Photoshop.CC/m0nkrus.nfo",
@@ -552,7 +709,6 @@
 		"/D/workspace/vagrant/www/dev/allmoney/static/gulpfile.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/mixins.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/buttons.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/filters/index.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/core/gradients.less",
 		"/D/workspace/vagrant/www/dev/rosalfa.instantia/wp-content/themes/seolead/style.css",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/vendor-prefixes.less",
@@ -562,64 +718,12 @@
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/font-awesome/core.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/font-awesome/path.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/font-awesome.min.css",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/index.js",
-		"/D/workspace/vagrant/www/dev/roamforge/client/src/app/game/gameDirectives.js",
 		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/style.css",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/mixins/forms.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/variables.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/forms.less",
 		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/core.css",
-		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/variables.css",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/reset.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/css/replace.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/common/directiveSelect.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/app/directives/common/index.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular/angular.min.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/mixins/tab-focus.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/buttons.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/glyphicons.less",
-		"/D/workspace/vagrant/www/dev/roamforge/client/src/index.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/navs.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/navbar.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/mixins/buttons.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/pager.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/theme.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/bootstrap/less/utilities.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap.js",
-		"/D/documents/downloads/bootstrap-3.3.5/bootstrap-3.3.5/less/bootstrap.less",
-		"/D/documents/downloads/bootstrap-3.3.5/bootstrap-3.3.5/less/variables.less",
-		"/D/workspace/vagrant/www/dev/allmoney/static/package.json",
-		"/D/workspace/vagrant/www/dev/allmoney/static/src/bower_components/angular-bootstrap/ui-bootstrap-csp.css",
-		"/D/workspace/vagrant/www/dev/roamforge/client/src/partials/index.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/.bowerrc",
-		"/D/documents/downloads/Тестовое задание для Люси/╨в╨╡╤Б╤В╨╛╨▓╨╛╨╡ ╨╖╨░╨┤╨░╨╜╨╕╨╡ ╨┤╨╗╤П ╨Ы╤О╤Б╨╕/home.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/build/index.html",
-		"/D/workspace/vagrant/www/dev/allmoney/static/build/app/app.js",
-		"/D/workspace/vagrant/www/dev/roamforge/client/package.json",
-		"/D/workspace/vagrant/www/dev/roamforge/client/npm-debug.log.6ed52eac9bb441a271c3033bc0cd5668",
-		"/D/workspace/vagrant/www/dev/roamforge/client/gulpfile.js",
-		"/D/workspace/vagrant/www/dev/allmoney/package.json",
-		"/D/workspace/vagrant/www/dev/allmoney/routes/index.js",
-		"/D/workspace/vagrant/www/dev/grvd.node/index.js",
-		"/C/Users/INSTAN~1/AppData/Local/Temp/F3T4282.tmp/syslog",
-		"/C/Users/INSTAN~1/AppData/Local/Temp/F3T4281.tmp/syslog",
-		"/D/workspace/vagrant/www/dev/index.php",
-		"/D/workspace/alt/openmama/projects/sample_0/mama/config/profile.openmama",
-		"/D/workspace/alt/openmama/projects/sample_0/mama/config/mama.properties",
-		"/C/Users/instantia/AppData/Local/Temp/fz3temp-1/style.css",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-development.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/css/jquery.formstyler.css",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/404.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-portfolio.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/services.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-o-kompanii.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-news.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/single.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/index.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-uslugi.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page.php",
-		"/D/workspace/vagrant/www/dev/profils.instantia/wp-content/themes/seolead/page-articles.php"
+		"/D/workspace/vagrant/www/dev/allmoney/static/build/css/variables.css"
 	],
 	"find":
 	{
@@ -630,6 +734,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"D:\\workspace\\vagrant\\www\\dev\\allmoney\\static\\src\\app",
 			""
 		]
 	},
@@ -638,6 +743,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mfo",
+			"95a4ba",
+			"avatar",
+			"code",
+			"PERIOD_UNITS",
+			"updatea",
+			"access-token",
+			"verif",
+			"sign",
+			"demo",
+			"addScopeMethods",
+			"load",
+			"bg",
+			"004997",
+			"roles",
+			"dl",
+			"h4",
+			"console.log",
+			"@gray-light",
+			"@icon-path",
+			"'Не указано'",
+			"row",
+			"user",
+			"gradien",
+			"alert",
+			"\\\"",
+			"alert",
+			"alertProvider",
+			"alert",
+			"8",
+			"timeOut",
+			"transiti",
+			"trans",
+			"404",
+			"403",
+			"errorHandler(res",
+			"callback",
+			"token",
+			"configmailer",
+			"node",
+			"path",
+			"node",
+			"res",
+			"node",
+			"caret",
 			"balance",
 			"getUserById",
 			"validateToken",
@@ -720,52 +870,7 @@
 			"source",
 			";\n",
 			"now",
-			"item-prod",
-			"transit",
-			"h1",
-			"content-wra",
-			"e35c1e",
-			".rev",
-			"review",
-			"form",
-			"timer",
-			"contacts",
-			"font-size: 14",
-			"phone",
-			"../fonts/",
-			"'Roboto Condensed'",
-			"self.De",
-			"unity.area",
-			"Phaser.Physics.Matter.BodyDebug",
-			"= new Phaser.Physics.Matter.BodyDebug",
-			"pxmi",
-			"pmxi",
-			"pxmi",
-			"BodyDebug",
-			"debugBody",
-			"InversePointProxy",
-			"Phaser.Physics.Matter.Body.prot",
-			"InversePointProxy",
-			"velocity",
-			"InversePointProxy",
-			"walls",
-			"pxm",
-			"mpx",
-			"mpxi",
-			"pxmi",
-			"pxm(",
-			"mpx(",
-			"mpxi(",
-			"mpxi",
-			"pxmi(",
-			"InversePointProxy",
-			"physics.p2",
-			"Phaser.Physics.P2",
-			"velocity",
-			"Matter",
-			"Phaser",
-			"Phaser.QuadTree",
-			"Phaser"
+			"item-prod"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -773,6 +878,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"h5",
+			"reports['notspecified']",
+			"\"",
+			"errorHandler(req, res",
+			"nodemailer",
+			"config",
 			"fonts/",
 			"'blogger_sans'",
 			"Phaser.Physics.Matter",
@@ -830,76 +941,77 @@
 	"groups":
 	[
 		{
-			"selected": 15,
+			"selected": 30,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "api/index.js",
+					"file": "static/src/partials/ad/edit.html",
 					"settings":
 					{
-						"buffer_size": 1752,
+						"buffer_size": 1992,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								412,
-								412
+								1920,
+								1920
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 188.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "api/models/index.js",
+					"file": "static/src/partials/user/register.html",
 					"settings":
 					{
-						"buffer_size": 73,
+						"buffer_size": 8329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								68,
-								68
+								5852,
+								5839
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1956.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "api/routes/index.js",
+					"file": "static/src/app/controllers/index.js",
 					"settings":
 					{
-						"buffer_size": 160,
+						"buffer_size": 1586,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								147,
-								147
+								1557,
+								1557
 							]
 						],
 						"settings":
@@ -908,25 +1020,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 912.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "api/routes/user.js",
+					"file": "static/src/app/catalog.js",
 					"settings":
 					{
-						"buffer_size": 2808,
+						"buffer_size": 919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2379,
-								2379
+								318,
+								318
 							]
 						],
 						"settings":
@@ -935,30 +1047,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 285.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "static/src/app/login.js",
+					"file": "static/src/partials/catalog/view.html",
 					"settings":
 					{
-						"buffer_size": 490,
+						"buffer_size": 1794,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								437,
-								446
+								1663,
+								1663
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -969,233 +1081,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "static/src/app/routes.js",
+					"file": "static/src/partials/sidebar.html",
 					"settings":
 					{
-						"buffer_size": 1160,
+						"buffer_size": 168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1144,
-								1144
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 217.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "index.js",
-					"settings":
-					{
-						"buffer_size": 17,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "static/src/app/app.js",
-					"settings":
-					{
-						"buffer_size": 1493,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1345,
-								1345
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 418.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "static/src/app/access.json",
-					"settings":
-					{
-						"buffer_size": 254,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								21,
-								30
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "api/users.json",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "static/src/app/user.js",
-					"settings":
-					{
-						"buffer_size": 840,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								732,
-								732
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 103.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "static/src/app/controllers/user/loginControllers.js",
-					"settings":
-					{
-						"buffer_size": 726,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								164,
-								164
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "package.json",
-					"settings":
-					{
-						"buffer_size": 702,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "static/src/partials/user/view.html",
-					"settings":
-					{
-						"buffer_size": 133,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								116,
-								116
+								130,
+								130
 							]
 						],
 						"settings":
@@ -1209,19 +1106,235 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "static/src/app/register.js",
+					"buffer": 6,
+					"file": "static/src/partials/catalog/ad.html",
 					"settings":
 					{
-						"buffer_size": 514,
+						"buffer_size": 1237,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								223,
-								223
+								547,
+								547
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "static/src/app/directives/catalog/index.js",
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								308,
+								308
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "api/routes/catalog.js",
+					"settings":
+					{
+						"buffer_size": 796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								759,
+								759
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "api/controllers/catalog.js",
+					"settings":
+					{
+						"buffer_size": 570,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								463,
+								463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "static/src/app/services/catalog/index.js",
+					"settings":
+					{
+						"buffer_size": 416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "static/src/index.html",
+					"settings":
+					{
+						"buffer_size": 5358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1347,
+								1347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 467.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "api/routes/ad.js",
+					"settings":
+					{
+						"buffer_size": 2081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								995,
+								995
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 592.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "static/src/app/user.login.js",
+					"settings":
+					{
+						"buffer_size": 509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "static/src/app/user.personal.js",
+					"settings":
+					{
+						"buffer_size": 738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								611,
+								611
 							]
 						],
 						"settings":
@@ -1237,18 +1350,18 @@
 				},
 				{
 					"buffer": 15,
-					"file": "static/src/app/controllers/user/index.js",
+					"file": "static/src/app/user.register.js",
 					"settings":
 					{
-						"buffer_size": 727,
+						"buffer_size": 865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								455,
-								466
+								393,
+								393
 							]
 						],
 						"settings":
@@ -1264,18 +1377,18 @@
 				},
 				{
 					"buffer": 16,
-					"file": "static/src/app/services/user/index.js",
+					"file": "static/src/app/controllers/user/index.js",
 					"settings":
 					{
-						"buffer_size": 334,
+						"buffer_size": 1167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								642,
+								642
 							]
 						],
 						"settings":
@@ -1291,180 +1404,18 @@
 				},
 				{
 					"buffer": 17,
-					"file": "api/models/user.js",
+					"file": "static/src/app/controllers/user/personalController.js",
 					"settings":
 					{
-						"buffer_size": 921,
+						"buffer_size": 372,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								557,
-								557
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 114.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "static/src/partials/user/login.html",
-					"settings":
-					{
-						"buffer_size": 1557,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								797,
-								797
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "static/src/index.html",
-					"settings":
-					{
-						"buffer_size": 5532,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1316,
-								1319
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 47.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "static/src/partials/user/register.html",
-					"settings":
-					{
-						"buffer_size": 3702,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1100,
-								1100
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 114.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "static/src/app/controllers/user/registerControllers.js",
-					"settings":
-					{
-						"buffer_size": 918,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								139,
-								144
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 19.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "api/controllers/user.js",
-					"settings":
-					{
-						"buffer_size": 853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								530,
-								530
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "static/src/app/filters/index.js",
-					"settings":
-					{
-						"buffer_size": 327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								250,
-								250
+								131,
+								131
 							]
 						],
 						"settings":
@@ -1478,19 +1429,126 @@
 					"type": "text"
 				},
 				{
-					"buffer": 24,
-					"file": "static/src/css/style.less",
+					"buffer": 18,
+					"file": "api/routes/user.js",
 					"settings":
 					{
-						"buffer_size": 9489,
+						"buffer_size": 5392,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								838,
-								838
+								5056,
+								5056
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4501.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "api/models/ad.js",
+					"settings":
+					{
+						"buffer_size": 1810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1219,
+								1219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1356.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "static/src/app/access.json",
+					"settings":
+					{
+						"buffer_size": 286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								270,
+								270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "static/src/partials/ad/view.html",
+					"settings":
+					{
+						"buffer_size": 2957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2686,
+								2686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1024.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "static/src/css/core/core.less",
+					"settings":
+					{
+						"buffer_size": 10643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1284,
+								1284
 							]
 						],
 						"settings":
@@ -1499,51 +1557,214 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 514.0,
+						"translation.y": 1636.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "static/src/partials/index.html",
+					"settings":
+					{
+						"buffer_size": 1195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								799,
+								799
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "static/src/app/services/user/index.js",
+					"settings":
+					{
+						"buffer_size": 948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								928,
+								928
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 25,
-					"file": "static/src/css/variables.less",
+					"file": "api/index.js",
 					"settings":
 					{
-						"buffer_size": 4978,
+						"buffer_size": 1885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3424,
-								3430
+								1052,
+								1052
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1425.0,
+						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 26,
-					"file": "static/src/css/core/core.less",
+					"file": "api/config.js",
 					"settings":
 					{
-						"buffer_size": 7398,
+						"buffer_size": 503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3218,
-								3265
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "static/src/app/filters/catalog/index.js",
+					"settings":
+					{
+						"buffer_size": 272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "static/src/app/filters/index.js",
+					"settings":
+					{
+						"buffer_size": 348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "static/src/app/directives/index.js",
+					"settings":
+					{
+						"buffer_size": 1444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1423,
+								1423
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "static/src/css/style.less",
+					"settings":
+					{
+						"buffer_size": 16608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5084,
+								5084
 							]
 						],
 						"settings":
@@ -1552,7 +1773,88 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3147.0,
+						"translation.y": 8521.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "static/src/app/config.js",
+					"settings":
+					{
+						"buffer_size": 1959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1685,
+								1685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "static/src/partials/ad/create.html",
+					"settings":
+					{
+						"buffer_size": 5825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5347,
+								5347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1482.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "static/src/app/controllers/catalog/index.js",
+					"settings":
+					{
+						"buffer_size": 1154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								726,
+								726
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -26,6 +26,8 @@
 
 					// success
 					$scope.ads = res.data;
+					if (!$scope.ads.length)
+						$scope.ads = false;
 
 				}, function (res) {
 

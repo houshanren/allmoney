@@ -1,5 +1,7 @@
 node_modules
 static/node_modules
 static/src/bower_components
-api/node.log
+node.log
+*.sublime-project
+*.sublime-workspace
 
