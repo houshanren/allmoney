@@ -1,0 +1,48 @@
+<div class="wrapper page page-login">
+	<div class="container">
+		<section class="choose col-66">
+			<div class="fl col col-50 login">
+
+				<h1>Вход в <span class="hl">личный</span> кабинет</h1>
+				<form name="loginForm" ng-submit="loginForm.$valid && submit()" novalidate>
+					<fieldset>
+						<input ng-model="data.email" type="email" class="form-control" placeholder="Ваш e-mail" title="Ваш e-mail" required />
+					</fieldset>
+					<fieldset>
+						<input ng-model="data.password" type="password" class="form-control" placeholder="Пароль" title="Пароль" required />
+					</fieldset>
+					<fieldset>
+						<input type="submit" class="btn primary" value="Войти" />
+					</fieldset>
+					<a href="#">Восстановить пароль</a>
+				</form>
+
+			</div>
+			<a href="/user/register" class="fl col col-50 register">
+				<span class="clip"><i class="fa fa-user-plus"></i></span>
+				Зарегистрироваться
+			</a>
+		</section>
+		<section class="benefits">
+			<h2>Преимущества личного кабинета</h2>
+			<div class="row">
+				<div class="col">
+					<div class="clip"><i class="fa fa-pencil-square-o"></i></div>
+					<h3>Редактирование информации</h3>
+				</div>
+				<div class="col">
+					<div class="clip"><i class="fa fa-toggle-off"></i></div>
+					<h3>Подключение услуг</h3>
+				</div>
+				<div class="col">
+					<div class="clip"><i class="fa fa-line-chart"></i></div>
+					<h3>Контроль статистики</h3>
+				</div>
+				<div class="col">
+					<div class="clip"><i class="fa fa-credit-card"></i></div>
+					<h3>Оплата</h3>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

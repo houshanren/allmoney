@@ -1,0 +1,31 @@
+{
+  "name": "allmoney",
+  "version": "0.0.1",
+  "description": "allmoney application",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "crypto": "0.0.3",
+    "express": "^4.13.1",
+    "jsonwebtoken": "^5.0.5",
+    "lodash": "^3.10.0",
+    "mongoose": "^4.1.7",
+    "morgan": "^1.6.1",
+    "nodemailer": "^1.4.0",
+    "winston": "^1.0.1"
+  },
+  "author": "instantia",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/instantia/allmoney.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/instantia/allmoney/issues"
+  },
+  "homepage": "https://gitlab.com/instantia/allmoney#README"
+}

@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Подтвердите адрес эл. почты</title>
+</head>
+<body>
+	<p>
+		Привет, {{ username }}!
+	</p>
+	<p>
+		Благодарим за регистрацию на сайте!
+	</p>
+	<p>
+		Для подтверждения адреса email используйте ссылку:<br/>
+		<a href="http://{{ domain }}/user/register/{{ token }}">http://{{ domain }}/user/register/{{ token }}</a>
+	</p>
+	<p>
+		Cсылка действительна в течение 7 дней.
+	</p>
+	<p>
+		С уважением,<br/>
+		Администрация сайта<br/>
+		<a href="http://{{ domain }}/">{{ domain }}</a>
+	</p>
+</body>
+</html>

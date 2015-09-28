@@ -1,0 +1,164 @@
+<div class="wrapper page page-edit">
+	<div class="container">
+		<h1>Личный кабинет</h1>
+		<div class="row tabs">
+			<ul class="nav">
+				<li ng-class="{ active: isActive('/user/personal') }"><a href="/user/personal">Общая информация</a></li>
+				<li ng-class="{ active: isActive('/user/edit') }"><a href="/user/edit">Настройки профиля</a></li>
+				<li ng-class="{ active: isActive('/user/stats') }"><a href="/user/stats">Моя статистика</a></li>
+				<li ng-class="{ active: isActive('/user/notification') }"><a href="/user/notification">Уведомления</a></li>
+			</ul>
+		</div>
+		<section class="edit">
+			<form name="editForm" ng-submit="editForm.$valid && submit()" novalidate>
+				<div class="row meta" ng-if="data.role > 0">
+					
+					<div role="user" ng-if="data.role === 1">
+						<div class="fl col col-33">
+							<h3>Основная информация</h3>
+							<fieldset>
+								<input ng-model="data.meta.user.name" type="text" class="form-control" placeholder="Ваше имя" title="Ваше имя" />
+							</fieldset>
+							<fieldset>
+								<input ng-model="data.meta.user.city" type="text" class="form-control" placeholder="Город проживания" title="Город проживания" />
+							</fieldset>
+						</div>
+					</div>
+					<div role="pp" ng-if="data.role === 4">
+						<div class="col col-66">
+							<div class="fl col col-50">
+								<h3>Основная информация</h3>
+								<fieldset>
+									<input ng-model="data.meta.pp.firstname" type="text" class="form-control" placeholder="Ваше имя" title="Ваше имя" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.pp.middlename" type="text" class="form-control" placeholder="Ваше отчество" title="Ваше отчество" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.pp.lastname" type="text" class="form-control" placeholder="Ваша фамилия" title="Ваша фамилия" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.pp.city" type="text" class="form-control" placeholder="Город проживания" title="Город проживания" />
+								</fieldset>
+							</div>
+							<div class="fr col col-50">
+								<h3>Паспортные данные</h3>
+								<fieldset>
+									<input ng-model="data.meta.pp.series" type="text" class="form-control" placeholder="Серия паспорта" title="Серия паспорта" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.pp.number" type="text" class="form-control" placeholder="Номер паспорта" title="Номер паспорта" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.pp.issue" type="text" class="form-control" placeholder="Дата выдачи" title="Дата выдачи" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.pp.by" type="text" class="form-control" placeholder="Кем выдан" title="Кем выдан" />
+								</fieldset>
+							</div>
+						</div>
+					</div>
+
+					<div role="mfi" ng-if="data.role === 5">
+						<div class="col col-66">
+							<h3>Данные организации</h3>
+							<div class="fl col col-50">
+								<fieldset>
+									<input ng-model="data.meta.mfi.name" type="text" class="form-control" placeholder="Название компании" title="Название компании" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.mfi.legalname" type="text" class="form-control" placeholder="Юридическое название компании" title="Юридическое название компании" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.mfi.legaladdress" type="text" class="form-control" placeholder="Юридический адрес" title="Юридический адрес" />
+								</fieldset>
+							</div>
+							<div class="fr col col-50">
+								<fieldset>
+									<input ng-model="data.meta.mfi.bin" type="text" class="form-control" placeholder="ОГРН" title="ОГРНы" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.mfi.inn" type="text" class="form-control" placeholder="ИНН" title="ИНН" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.mfi.actualaddress" type="text" class="form-control" placeholder="Фактический адрес" title="Фактический адрес" />
+								</fieldset>
+							</div>
+						</div>
+					</div>
+
+					<div role="ps" ng-if="data.role === 6">
+						<div class="col col-66">
+							<h3>Данные организации</h3>
+							<div class="fl col col-50">
+								<fieldset>
+									<input ng-model="data.meta.ps.name" type="text" class="form-control" placeholder="Название компании" title="Название компании" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.ps.legalname" type="text" class="form-control" placeholder="Юридическое название компании" title="Юридическое название компании" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.ps.legaladdress" type="text" class="form-control" placeholder="Юридический адрес" title="Юридический адрес" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.ps.legaladdress" type="text" class="form-control" placeholder="Номер лицензии" title="Номер лицензии" />
+								</fieldset>
+							</div>
+							<div class="fr col col-50">
+								<fieldset>
+									<input ng-model="data.meta.ps.bin" type="text" class="form-control" placeholder="ОГРН" title="ОГРНы" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.ps.inn" type="text" class="form-control" placeholder="ИНН" title="ИНН" />
+								</fieldset>
+								<fieldset>
+									<input ng-model="data.meta.ps.actualaddress" type="text" class="form-control" placeholder="Фактический адрес" title="Фактический адрес" />
+								</fieldset>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<hr/>
+				<div class="row required">
+
+					<div class="fl col col-33">
+						<h3>Учетные данные <small>(обязательно)</small></h3>
+						<fieldset>
+							<input ng-model="data.password" equals="{{ data.password_confirmation }}" type="password" class="form-control" placeholder="Пароль" title="Пароль" />
+						</fieldset>
+						<fieldset>
+							<input ng-model="data.password_confirmation" equals="{{ data.password }}" type="password" class="form-control" placeholder="Подтвердите пароль" title="Подтвердите пароль" />
+						</fieldset>
+					</div>
+
+				</div>
+				<hr/>
+				<div class="row">
+
+					<div class="fl col col-33">
+						<h3>Контактные данные</h3>
+						<fieldset>
+							<input ng-model="data.contacts.name" type="text" class="form-control" placeholder="Ваше имя" title="Ваше имя" />
+						</fieldset>
+						<fieldset>
+							<input ng-model="data.contacts.phone" type="text" class="form-control" placeholder="Контактный телефон" title="Контактный телефон" />
+						</fieldset>
+						<fieldset>
+							<input ng-model="data.contacts.email" type="email" class="form-control" placeholder="Контактный e-mail" title="Контактный e-mail" />
+						</fieldset>
+					</div>
+
+				</div>
+				<hr/>
+				<div class="row submit">
+
+					<fieldset>
+						<input type="submit" class="btn primary" value="Сохранить изменения" />
+					</fieldset>
+
+				</div>
+			</form>
+		</section>
+	</div>
+</div>

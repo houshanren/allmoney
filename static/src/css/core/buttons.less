@@ -1,0 +1,71 @@
+// Button variants
+
+.button-variant(@color; @background; @border) {
+	color: @color;
+	background-color: @background;
+	border-color: @border;
+
+	&:focus,
+	&.focus {
+		color: @color;
+		background-color: darken(@background, 5%);
+		border-color: darken(@border, 6%);
+	}
+	&:hover {
+		color: @color;
+		background-color: darken(@background, 5%);
+		border-color: darken(@border, 6%);
+	}
+	&:active,
+	&.active,
+	.open > .dropdown-toggle& {
+		color: @color;
+		background-color: darken(@background, 5%);
+		border-color: darken(@border, 6%);
+
+		&:hover,
+		&:focus,
+		&.focus {
+			color: @color;
+			background-color: darken(@background, 8%);
+			border-color: darken(@border, 6%);
+		}
+	}
+	&:active,
+	&.active,
+	.open > .dropdown-toggle& {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&:hover,
+		&:focus,
+		&.focus {
+			background-color: @background;
+			border-color: @border;
+		}
+	}
+
+	.badge {
+		color: @background;
+		background-color: @color;
+	}
+}
+
+// Button sizes
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+	padding: @padding-vertical @padding-horizontal;
+	font-size: @font-size;
+	line-height: @line-height;
+	border-radius: @border-radius;
+	.fa {
+		font-size: floor(@font-size * 1.2);
+	}
+	&.icon-left .fa {
+		margin-right: 10px;
+	}
+	&.icon-right .fa {
+		margin-left: 10px;
+	}
+}

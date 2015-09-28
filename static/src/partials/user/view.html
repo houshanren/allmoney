@@ -1,0 +1,111 @@
+<div class="wrapper page page-user">
+	<div class="container">
+		<h1>Информация о пользователи</h1>
+		<section class="row">
+			<div class="fl col col-50 meta">
+				<h3>Основная информация</h3>
+				<div class="fl avatar">
+					
+				</div>
+				<div class="info">
+					
+					<!-- user -->
+					<div role="user" ng-if="data.role === 1">
+						<dl>
+							<dt><h5>Имя:</h5></dt>
+							<dd>{{ data.meta.user.name || data.contacts.name || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Город проживания:</h5></dt>
+							<dd>{{ data.meta.user.city || reports['notspecified'] }}</dd>
+						</dl>
+					</div>
+					<!-- private person -->
+					<div role="pp" ng-if="data.role === 4">
+						<dl>
+							<dt><h5>ФИО:</h5></dt>
+							<dd>{{ (data.meta.pp.lastname && data.meta.pp.firstname && data.meta.pp.middlename) ? data.meta.pp.lastname + ' ' + data.meta.pp.firstname + ' ' + data.meta.pp.middlename : reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Город проживания:</h5></dt>
+							<dd>{{ data.meta.pp.city || reports['notspecified'] }}</dd>
+						</dl>
+					</div>
+					<!-- microfinance organization -->
+					<div role="mfi" ng-if="data.role === 5">
+						<dl>
+							<dt><h5>Название компании:</h5></dt>
+							<dd>{{ data.meta.mfi.name || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Юридическое название компании:</h5></dt>
+							<dd>{{ data.meta.mfi.legalname || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Юридический адрес:</h5></dt>
+							<dd>{{ data.meta.mfi.legaladdress || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>ОГРН:</h5></dt>
+							<dd>{{ data.meta.mfi.bin || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>ИНН:</h5></dt>
+							<dd>{{ data.meta.mfi.inn || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Фактический адрес:</h5></dt>
+							<dd>{{ data.meta.mfi.actualaddress || reports['notspecified'] }}</dd>
+						</dl>
+					</div>
+					<!-- pawnshop -->
+					<div role="ps" ng-if="data.role === 6">
+						<dl>
+							<dt><h5>Название компании:</h5></dt>
+							<dd>{{ data.meta.ps.name || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Юридическое название компании:</h5></dt>
+							<dd>{{ data.meta.ps.legalname || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Юридический адрес:</h5></dt>
+							<dd>{{ data.meta.ps.legaladdress || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>ОГРН:</h5></dt>
+							<dd>{{ data.meta.ps.bin || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>ИНН:</h5></dt>
+							<dd>{{ data.meta.ps.inn || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Фактический адрес:</h5></dt>
+							<dd>{{ data.meta.ps.actualaddress || reports['notspecified'] }}</dd>
+						</dl>
+						<dl>
+							<dt><h5>Номер лицензии:</h5></dt>
+							<dd>{{ data.meta.ps.license || reports['notspecified'] }}</dd>
+						</dl>
+					</div>
+
+				</div>
+			</div>
+			<div class="fr col col-50 additional">
+				<div class="contacts">
+					<h3>Контактные данные</h3>
+					<dl>
+						<dd><i class="fa fa-user"></i> {{ data.contacts.name || reports['notspecified'] }}</dd>
+					</dl>
+					<dl>
+						<dd><i class="fa fa-phone"></i> {{ data.contacts.phone || reports['notspecified'] }}</dd>
+					</dl>
+					<dl>
+						<dd><i class="fa fa-envelope"></i> {{ data.contacts.email || reports['notspecified'] }}</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

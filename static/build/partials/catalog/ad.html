@@ -1,0 +1,43 @@
+<div class="row ad">
+	<div class="fl col avatar">
+		
+	</div>
+	<dl class="fl col">
+		<dt>Сумма:</dt>
+		<dd>
+			до {{ ad.amount.to }}
+			<b ng-if="ad.category === 5"><span ng-repeat="code in ad.wayget track by $index">{{ waygetTypes[code] }}{{ ((ad.wayget.length - 1) > $index) ? ', ' : null }}</span></b>
+		</dd>
+	</dl>
+	<dl class="fl col">
+		<dt>Срок:</dt>
+		<dd>
+			{{ ad.term.from }} - {{ ad.term.to }}
+			<b>{{ termUnits[ad.term.unit] }}</b>
+		</dd>
+	</dl>
+	<dl class="fl col">
+		<dt>Ставка:</dt>
+		<dd>
+			{{ ad.rate.from }} - {{ ad.rate.to }}%
+			<b>{{ rateUnits[ad.rate.unit] }}</b>
+		</dd>
+	</dl>
+	<dl class="fl col" ng-if="ad.category !== 4">
+		<dt>Рассмотрение:</dt>
+		<dd>
+			{{ ad.period.from }} {{ periodUnits[ad.period.unit] }}
+		</dd>
+	</dl>
+	<dl class="fl col" ng-if="ad.category === 4">
+		<dt>Обеспечение:</dt>
+		<dd>
+			<span ng-repeat="code in ad.security track by $index">{{ securityTypes[code] }}{{ ((ad.security.length - 1) > $index) ? ', ' : null }}</span>
+		</dd>
+	</dl>
+	<a ng-href="{{ ad.category !== 4 ? ad.link : ('/ad/' + ad._id) }}" class="fr col external">
+		<span class="clip"><i class="fa fa-money"></i></span>
+		{{ reports['howtoget'] }}
+	</a>
+	<a ng-href="{{ '/ad/' + ad._id }}" class="more"></a>
+</div>

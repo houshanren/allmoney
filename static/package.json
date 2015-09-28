@@ -1,0 +1,19 @@
+{
+  "name": "static.allmoney",
+  "version": "0.0.1",
+  "description": "static application",
+  "main": "index.js",
+  "private": true,
+  "author": "instantia",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^10.2.0",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.10",
+    "gulp-less": "^3.0.3",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  }
+}

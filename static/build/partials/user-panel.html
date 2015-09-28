@@ -1,0 +1,24 @@
+<div class="not-signed" ng-hide="user.signedIn">
+	<a href="/user/login" class="btn default icon-left" role="button"><i class="fa fa-sign-in"></i>Войти на сайт</a>
+	<a href="/user/register" class="btn primary icon-left" role="button"><i class="fa fa-user-plus"></i>Регистрация</a>
+</div>
+<div class="signed" ng-show="user.signedIn">
+	<a href="/user/{{ user.id }}" class="fl avatar">
+		
+	</a>
+	<div class="fl info">
+		<a href="/user/{{ user.id }}" class="username">{{ user.username }}</a>
+		<span class="balance">Ваш баланс: <span class="sum" ng-bind-html="user.balance | rub"></span></span>
+	</div>
+	<div class="fr additional">
+		<i class="caret" dropdown-toggle></i>
+	</div>
+</div>
+<ul class="dropdown-menu" role="menu" ng-show="user.signedIn">
+	<li role="menuitem"><a href="/user/personal">Личный кабинет</a></li>
+	<li role="menuitem"><a href="/user/edit">Настройки профиля</a></li>
+	<li role="menuitem"><a href="#">Моя статистика</a></li>
+	<li role="menuitem"><a href="#">Уведомления</a></li>
+	<li class="divider"></li>
+	<li role="menuitem"><a href="#" ng-click="signOut()"><i class="fa fa-sign-out"></i> Выйти</a></li>
+</ul>
